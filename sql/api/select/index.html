@@ -1143,6 +1143,40 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#select-from-integration" class="md-nav__link">
+    Select from integration
+  </a>
+  
+    <nav class="md-nav" aria-label="Select from integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#simple-select" class="md-nav__link">
+    Simple select
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#raw-select-from-integration" class="md-nav__link">
+    Raw select from integration
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#complex-queries" class="md-nav__link">
+    Complex queries
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1589,6 +1623,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/eeg-forecasting/" class="md-nav__link">
+        Brain activity
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -1803,6 +1851,20 @@
           
         </ul>
       </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tutorials/" class="md-nav__link">
+        Tutorials List
+      </a>
     </li>
   
 
@@ -2095,6 +2157,40 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#select-from-integration" class="md-nav__link">
+    Select from integration
+  </a>
+  
+    <nav class="md-nav" aria-label="Select from integration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#simple-select" class="md-nav__link">
+    Simple select
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#raw-select-from-integration" class="md-nav__link">
+    Raw select from integration
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#complex-queries" class="md-nav__link">
+    Complex queries
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2246,6 +2342,53 @@
 <span class="o">|</span><span class="w"> </span><span class="mi">503</span><span class="w">   </span><span class="o">|</span><span class="w"> </span><span class="n">good</span><span class="w">     </span><span class="o">|</span><span class="w"> </span><span class="n">downtown</span><span class="w">        </span><span class="o">|</span><span class="w"> </span><span class="mi">10</span><span class="w">             </span><span class="o">|</span><span class="w"> </span><span class="mi">3026</span><span class="w">         </span><span class="o">|</span><span class="w"> </span><span class="mi">3020</span><span class="w">                        </span><span class="o">|</span><span class="w"></span>
 <span class="o">|</span><span class="w"> </span><span class="mi">1066</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="n">good</span><span class="w">     </span><span class="o">|</span><span class="w"> </span><span class="n">thowsand_oaks</span><span class="w">   </span><span class="o">|</span><span class="w"> </span><span class="mi">13</span><span class="w">             </span><span class="o">|</span><span class="w"> </span><span class="mi">4774</span><span class="w">         </span><span class="o">|</span><span class="w"> </span><span class="mi">4748</span><span class="w">                        </span><span class="o">|</span><span class="w"></span>
 <span class="o">+</span><span class="c1">-------+----------+-----------------+----------------+--------------+-----------------------------+</span>
+</code></pre></div>
+<h2 id="select-from-integration">Select from integration<a class="headerlink" href="#select-from-integration" title="Permanent link">&para;</a></h2>
+<h3 id="simple-select">Simple select<a class="headerlink" href="#simple-select" title="Permanent link">&para;</a></h3>
+<p>In this example query contains only tables from one integration 
+and therefore will be sent to integration database
+(integration name will be cut from table name)
+<div class="highlight"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="k">location</span><span class="p">,</span><span class="w"> </span><span class="k">max</span><span class="p">(</span><span class="n">sqft</span><span class="p">)</span><span class="w"></span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">example_db</span><span class="p">.</span><span class="n">demo_data</span><span class="p">.</span><span class="n">home_rentals</span><span class="w"> </span>
+<span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="k">location</span><span class="w"></span>
+<span class="k">LIMIT</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span><span class="w"></span>
+</code></pre></div></p>
+<h3 id="raw-select-from-integration">Raw select from integration<a class="headerlink" href="#raw-select-from-integration" title="Permanent link">&para;</a></h3>
+<p>It is also possible to send raw query to integration. 
+It can be useful when query to integration can not be parsed as sql</p>
+<p>Syntax:</p>
+<div class="highlight"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="o">&lt;</span><span class="n">integration_name</span><span class="o">&gt;</span><span class="w"> </span><span class="p">(</span><span class="w"> </span><span class="o">&lt;</span><span class="n">raw</span><span class="w"> </span><span class="n">query</span><span class="o">&gt;</span><span class="w"> </span><span class="p">)</span><span class="w"> </span>
+</code></pre></div>
+<p>Example of select from mongo integration using mongo query
+<div class="highlight"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">mongo</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w"> </span><span class="n">db</span><span class="p">.</span><span class="n">house_sales2</span><span class="p">.</span><span class="n">find</span><span class="p">().</span><span class="k">limit</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span>
+<span class="p">)</span><span class="w"></span>
+</code></pre></div></p>
+<h2 id="complex-queries">Complex queries<a class="headerlink" href="#complex-queries" title="Permanent link">&para;</a></h2>
+<ol>
+<li>Subselect on data from integration.</li>
+</ol>
+<p>It can be useful in cases when ingration engine doesn't support some functions, for example grouping.
+In that case all data from raw select are passed to mindsdb and then subselect performs on them inside mindsdb</p>
+<div class="highlight"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="k">type</span><span class="p">,</span><span class="w"> </span><span class="k">max</span><span class="p">(</span><span class="n">bedrooms</span><span class="p">),</span><span class="w"> </span><span class="k">last</span><span class="p">(</span><span class="n">MA</span><span class="p">)</span><span class="w"></span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">mongo</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w"> </span><span class="n">db</span><span class="p">.</span><span class="n">house_sales2</span><span class="p">.</span><span class="n">find</span><span class="p">().</span><span class="k">limit</span><span class="p">(</span><span class="mi">300</span><span class="p">)</span><span class="w"> </span>
+<span class="p">)</span><span class="w"> </span><span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="mi">1</span><span class="w"></span>
+</code></pre></div>
+<ol>
+<li>Unions</li>
+</ol>
+<p>It is possible to use UNION / UNION ALL operators.
+It this case every subselect from union will be fetched and merged to one result-set on mindsdb side  </p>
+<div class="highlight"><pre><span></span><code><span class="w"> </span><span class="k">SELECT</span><span class="w"> </span>
+<span class="w">  </span><span class="k">data</span><span class="p">.</span><span class="k">time</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nb">date</span><span class="p">,</span><span class="w"> </span><span class="k">data</span><span class="p">.</span><span class="n">target</span><span class="w"></span>
+<span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">datasource</span><span class="p">.</span><span class="k">table_name</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="k">data</span><span class="w"></span>
+<span class="k">UNION</span><span class="w"> </span><span class="k">ALL</span><span class="w"></span>
+<span class="w"> </span><span class="k">SELECT</span><span class="w"></span>
+<span class="w">  </span><span class="n">model</span><span class="p">.</span><span class="k">time</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nb">date</span><span class="p">,</span><span class="w"> </span><span class="n">model</span><span class="p">.</span><span class="n">target</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">target</span><span class="w"></span>
+<span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">mindsdb</span><span class="p">.</span><span class="n">model</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">model</span><span class="w"> </span>
+<span class="w">  </span><span class="k">JOIN</span><span class="w"> </span><span class="n">datasource</span><span class="p">.</span><span class="k">table_name</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">t</span><span class="w"></span>
+<span class="w"> </span><span class="k">WHERE</span><span class="w"> </span><span class="n">t</span><span class="p">.</span><span class="k">time</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">LATEST</span><span class="w"> </span><span class="k">AND</span><span class="w"> </span><span class="n">t</span><span class="p">.</span><span class="k">group</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;value&#39;</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
 
               

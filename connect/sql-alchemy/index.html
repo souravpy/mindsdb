@@ -1542,6 +1542,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sql/tutorials/eeg-forecasting/" class="md-nav__link">
+        Brain activity
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -1756,6 +1770,20 @@
           
         </ul>
       </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/" class="md-nav__link">
+        Tutorials List
+      </a>
     </li>
   
 
@@ -2027,6 +2055,7 @@
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p>You can use the Python code below to connect your Cloud MindsDB database to SQL Alchemy.</p>
+<p>Make sure you have the <em>pymysql</em> module installed before executing the Python code. To install it, run the <code>pip install pymysql</code> command.</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">sqlalchemy</span> <span class="kn">import</span> <span class="n">create_engine</span>
 
 <span class="n">user</span> <span class="o">=</span> <span class="s1">&#39;MindsDB Cloud username&#39;</span> <span class="c1"># your Mindsdb Cloud email address is your username</span>
@@ -2043,6 +2072,7 @@
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
         <span class="k">try</span><span class="p">:</span>
                 <span class="n">engine</span> <span class="o">=</span> <span class="n">get_connection</span><span class="p">()</span>
+                <span class="n">engine</span><span class="o">.</span><span class="n">connect</span><span class="p">()</span>
                 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Connection to the </span><span class="si">{</span><span class="n">host</span><span class="si">}</span><span class="s2"> for user </span><span class="si">{</span><span class="n">user</span><span class="si">}</span><span class="s2"> created successfully.&quot;</span><span class="p">)</span>
         <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">ex</span><span class="p">:</span>
                 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Connection could not be made due to the following error: </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">ex</span><span class="p">)</span>
@@ -2061,12 +2091,13 @@
 </div>
 <div class="tabbed-block">
 <p>You can use the Python code below to connect your local MindsDB database to SQL Alchemy.</p>
+<p>Make sure you have the <em>pymysql</em> module installed before executing the Python code. To install it, run the <code>pip install pymysql</code> command.</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">sqlalchemy</span> <span class="kn">import</span> <span class="n">create_engine</span>
 
 <span class="n">user</span> <span class="o">=</span> <span class="s1">&#39;mindsdb&#39;</span>
 <span class="n">password</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
 <span class="n">host</span> <span class="o">=</span> <span class="s1">&#39;127.0.0.1&#39;</span>
-<span class="n">port</span> <span class="o">=</span> <span class="mi">47334</span>
+<span class="n">port</span> <span class="o">=</span> <span class="mi">47335</span>
 <span class="n">database</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
 
 <span class="k">def</span> <span class="nf">get_connection</span><span class="p">():</span>
@@ -2077,6 +2108,7 @@
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
         <span class="k">try</span><span class="p">:</span>
                 <span class="n">engine</span> <span class="o">=</span> <span class="n">get_connection</span><span class="p">()</span>
+                <span class="n">engine</span><span class="o">.</span><span class="n">connect</span><span class="p">()</span>
                 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Connection to the </span><span class="si">{</span><span class="n">host</span><span class="si">}</span><span class="s2"> for user </span><span class="si">{</span><span class="n">user</span><span class="si">}</span><span class="s2"> created successfully.&quot;</span><span class="p">)</span>
         <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">ex</span><span class="p">:</span>
                 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Connection could not be made due to the following error: </span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">ex</span><span class="p">)</span>
@@ -2086,7 +2118,7 @@
 <li>Username is <code>mindsdb</code></li>
 <li>Password is left empty</li>
 <li>Host is <code>127.0.0.1</code></li>
-<li>Port is <code>47334</code></li>
+<li>Port is <code>47335</code></li>
 <li>Database name is left empty</li>
 </ul>
 <p>To create a database connection, execute the code above. On success, the following output is expected:</p>

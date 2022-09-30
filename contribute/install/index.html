@@ -1492,6 +1492,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sql/tutorials/eeg-forecasting/" class="md-nav__link">
+        Brain activity
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -1711,6 +1725,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/" class="md-nav__link">
+        Tutorials List
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -1787,8 +1815,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#installing-mindsdb-from-the-source" class="md-nav__link">
-    Installing MindsDB from the source
+  <a href="#installing-mindsdb" class="md-nav__link">
+    Installing MindsDB
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#whats-next" class="md-nav__link">
+    What's Next?
   </a>
   
 </li>
@@ -1981,8 +2016,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#installing-mindsdb-from-the-source" class="md-nav__link">
-    Installing MindsDB from the source
+  <a href="#installing-mindsdb" class="md-nav__link">
+    Installing MindsDB
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#whats-next" class="md-nav__link">
+    What's Next?
   </a>
   
 </li>
@@ -2006,18 +2048,39 @@
 
 
 <h1 id="installing-mindsdb-for-development">Installing MindsDB for Development<a class="headerlink" href="#installing-mindsdb-for-development" title="Permanent link">&para;</a></h1>
-<p>Before you contribute to MindsDB you will need to install it. There are a few options to do that by installing from source, PyPi or using our Docker image. Our preferred method for development is source install.</p>
-<h3 id="installing-mindsdb-from-the-source">Installing MindsDB from the source<a class="headerlink" href="#installing-mindsdb-from-the-source" title="Permanent link">&para;</a></h3>
-<p>Before installing MindsDB make sure you have <code>Git</code> and <code>Python 3.7.x or 3.8.x</code> versions installed.</p>
+<p>If you want to contribute to the development of MindsDB, you need to install it first.</p>
+<p>There are a few installation options that you can choose as follows:</p>
+<ul>
+<li>from <a href="/setup/self-hosted/pip/source/">source</a>,</li>
+<li>using PyPi for <a href="/setup/self-hosted/pip/windows/">Windows</a>, <a href="/setup/self-hosted/pip/linux/">Linux</a>, or <a href="/setup/self-hosted/pip/macos/">MacOS</a>,</li>
+<li>using <a href="/setup/self-hosted/docker/">Docker image</a>.</li>
+</ul>
+<p>Our preferred MindsDB installation method for development is the installation from source.</p>
+<h2 id="installing-mindsdb">Installing MindsDB<a class="headerlink" href="#installing-mindsdb" title="Permanent link">&para;</a></h2>
+<p>Here, we recall the steps of MindsDB installation from source. You can either follow the steps below or visit the provided link.</p>
+<p>Before proceeding, make sure you have <code>Git</code> and <code>Python 3.7.x</code> or <code>Python 3.8.x</code> installed.</p>
 <ol>
-<li>Fork MindsDB Repository from <a href="https://github.com/mindsdb/mindsdb/fork">GitHub</a>.</li>
-<li>Clone the fork locally <code>git@github.com:YOUR_USERNAME/mindsdb.git</code>.</li>
-<li>Create a new virtual environment as <code>python3 -m venv mindsdbenv</code>.</li>
-<li>Activate the virtual environment <code>source mindsdbenv/bin/activate</code>.</li>
-<li>Install dependencies <code>cd mindsdb &amp; pip install -e .</code></li>
-<li>Start MindsDB <code>python3 -m mindsdb</code>.</li>
+<li>Fork the MindsDB repository from <a href="https://github.com/mindsdb/mindsdb/fork">GitHub</a>.</li>
+<li>Clone the fork locally:
+<div class="highlight"><pre><span></span><code>git clone git@github.com:YOUR_USERNAME/mindsdb.git
+</code></pre></div></li>
+<li>Create a new virtual environment:
+<div class="highlight"><pre><span></span><code>python3 -m venv mindsdb-venv
+</code></pre></div></li>
+<li>Activate the virtual environment:
+<div class="highlight"><pre><span></span><code><span class="nb">source</span> mindsdb-venv/bin/activate
+</code></pre></div></li>
+<li>Install dependencies:
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span> mindsdb <span class="p">&amp;</span> pip install -r requirements.txt
+</code></pre></div></li>
+<li>Install MindsDB:
+<div class="highlight"><pre><span></span><code>python setup.py develop
+</code></pre></div></li>
+<li>Start MindsDB:
+<div class="highlight"><pre><span></span><code>python3 -m mindsdb
+</code></pre></div></li>
 </ol>
-<p>If everything works, in the console you should see a similar message:</p>
+<p>If everything works as expected, you should see the following message in the console:</p>
 <div class="highlight"><pre><span></span><code>...
 2022-06-28 16:21:46,942 - INFO -  - GUI available at http://127.0.0.1:47334/
 2022-06-28 16:21:47,010 - INFO - Starting MindsDB Mysql proxy server on tcp://127.0.0.1:47335
@@ -2025,6 +2088,10 @@
 mysql API: started on 47335
 http API: started on 47334
 </code></pre></div>
+<h2 id="whats-next">What's Next?<a class="headerlink" href="#whats-next" title="Permanent link">&para;</a></h2>
+<p>Now that you are all set, we recommend you check out our <strong>Tutorials</strong> and <strong>Community Tutorials</strong> sections, where you'll find various examples of regression, classification, and time series predictions with MindsDB.</p>
+<p>To learn more about MindsDB itself, follow the guide on <a href="/sql/table-structure/">MindsDB database structure</a>. Also, don't miss out on the remaining pages from the <strong>SQL API</strong> section, as they explain a common SQL syntax with examples.</p>
+<p>Have fun!</p>
 
               
             </article>

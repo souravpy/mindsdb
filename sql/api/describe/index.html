@@ -1075,11 +1075,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#describe-model-statement" class="md-nav__link">
-    DESCRIBE ... MODEL Statement
+  <a href="#describe-predictor-model-statement" class="md-nav__link">
+    DESCRIBE PREDICTOR ... MODEL Statement
   </a>
   
-    <nav class="md-nav" aria-label="DESCRIBE ... MODEL Statement">
+    <nav class="md-nav" aria-label="DESCRIBE PREDICTOR ... MODEL Statement">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -1630,6 +1630,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/eeg-forecasting/" class="md-nav__link">
+        Brain activity
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -1844,6 +1858,20 @@
           
         </ul>
       </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tutorials/" class="md-nav__link">
+        Tutorials List
+      </a>
     </li>
   
 
@@ -2110,11 +2138,11 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#describe-model-statement" class="md-nav__link">
-    DESCRIBE ... MODEL Statement
+  <a href="#describe-predictor-model-statement" class="md-nav__link">
+    DESCRIBE PREDICTOR ... MODEL Statement
   </a>
   
-    <nav class="md-nav" aria-label="DESCRIBE ... MODEL Statement">
+    <nav class="md-nav" aria-label="DESCRIBE PREDICTOR ... MODEL Statement">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -2202,7 +2230,7 @@
 <p>The <code>DESCRIBE mindsdb.[predictor_name].features</code> statement displays how the model encoded the data before the training process.</p>
 <h3 id="syntax">Syntax<a class="headerlink" href="#syntax" title="Permanent link">&para;</a></h3>
 <p>Here is the syntax:</p>
-<div class="highlight"><pre><span></span><code><span class="k">DESCRIBE</span><span class="w"> </span><span class="n">mindsdb</span><span class="p">.[</span><span class="n">predictor_name</span><span class="p">].</span><span class="n">features</span><span class="p">;</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="k">DESCRIBE</span><span class="w"> </span><span class="n">PREDICTOR</span><span class="w"> </span><span class="n">mindsdb</span><span class="p">.[</span><span class="n">predictor_name</span><span class="p">].</span><span class="n">features</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
 <p>On execution, we get:</p>
 <div class="highlight"><pre><span></span><code><span class="o">+</span><span class="c1">--------------+-------------+--------------+-------------+</span>
@@ -2244,7 +2272,7 @@
 </table>
 <h3 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h3>
 <p>Let's look at an example using the <code>home_rentals_model</code> model.</p>
-<div class="highlight"><pre><span></span><code><span class="k">DESCRIBE</span><span class="w"> </span><span class="n">mindsdb</span><span class="p">.</span><span class="n">home_rentals_model</span><span class="p">.</span><span class="n">features</span><span class="p">;</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="k">DESCRIBE</span><span class="w"> </span><span class="n">PREDICTOR</span><span class="w"> </span><span class="n">mindsdb</span><span class="p">.</span><span class="n">home_rentals_model</span><span class="p">.</span><span class="n">features</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
 <p>On execution, we get:</p>
 <div class="highlight"><pre><span></span><code><span class="o">+</span><span class="c1">---------------------+-------------+----------------+---------+</span>
@@ -2260,12 +2288,12 @@
 <span class="o">+</span><span class="c1">---------------------+-------------+----------------+---------+</span>
 </code></pre></div>
 <p>Here the <code>rental_price</code> column is the <code>target</code> column to be predicted. As for the <code>feature</code> columns, these are used to train the ML model to predict the value of the <code>rental_price</code> column.</p>
-<h2 id="describe-model-statement"><code class="highlight"><span class="k">DESCRIBE</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="n">MODEL</span><span class="w"></span></code> Statement<a class="headerlink" href="#describe-model-statement" title="Permanent link">&para;</a></h2>
+<h2 id="describe-predictor-model-statement"><code class="highlight"><span class="k">DESCRIBE</span><span class="w"> </span><span class="n">PREDICTOR</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="n">MODEL</span><span class="w"></span></code> Statement<a class="headerlink" href="#describe-predictor-model-statement" title="Permanent link">&para;</a></h2>
 <h3 id="description_1">Description<a class="headerlink" href="#description_1" title="Permanent link">&para;</a></h3>
-<p>The <code>DESCRIBE mindsdb.[predictor_name].model</code> statement displays the performance of the candidate models.</p>
+<p>The <code>DESCRIBE PREDICTOR mindsdb.[predictor_name].model</code> statement displays the performance of the candidate models.</p>
 <h3 id="syntax_1">Syntax<a class="headerlink" href="#syntax_1" title="Permanent link">&para;</a></h3>
 <p>Here is the syntax:</p>
-<div class="highlight"><pre><span></span><code><span class="k">DESCRIBE</span><span class="w"> </span><span class="n">mindsdb</span><span class="p">.[</span><span class="n">predictor_name</span><span class="p">].</span><span class="n">model</span><span class="p">;</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="k">DESCRIBE</span><span class="w"> </span><span class="n">PREDICTOR</span><span class="w"> </span><span class="n">mindsdb</span><span class="p">.[</span><span class="n">predictor_name</span><span class="p">].</span><span class="n">model</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
 <p>On execution, we get:</p>
 <div class="highlight"><pre><span></span><code><span class="o">+</span><span class="c1">-----------------+-------------+---------------+-----------+---------------------+</span>
@@ -2311,7 +2339,7 @@
 </table>
 <h3 id="example_1">Example<a class="headerlink" href="#example_1" title="Permanent link">&para;</a></h3>
 <p>Let's look at an example using the <code>home_rentals_model</code> model.</p>
-<div class="highlight"><pre><span></span><code><span class="k">DESCRIBE</span><span class="w"> </span><span class="n">mindsdb</span><span class="p">.</span><span class="n">home_rentals_model</span><span class="p">.</span><span class="n">model</span><span class="p">;</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="k">DESCRIBE</span><span class="w"> </span><span class="n">PREDICTOR</span><span class="w"> </span><span class="n">mindsdb</span><span class="p">.</span><span class="n">home_rentals_model</span><span class="p">.</span><span class="n">model</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
 <p>On execution, we get:</p>
 <div class="highlight"><pre><span></span><code><span class="o">+</span><span class="c1">------------+--------------------+----------------------+----------+---------------------+</span>
@@ -2324,10 +2352,10 @@
 </code></pre></div>
 <h2 id="describe-ensemble-statement"><code class="highlight"><span class="k">DESCRIBE</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="n">ENSEMBLE</span><span class="w"></span></code> Statement<a class="headerlink" href="#describe-ensemble-statement" title="Permanent link">&para;</a></h2>
 <h3 id="description_2">Description<a class="headerlink" href="#description_2" title="Permanent link">&para;</a></h3>
-<p>The <code>DESCRIBE mindsdb.[predictor_name].ensemble</code> statement displays the parameters used to select the best candidate model.</p>
+<p>The <code>DESCRIBE PREDICTOR mindsdb.[predictor_name].ensemble</code> statement displays the parameters used to select the best candidate model.</p>
 <h3 id="syntax_2">Syntax<a class="headerlink" href="#syntax_2" title="Permanent link">&para;</a></h3>
 <p>Here is the syntax:</p>
-<div class="highlight"><pre><span></span><code><span class="k">DESCRIBE</span><span class="w"> </span><span class="n">mindsdb</span><span class="p">.[</span><span class="n">predictor_name</span><span class="p">].</span><span class="n">ensemble</span><span class="p">;</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="k">DESCRIBE</span><span class="w"> </span><span class="n">PREDICTOR</span><span class="w"> </span><span class="n">mindsdb</span><span class="p">.[</span><span class="n">predictor_name</span><span class="p">].</span><span class="n">ensemble</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
 <p>On execution, we get:</p>
 <div class="highlight"><pre><span></span><code><span class="o">+</span><span class="c1">-----------------+</span>
@@ -2357,7 +2385,7 @@
 </table>
 <h3 id="example_2">Example<a class="headerlink" href="#example_2" title="Permanent link">&para;</a></h3>
 <p>Let's look at an example using the <code>home_rentals_model</code> model.</p>
-<div class="highlight"><pre><span></span><code><span class="k">DESCRIBE</span><span class="w"> </span><span class="n">mindsdb</span><span class="p">.</span><span class="n">home_rentals_model</span><span class="p">.</span><span class="n">ensemble</span><span class="p">;</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="k">DESCRIBE</span><span class="w"> </span><span class="n">PREDICTOR</span><span class="w"> </span><span class="n">mindsdb</span><span class="p">.</span><span class="n">home_rentals_model</span><span class="p">.</span><span class="n">ensemble</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
 <p>On execution, we get:</p>
 <div class="highlight"><pre><span></span><code><span class="o">+</span><span class="c1">----------------------------------------------------------------------+</span>

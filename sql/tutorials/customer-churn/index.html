@@ -1592,6 +1592,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../eeg-forecasting/" class="md-nav__link">
+        Brain activity
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -1806,6 +1820,20 @@
           
         </ul>
       </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tutorials/" class="md-nav__link">
+        Tutorials List
+      </a>
     </li>
   
 
@@ -2365,8 +2393,7 @@ A <strong>feature</strong> is an input variable — the x variable in simple lin
 <span class="o">|</span><span class="w"> </span><span class="n">Yes</span><span class="w">   </span><span class="o">|</span><span class="w"> </span><span class="mi">0</span><span class="p">.</span><span class="mi">7865168539325843</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="err">{</span><span class="ss">&quot;predicted_value&quot;</span><span class="p">:</span><span class="w"> </span><span class="ss">&quot;Yes&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">&quot;confidence&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">.</span><span class="mi">7865168539325843</span><span class="p">,</span><span class="w"> </span><span class="ss">&quot;anomaly&quot;</span><span class="p">:</span><span class="w"> </span><span class="k">null</span><span class="p">,</span><span class="w"> </span><span class="ss">&quot;truth&quot;</span><span class="p">:</span><span class="w"> </span><span class="k">null</span><span class="err">}</span><span class="w">    </span><span class="o">|</span><span class="w"></span>
 <span class="o">+</span><span class="c1">-------+---------------------+-------------------------------------------------------------------------------------------------+</span>
 </code></pre></div>
-<p>Let's try another prediction.</p>
-<p>An important thing to check is the <code>important_missing_information</code> value, where MindsDB points to the important missing information that should be included to give a more accurate prediction. In this case, the <code>Contract</code>, <code>MonthlyCharges</code>, <code>TotalCharges</code>, and <code>OnlineBackup</code> columns are the important missing information. Let’s include those values in the <code>WHERE</code> clause, and run a new query.</p>
+<p>To get more accurate predictions, we should provide as much data as possible in the <code>WHERE</code> clause. Let's run another query.</p>
 <div class="highlight"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="n">Churn</span><span class="p">,</span><span class="w"> </span><span class="n">Churn_confidence</span><span class="p">,</span><span class="w"> </span><span class="n">Churn_explain</span><span class="w"></span>
 <span class="k">FROM</span><span class="w"> </span><span class="n">mindsdb</span><span class="p">.</span><span class="n">customer_churn_predictor</span><span class="w"></span>
 <span class="k">WHERE</span><span class="w"> </span><span class="n">SeniorCitizen</span><span class="o">=</span><span class="mi">0</span><span class="w"> </span>
@@ -2395,7 +2422,7 @@ A <strong>feature</strong> is an input variable — the x variable in simple lin
 <span class="o">|</span><span class="w"> </span><span class="n">Yes</span><span class="w">   </span><span class="o">|</span><span class="w"> </span><span class="mi">0</span><span class="p">.</span><span class="mi">8202247191011236</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="err">{</span><span class="ss">&quot;predicted_value&quot;</span><span class="p">:</span><span class="w"> </span><span class="ss">&quot;Yes&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">&quot;confidence&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">.</span><span class="mi">8202247191011236</span><span class="p">,</span><span class="w"> </span><span class="ss">&quot;anomaly&quot;</span><span class="p">:</span><span class="w"> </span><span class="k">null</span><span class="p">,</span><span class="w"> </span><span class="ss">&quot;truth&quot;</span><span class="p">:</span><span class="w"> </span><span class="k">null</span><span class="err">}</span><span class="w">    </span><span class="o">|</span><span class="w"></span>
 <span class="o">+</span><span class="c1">-------+---------------------+-------------------------------------------------------------------------------------------------+</span>
 </code></pre></div>
-<p>Here, MindsDB predicted the probability of this customer churning with the confidence of around 82%.</p>
+<p>MindsDB predicted the probability of this customer churning with confidence of around 82%. The previous query predicted it with confidence of around 79%. So providing more data improved the confidence level of predictions.</p>
 <h2 id="whats-next">What's Next?<a class="headerlink" href="#whats-next" title="Permanent link">&para;</a></h2>
 <p>Have fun while trying it out yourself!</p>
 <ul>

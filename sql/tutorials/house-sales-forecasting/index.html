@@ -1529,16 +1529,16 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#the-data" class="md-nav__link">
-    The Data
+  <a href="#data-setup" class="md-nav__link">
+    Data Setup
   </a>
   
-    <nav class="md-nav" aria-label="The Data">
+    <nav class="md-nav" aria-label="Data Setup">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#connecting-the-data" class="md-nav__link">
-    Connecting the data
+    Connecting the Data
   </a>
   
 </li>
@@ -1556,15 +1556,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#training-a-predictor-via-create-predictor" class="md-nav__link">
-    Training a Predictor Via CREATE PREDICTOR
+  <a href="#training-a-predictor" class="md-nav__link">
+    Training a Predictor
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#checking-the-status-of-a-predictor" class="md-nav__link">
-    Checking the Status of a Predictor
+  <a href="#status-of-a-predictor" class="md-nav__link">
+    Status of a Predictor
   </a>
   
 </li>
@@ -1587,6 +1587,20 @@
   
 </nav>
       
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../eeg-forecasting/" class="md-nav__link">
+        Brain activity
+      </a>
     </li>
   
 
@@ -1806,6 +1820,20 @@
           
         </ul>
       </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tutorials/" class="md-nav__link">
+        Tutorials List
+      </a>
     </li>
   
 
@@ -2045,16 +2073,16 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#the-data" class="md-nav__link">
-    The Data
+  <a href="#data-setup" class="md-nav__link">
+    Data Setup
   </a>
   
-    <nav class="md-nav" aria-label="The Data">
+    <nav class="md-nav" aria-label="Data Setup">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#connecting-the-data" class="md-nav__link">
-    Connecting the data
+    Connecting the Data
   </a>
   
 </li>
@@ -2072,15 +2100,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#training-a-predictor-via-create-predictor" class="md-nav__link">
-    Training a Predictor Via CREATE PREDICTOR
+  <a href="#training-a-predictor" class="md-nav__link">
+    Training a Predictor
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#checking-the-status-of-a-predictor" class="md-nav__link">
-    Checking the Status of a Predictor
+  <a href="#status-of-a-predictor" class="md-nav__link">
+    Status of a Predictor
   </a>
   
 </li>
@@ -2119,17 +2147,17 @@
 
 <h1 id="forecasting-quarterly-house-sales-with-mindsdb">Forecasting Quarterly House Sales with MindsDB<a class="headerlink" href="#forecasting-quarterly-house-sales-with-mindsdb" title="Permanent link">&para;</a></h1>
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
-<p>In this tutorial, we'll create, train, and query a machine learning model, which, in MindsDB language, is an <code>AI Table</code> or a <code>predictor</code>. We aim to predict sales forecasts for houses using a multivariate time series strategy.</p>
-<p>Make sure you have access to a working MindsDB installation either locally or via <a href="https://cloud.mindsdb.com/">cloud.mindsdb.com</a>.</p>
-<p>You can learn how to set up your account at MindsDB Cloud by following <a href="https://docs.mindsdb.com/setup/cloud/">this guide</a>. Another way is to set up MindsDB locally using <a href="https://docs.mindsdb.com/setup/self-hosted/docker/">Docker</a> or <a href="https://docs.mindsdb.com/setup/self-hosted/pip/source/">Python</a>.</p>
+<p>In this tutorial, we'll create and train a machine learning model, or as we call it, an <code>AI Table</code> or a <code>predictor</code>. By querying the model, we'll predict the real estate sales using a multivariate time series strategy.</p>
+<p>Make sure you have access to a working MindsDB installation, either locally or at <a href="https://cloud.mindsdb.com/">MindsDB Cloud</a>.</p>
+<p>If you want to learn how to set up your account at MindsDB Cloud, follow <a href="https://docs.mindsdb.com/setup/cloud/">this guide</a>. Another way is to set up MindsDB locally using <a href="https://docs.mindsdb.com/setup/self-hosted/docker/">Docker</a> or <a href="https://docs.mindsdb.com/setup/self-hosted/pip/source/">Python</a>.</p>
 <p>Let's get started.</p>
-<h2 id="the-data">The Data<a class="headerlink" href="#the-data" title="Permanent link">&para;</a></h2>
-<h3 id="connecting-the-data">Connecting the data<a class="headerlink" href="#connecting-the-data" title="Permanent link">&para;</a></h3>
+<h2 id="data-setup">Data Setup<a class="headerlink" href="#data-setup" title="Permanent link">&para;</a></h2>
+<h3 id="connecting-the-data">Connecting the Data<a class="headerlink" href="#connecting-the-data" title="Permanent link">&para;</a></h3>
 <p>There are a couple of ways you can get the data to follow through with this tutorial.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Connecting as a database via <code class="highlight"><span class="k">CREATE</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"></span></code></label><label for="__tabbed_1_2">Connecting as a file</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Connecting as a database</label><label for="__tabbed_1_2">Connecting as a file</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p>You can connect to a demo database that we've prepared for you. It contains the data used throughout this tutorial which is the <code class="highlight"><span class="n">example_db</span><span class="p">.</span><span class="n">demo_data</span><span class="p">.</span><span class="n">house_sales</span><span class="w"></span></code> table.</p>
+<p>You can connect to a demo database that we've prepared for you. It contains the data used throughout this tutorial (the <code class="highlight"><span class="n">example_db</span><span class="p">.</span><span class="n">demo_data</span><span class="p">.</span><span class="n">house_sales</span><span class="w"></span></code> table).</p>
 <div class="highlight"><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">example_db</span><span class="w"></span>
 <span class="w">    </span><span class="k">WITH</span><span class="w"> </span><span class="n">ENGINE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ss">&quot;postgres&quot;</span><span class="p">,</span><span class="w"></span>
 <span class="w">    </span><span class="k">PARAMETERS</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="err">{</span><span class="w"></span>
@@ -2147,9 +2175,9 @@
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<p>The dataset we use in this tutorial is the pre-processed version of the <em>House Property Sales</em> data. You can download it from <a href="https://www.kaggle.com/datasets/htagholdings/property-sales">Kaggle</a>. We use the <em>ma_lga_12345.csv</em> file.</p>
-<p>And <a href="https://docs.mindsdb.com/sql/create/file/">this guide</a> explains how to upload a file to MindsDB.</p>
-<p>Now, you can query the uploaded file as if it were a table.</p>
+<p>The dataset we use in this tutorial is the pre-processed version of the <em>House Property Sales</em> data. You can download <a href="https://www.kaggle.com/datasets/htagholdings/property-sales">the <code>CSV</code> data file here</a> (we use the <em>ma_lga_12345.csv</em> file) and upload it via <a href="/connect/mindsdb_editor/">MindsDB SQL Editor</a>.</p>
+<p>Follow <a href="/sql/create/file/">this guide</a> to find out how to upload a file to MindsDB.</p>
+<p>Now you can run queries directly on the file as if it were a table. Let's preview the data that we'll use to train our predictor.</p>
 <div class="highlight"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"></span>
 <span class="k">FROM</span><span class="w"> </span><span class="n">files</span><span class="p">.</span><span class="n">house_sales</span><span class="w"></span>
 <span class="k">LIMIT</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span><span class="w"></span>
@@ -2158,11 +2186,12 @@
 </div>
 </div>
 <div class="admonition warning">
-<p class="admonition-title">From now on, we will use the <code>files.house_sales</code> file as a table. Make sure you replace it with <code class="highlight"><span class="n">example_db</span><span class="p">.</span><span class="n">demo_data</span><span class="p">.</span><span class="n">house_sales</span><span class="w"></span></code> if you use the <code>demo</code> database.</p>
+<p class="admonition-title">Pay Attention to the Queries</p>
+<p>From now on, we'll use the <code class="highlight"><span class="n">files</span><span class="p">.</span><span class="n">house_sales</span><span class="w"></span></code> file as a table. Make sure you replace it with <code>example_db.demo_data.house_sales</code> if you connect the data as a database.</p>
 </div>
 <h3 id="understanding-the-data">Understanding the Data<a class="headerlink" href="#understanding-the-data" title="Permanent link">&para;</a></h3>
-<p>We will use the house sales dataset where each row represents one real estate (house or unit). It tracks quarterly moving averages of house sales aggregated by type and amount of bedrooms in each listing. These quarterly moving averages will be predicted in the following sections of this tutorial.</p>
-<p>Below is the sample data stored in the house sales dataset.</p>
+<p>We use the house sales dataset, where each row is one house or one unit, to predict the <code>MA</code> column values. It tracks quarterly moving averages (<code>MA</code>) of house sales aggregated by real estate type and the number of bedrooms in each listing.</p>
+<p>Below is the sample data stored in the <code class="highlight"><span class="n">files</span><span class="p">.</span><span class="n">house_sales</span><span class="w"></span></code> table.</p>
 <div class="highlight"><pre><span></span><code><span class="o">+</span><span class="c1">----------+------+-----+--------+</span>
 <span class="o">|</span><span class="n">saledate</span><span class="w">  </span><span class="o">|</span><span class="n">MA</span><span class="w">    </span><span class="o">|</span><span class="k">type</span><span class="w"> </span><span class="o">|</span><span class="n">bedrooms</span><span class="o">|</span><span class="w"></span>
 <span class="o">+</span><span class="c1">----------+------+-----+--------+</span>
@@ -2177,34 +2206,34 @@
 <table>
 <thead>
 <tr>
-<th align="left">Column</th>
-<th align="left">Description</th>
+<th>Column</th>
+<th>Description</th>
 <th>Data Type</th>
 <th>Usage</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left"><code>saledate</code></td>
-<td align="left">The date of sale</td>
+<td><code>saledate</code></td>
+<td>The date of sale.</td>
 <td><code>date</code></td>
 <td>Feature</td>
 </tr>
 <tr>
-<td align="left"><code>MA</code></td>
-<td align="left">Moving average of the historical median price of the house or unit</td>
+<td><code>MA</code></td>
+<td>Moving average of the historical median price of the house or unit.</td>
 <td><code>integer</code></td>
 <td>Label</td>
 </tr>
 <tr>
-<td align="left"><code>type</code></td>
-<td align="left">Type of property (either a house or a unit)</td>
+<td><code>type</code></td>
+<td>Type of property (<code>house</code> or <code>unit</code>).</td>
 <td><code>character varying</code></td>
 <td>Feature</td>
 </tr>
 <tr>
-<td align="left"><code>bedrooms</code></td>
-<td align="left">Number of bedrooms</td>
+<td><code>bedrooms</code></td>
+<td>Number of bedrooms.</td>
 <td><code>integer</code></td>
 <td>Feature</td>
 </tr>
@@ -2212,38 +2241,44 @@
 </table>
 <div class="admonition info">
 <p class="admonition-title">Labels and Features</p>
-<p>A <strong>label</strong> is the thing we're predicting — the y variable in simple linear regression.
-A <strong>feature</strong> is an input variable — the x variable in simple linear regression.</p>
+<p>A <strong>label</strong> is a column whose values will be predicted (the y variable in simple linear regression).<br/>
+A <strong>feature</strong> is a column used to train the model (the x variable in simple linear regression).</p>
 </div>
-<h2 id="training-a-predictor-via-create-predictor">Training a Predictor Via <a href="/sql/create/predictor"><code class="highlight"><span class="k">CREATE</span><span class="w"> </span><span class="n">PREDICTOR</span><span class="w"></span></code></a><a class="headerlink" href="#training-a-predictor-via-create-predictor" title="Permanent link">&para;</a></h2>
-<p>Let's create and train your first machine learning predictor. For that, we are going to use the <a href="/sql/create/predictor"><code class="highlight"><span class="k">CREATE</span><span class="w"> </span><span class="n">PREDICTOR</span><span class="w"></span></code></a> syntax where we specify what sub-query to train <code class="highlight"><span class="k">FROM</span><span class="w"></span></code> (features) and what we want to <code class="highlight"><span class="n">PREDICT</span><span class="w"></span></code> (labels).</p>
+<h2 id="training-a-predictor">Training a Predictor<a class="headerlink" href="#training-a-predictor" title="Permanent link">&para;</a></h2>
+<p>Let's create and train the machine learning model. For that, we use the <a href="/sql/create/predictor"><code class="highlight"><span class="k">CREATE</span><span class="w"> </span><span class="n">PREDICTOR</span><span class="w"></span></code></a> statement and specify the input columns used to train <code class="highlight"><span class="k">FROM</span><span class="w"></span></code> (features) and what we want to <code class="highlight"><span class="n">PREDICT</span><span class="w"></span></code> (labels).</p>
 <div class="highlight"><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="n">PREDICTOR</span><span class="w"> </span><span class="n">mindsdb</span><span class="p">.</span><span class="n">house_sales_predictor</span><span class="w"></span>
 <span class="k">FROM</span><span class="w"> </span><span class="n">files</span><span class="w"></span>
 <span class="w">  </span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">house_sales</span><span class="p">)</span><span class="w"></span>
 <span class="n">PREDICT</span><span class="w"> </span><span class="n">MA</span><span class="w"></span>
 <span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">saledate</span><span class="w"></span>
 <span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">bedrooms</span><span class="p">,</span><span class="w"> </span><span class="k">type</span><span class="w"></span>
-<span class="c1">-- as the target is quarterly,</span>
-<span class="c1">-- we will look back two years to forecast the next one</span>
-<span class="n">WINDOW</span><span class="w"> </span><span class="mi">8</span><span class="w"></span>
-<span class="n">HORIZON</span><span class="w"> </span><span class="mi">4</span><span class="p">;</span><span class="w"></span>
+<span class="c1">-- the target column to be predicted stores one row per quarter</span>
+<span class="n">WINDOW</span><span class="w"> </span><span class="mi">8</span><span class="w">      </span><span class="c1">-- using data from the last two years to make forecasts (last 8 rows)</span>
+<span class="n">HORIZON</span><span class="w"> </span><span class="mi">4</span><span class="p">;</span><span class="w">    </span><span class="c1">-- making forecasts for the next year (next 4 rows)</span>
 </code></pre></div>
-<p>We use all of the columns as features, except for the <code>MA</code> column whose value is going to be predicted.</p>
-<p>MindsDB makes it simple so that we don't need to repeat the predictor creation process for every group, that is, for every number of bedrooms or for every type of a real estate. Instead, we just group by both the <code>bedrooms</code> and <code>type</code> columns and the predictor learns from all series and enables forecasts for all of them!</p>
-<h2 id="checking-the-status-of-a-predictor">Checking the Status of a Predictor<a class="headerlink" href="#checking-the-status-of-a-predictor" title="Permanent link">&para;</a></h2>
-<p>A predictor may take a couple of minutes for the training to complete. You can monitor the status of your predictor by using this SQL command:</p>
+<p>We use all of the columns as features, except for the <code>MA</code> column, whose values will be predicted.</p>
+<p>MindsDB makes it simple so that we don't need to repeat the predictor creation process for every group, that is, for every distinct number of bedrooms or for every distinct type of real estate. Instead, we just group by both the <code>bedrooms</code> and <code>type</code> columns, and the predictor learns from all series and enables forecasts for all of them!</p>
+<h2 id="status-of-a-predictor">Status of a Predictor<a class="headerlink" href="#status-of-a-predictor" title="Permanent link">&para;</a></h2>
+<p>A predictor may take a couple of minutes for the training to complete. You can monitor the status of the predictor by using this SQL command:</p>
 <div class="highlight"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="n">status</span><span class="w"></span>
 <span class="k">FROM</span><span class="w"> </span><span class="n">mindsdb</span><span class="p">.</span><span class="n">predictors</span><span class="w"></span>
 <span class="k">WHERE</span><span class="w"> </span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;house_sales_predictor&#39;</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
-<p>If we run it right after creating a predictor, we'll most probably get this output:</p>
+<p>If we run it right after creating a predictor, we get this output:</p>
+<div class="highlight"><pre><span></span><code><span class="o">+</span><span class="c1">------------+</span>
+<span class="o">|</span><span class="w"> </span><span class="n">status</span><span class="w">     </span><span class="o">|</span><span class="w"></span>
+<span class="o">+</span><span class="c1">------------+</span>
+<span class="o">|</span><span class="w"> </span><span class="n">generating</span><span class="w"> </span><span class="o">|</span><span class="w"></span>
+<span class="o">+</span><span class="c1">------------+</span>
+</code></pre></div>
+<p>A bit later, this is the output:</p>
 <div class="highlight"><pre><span></span><code><span class="o">+</span><span class="c1">----------+</span>
 <span class="o">|</span><span class="w"> </span><span class="n">status</span><span class="w">   </span><span class="o">|</span><span class="w"></span>
 <span class="o">+</span><span class="c1">----------+</span>
 <span class="o">|</span><span class="w"> </span><span class="n">training</span><span class="w"> </span><span class="o">|</span><span class="w"></span>
 <span class="o">+</span><span class="c1">----------+</span>
 </code></pre></div>
-<p>But if we wait a couple of minutes, this should be the output:</p>
+<p>And at last, this should be the output:</p>
 <div class="highlight"><pre><span></span><code><span class="o">+</span><span class="c1">----------+</span>
 <span class="o">|</span><span class="w"> </span><span class="n">status</span><span class="w">   </span><span class="o">|</span><span class="w"></span>
 <span class="o">+</span><span class="c1">----------+</span>
@@ -2252,8 +2287,8 @@ A <strong>feature</strong> is an input variable — the x variable in simple lin
 </code></pre></div>
 <p>Now, if the status of our predictor says <code>complete</code>, we can start making predictions!</p>
 <h2 id="making-predictions">Making Predictions<a class="headerlink" href="#making-predictions" title="Permanent link">&para;</a></h2>
-<p>You can make predictions by querying the predictor as if it were a table. The <a href="/sql/api/select/"><code>SELECT</code></a> syntax lets you make predictions for the label based on the chosen features for a given period of time. Usually, you want to know what happens right after the latest training data point that was fed. We have a special keyword for that: the <code>LATEST</code> keyword.</p>
-<div class="highlight"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="n">m</span><span class="p">.</span><span class="n">saledate</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="nb">date</span><span class="p">,</span><span class="w"> </span><span class="n">m</span><span class="p">.</span><span class="n">MA</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">forecast</span><span class="w"></span>
+<p>You can make predictions by querying the predictor joined with the data table. The <a href="/sql/api/select/"><code>SELECT</code></a> statement lets you make predictions for the label based on the chosen features for a given time period. Usually, you want to know what happens right after the latest training data point that was fed. We have a special keyword for that, the <code>LATEST</code> keyword.</p>
+<div class="highlight"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="n">m</span><span class="p">.</span><span class="n">saledate</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="nb">date</span><span class="p">,</span><span class="w"> </span><span class="n">m</span><span class="p">.</span><span class="n">MA</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">forecast</span><span class="p">,</span><span class="w"> </span><span class="n">MA_explain</span><span class="w"></span>
 <span class="k">FROM</span><span class="w"> </span><span class="n">mindsdb</span><span class="p">.</span><span class="n">house_sales_predictor</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">m</span><span class="w"> </span>
 <span class="k">JOIN</span><span class="w"> </span><span class="n">files</span><span class="p">.</span><span class="n">house_sales</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">t</span><span class="w"></span>
 <span class="k">WHERE</span><span class="w"> </span><span class="n">t</span><span class="p">.</span><span class="n">saledate</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">LATEST</span><span class="w"> </span>
@@ -2261,6 +2296,17 @@ A <strong>feature</strong> is an input variable — the x variable in simple lin
 <span class="k">AND</span><span class="w"> </span><span class="n">t</span><span class="p">.</span><span class="n">bedrooms</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span><span class="w"></span>
 <span class="k">LIMIT</span><span class="w"> </span><span class="mi">4</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
+<p>On execution, we get:</p>
+<div class="highlight"><pre><span></span><code><span class="o">+</span><span class="c1">-------------+-------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+</span>
+<span class="o">|</span><span class="w"> </span><span class="nb">date</span><span class="w">        </span><span class="o">|</span><span class="w"> </span><span class="n">forecast</span><span class="w">          </span><span class="o">|</span><span class="w"> </span><span class="n">MA_explain</span><span class="w">                                                                                                                                                                                    </span><span class="o">|</span><span class="w"></span>
+<span class="o">+</span><span class="c1">-------------+-------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+</span>
+<span class="o">|</span><span class="w"> </span><span class="mi">2019</span><span class="o">-</span><span class="mi">12</span><span class="o">-</span><span class="mi">31</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">441413</span><span class="p">.</span><span class="mi">5849598734</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="err">{</span><span class="ss">&quot;predicted_value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">441413</span><span class="p">.</span><span class="mi">5849598734</span><span class="p">,</span><span class="w"> </span><span class="ss">&quot;confidence&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">.</span><span class="mi">99</span><span class="p">,</span><span class="w"> </span><span class="ss">&quot;anomaly&quot;</span><span class="p">:</span><span class="w"> </span><span class="k">true</span><span class="p">,</span><span class="w"> </span><span class="ss">&quot;truth&quot;</span><span class="p">:</span><span class="w"> </span><span class="k">null</span><span class="p">,</span><span class="w"> </span><span class="ss">&quot;confidence_lower_bound&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">440046</span><span class="p">.</span><span class="mi">28237074096</span><span class="p">,</span><span class="w"> </span><span class="ss">&quot;confidence_upper_bound&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">442780</span><span class="p">.</span><span class="mi">88754900586</span><span class="err">}</span><span class="w">        </span><span class="o">|</span><span class="w"></span>
+<span class="o">|</span><span class="w"> </span><span class="mi">2020</span><span class="o">-</span><span class="mi">04</span><span class="o">-</span><span class="mi">01</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">443292</span><span class="p">.</span><span class="mi">5194586229</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="err">{</span><span class="ss">&quot;predicted_value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">443292</span><span class="p">.</span><span class="mi">5194586229</span><span class="p">,</span><span class="w"> </span><span class="ss">&quot;confidence&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">.</span><span class="mi">9991</span><span class="p">,</span><span class="w"> </span><span class="ss">&quot;anomaly&quot;</span><span class="p">:</span><span class="w"> </span><span class="k">null</span><span class="p">,</span><span class="w"> </span><span class="ss">&quot;truth&quot;</span><span class="p">:</span><span class="w"> </span><span class="k">null</span><span class="p">,</span><span class="w"> </span><span class="ss">&quot;confidence_lower_bound&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">427609</span><span class="p">.</span><span class="mi">3325864327</span><span class="p">,</span><span class="w"> </span><span class="ss">&quot;confidence_upper_bound&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">458975</span><span class="p">.</span><span class="mi">7063308131</span><span class="err">}</span><span class="w">        </span><span class="o">|</span><span class="w"></span>
+<span class="o">|</span><span class="w"> </span><span class="mi">2020</span><span class="o">-</span><span class="mi">07</span><span class="o">-</span><span class="mi">02</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">443292</span><span class="p">.</span><span class="mi">5194585953</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="err">{</span><span class="ss">&quot;predicted_value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">443292</span><span class="p">.</span><span class="mi">5194585953</span><span class="p">,</span><span class="w"> </span><span class="ss">&quot;confidence&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">.</span><span class="mi">9991</span><span class="p">,</span><span class="w"> </span><span class="ss">&quot;anomaly&quot;</span><span class="p">:</span><span class="w"> </span><span class="k">null</span><span class="p">,</span><span class="w"> </span><span class="ss">&quot;truth&quot;</span><span class="p">:</span><span class="w"> </span><span class="k">null</span><span class="p">,</span><span class="w"> </span><span class="ss">&quot;confidence_lower_bound&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">424501</span><span class="p">.</span><span class="mi">59192981094</span><span class="p">,</span><span class="w"> </span><span class="ss">&quot;confidence_upper_bound&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">462083</span><span class="p">.</span><span class="mi">4469873797</span><span class="err">}</span><span class="w">       </span><span class="o">|</span><span class="w"></span>
+<span class="o">|</span><span class="w"> </span><span class="mi">2020</span><span class="o">-</span><span class="mi">10</span><span class="o">-</span><span class="mi">02</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">443292</span><span class="p">.</span><span class="mi">5194585953</span><span class="w"> </span><span class="o">|</span><span class="w"> </span><span class="err">{</span><span class="ss">&quot;predicted_value&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">443292</span><span class="p">.</span><span class="mi">5194585953</span><span class="p">,</span><span class="w"> </span><span class="ss">&quot;confidence&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">.</span><span class="mi">9991</span><span class="p">,</span><span class="w"> </span><span class="ss">&quot;anomaly&quot;</span><span class="p">:</span><span class="w"> </span><span class="k">null</span><span class="p">,</span><span class="w"> </span><span class="ss">&quot;truth&quot;</span><span class="p">:</span><span class="w"> </span><span class="k">null</span><span class="p">,</span><span class="w"> </span><span class="ss">&quot;confidence_lower_bound&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">424501</span><span class="p">.</span><span class="mi">59192981094</span><span class="p">,</span><span class="w"> </span><span class="ss">&quot;confidence_upper_bound&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">462083</span><span class="p">.</span><span class="mi">4469873797</span><span class="err">}</span><span class="w">       </span><span class="o">|</span><span class="w"></span>
+<span class="o">+</span><span class="c1">-------------+-------------------+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+</span>
+</code></pre></div>
+<p>Please note that in the <a href="/sql/api/select/"><code>SELECT</code></a> statement, we select <code>m.saledate</code> instead of <code>t.saledate</code> because we make predictions for future dates that are not in the data table.</p>
 <p>Now, try changing the <code>type</code> column value to <em>unit</em>, or the <code>bedrooms</code> column value to any number between 1 to 5, and check how the forecasts vary. This is because MindsDB recognizes each grouping as being its own different time series.</p>
 <h2 id="whats-next">What's Next?<a class="headerlink" href="#whats-next" title="Permanent link">&para;</a></h2>
 <p>Have fun while trying it out yourself!</p>

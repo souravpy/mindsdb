@@ -1492,6 +1492,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sql/tutorials/eeg-forecasting/" class="md-nav__link">
+        Brain activity
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -1711,6 +1725,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/" class="md-nav__link">
+        Tutorials List
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -1823,36 +1851,36 @@
       
         <li class="md-nav__item">
   <a href="#what-are-handlers" class="md-nav__link">
-    What are handlers?
+    What are Handlers?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#handlers-in-the-mindsdb-repository" class="md-nav__link">
+    Handlers in the MindsDB Repository
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#structure-of-a-handler" class="md-nav__link">
-    Structure of a handler
+    Structure of a Handler
   </a>
   
-    <nav class="md-nav" aria-label="Structure of a handler">
+    <nav class="md-nav" aria-label="Structure of a Handler">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#structure-within-the-mindsdb-repository" class="md-nav__link">
-    Structure within the MindsDB repository
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#core-methods" class="md-nav__link">
-    Core methods
+    Core Methods
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#predictor-specific-behavior" class="md-nav__link">
-    Predictor-specific behavior
+  <a href="#predictor-specific-methods" class="md-nav__link">
+    Predictor-Specific Methods
   </a>
   
 </li>
@@ -1866,105 +1894,62 @@
         
           <li class="md-nav__item">
   <a href="#storing-internal-state" class="md-nav__link">
-    Storing internal state
+    Storing Internal State
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#formatting-output" class="md-nav__link">
-    Formatting output
+    Formatting Output
   </a>
   
 </li>
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#other-common-methods" class="md-nav__link">
-    Other common methods
-  </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#how-to-write-a-handler" class="md-nav__link">
-    How to write a handler
+    How to Write a Handler
   </a>
   
-    <nav class="md-nav" aria-label="How to write a handler">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-a-database-handler" class="md-nav__link">
+    Creating a Database Handler
+  </a>
+  
+    <nav class="md-nav" aria-label="Creating a Database Handler">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#step-1-create-handler-class" class="md-nav__link">
-    Step 1: Create Handler class:
-  </a>
-  
-    <nav class="md-nav" aria-label="Step 1: Create Handler class:">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#set-class-property-name" class="md-nav__link">
-    Set class property name:
+  <a href="#creating-the-handler-class" class="md-nav__link">
+    Creating the Handler Class
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-11-implement-__init__" class="md-nav__link">
-    Step 1.1: Implement __init__
+  <a href="#creating-the-connection_args-dictionary" class="md-nav__link">
+    Creating the connection_args Dictionary
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-12-implement-connect" class="md-nav__link">
-    Step 1.2: Implement connect
+  <a href="#creating-the-connection_args_example-dictionary" class="md-nav__link">
+    Creating the connection_args_example Dictionary
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-13-implement-disconnect" class="md-nav__link">
-    Step 1.3: Implement disconnect
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-14-implement-check_connection" class="md-nav__link">
-    Step 1.4: Implement check_connection
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-15-implement-native_query" class="md-nav__link">
-    Step 1.5: Implement native_query
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-16-implement-query" class="md-nav__link">
-    Step 1.6: Implement query
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-17-implement-get_tables" class="md-nav__link">
-    Step 1.7: Implement get_tables
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-18-implement-get_columns" class="md-nav__link">
-    Step 1.8: Implement get_columns
+  <a href="#exporting-all-required-variables" class="md-nav__link">
+    Exporting All Required Variables
   </a>
   
 </li>
@@ -1973,30 +1958,11 @@
     </nav>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#step-2-create-connection_args-dict" class="md-nav__link">
-    Step 2: Create connection_args dict:
+      
+        <li class="md-nav__item">
+  <a href="#check-out-our-handlers" class="md-nav__link">
+    Check out our Handlers!
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-3-create-connection_args_example-dict" class="md-nav__link">
-    Step 3: Create connection_args_example dict:
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-4-export-all-required-variables" class="md-nav__link">
-    Step 4: Export all required variables:
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -2168,36 +2134,36 @@
       
         <li class="md-nav__item">
   <a href="#what-are-handlers" class="md-nav__link">
-    What are handlers?
+    What are Handlers?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#handlers-in-the-mindsdb-repository" class="md-nav__link">
+    Handlers in the MindsDB Repository
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#structure-of-a-handler" class="md-nav__link">
-    Structure of a handler
+    Structure of a Handler
   </a>
   
-    <nav class="md-nav" aria-label="Structure of a handler">
+    <nav class="md-nav" aria-label="Structure of a Handler">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#structure-within-the-mindsdb-repository" class="md-nav__link">
-    Structure within the MindsDB repository
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#core-methods" class="md-nav__link">
-    Core methods
+    Core Methods
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#predictor-specific-behavior" class="md-nav__link">
-    Predictor-specific behavior
+  <a href="#predictor-specific-methods" class="md-nav__link">
+    Predictor-Specific Methods
   </a>
   
 </li>
@@ -2211,105 +2177,62 @@
         
           <li class="md-nav__item">
   <a href="#storing-internal-state" class="md-nav__link">
-    Storing internal state
+    Storing Internal State
   </a>
   
 </li>
         
           <li class="md-nav__item">
   <a href="#formatting-output" class="md-nav__link">
-    Formatting output
+    Formatting Output
   </a>
   
 </li>
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#other-common-methods" class="md-nav__link">
-    Other common methods
-  </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#how-to-write-a-handler" class="md-nav__link">
-    How to write a handler
+    How to Write a Handler
   </a>
   
-    <nav class="md-nav" aria-label="How to write a handler">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-a-database-handler" class="md-nav__link">
+    Creating a Database Handler
+  </a>
+  
+    <nav class="md-nav" aria-label="Creating a Database Handler">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#step-1-create-handler-class" class="md-nav__link">
-    Step 1: Create Handler class:
-  </a>
-  
-    <nav class="md-nav" aria-label="Step 1: Create Handler class:">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#set-class-property-name" class="md-nav__link">
-    Set class property name:
+  <a href="#creating-the-handler-class" class="md-nav__link">
+    Creating the Handler Class
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-11-implement-__init__" class="md-nav__link">
-    Step 1.1: Implement __init__
+  <a href="#creating-the-connection_args-dictionary" class="md-nav__link">
+    Creating the connection_args Dictionary
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-12-implement-connect" class="md-nav__link">
-    Step 1.2: Implement connect
+  <a href="#creating-the-connection_args_example-dictionary" class="md-nav__link">
+    Creating the connection_args_example Dictionary
   </a>
   
 </li>
         
           <li class="md-nav__item">
-  <a href="#step-13-implement-disconnect" class="md-nav__link">
-    Step 1.3: Implement disconnect
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-14-implement-check_connection" class="md-nav__link">
-    Step 1.4: Implement check_connection
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-15-implement-native_query" class="md-nav__link">
-    Step 1.5: Implement native_query
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-16-implement-query" class="md-nav__link">
-    Step 1.6: Implement query
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-17-implement-get_tables" class="md-nav__link">
-    Step 1.7: Implement get_tables
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-18-implement-get_columns" class="md-nav__link">
-    Step 1.8: Implement get_columns
+  <a href="#exporting-all-required-variables" class="md-nav__link">
+    Exporting All Required Variables
   </a>
   
 </li>
@@ -2318,30 +2241,11 @@
     </nav>
   
 </li>
-        
-          <li class="md-nav__item">
-  <a href="#step-2-create-connection_args-dict" class="md-nav__link">
-    Step 2: Create connection_args dict:
+      
+        <li class="md-nav__item">
+  <a href="#check-out-our-handlers" class="md-nav__link">
+    Check out our Handlers!
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-3-create-connection_args_example-dict" class="md-nav__link">
-    Step 3: Create connection_args_example dict:
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#step-4-export-all-required-variables" class="md-nav__link">
-    Step 4: Export all required variables:
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -2363,191 +2267,317 @@
 
 
 
-<h1 id="building-a-new-integration">Building a new integration<a class="headerlink" href="#building-a-new-integration" title="Permanent link">&para;</a></h1>
-<p>This section will walk you through adding a new integration to MindsDB as data layers or predictive frameworks.</p>
+<h1 id="building-a-new-integration">Building a New Integration<a class="headerlink" href="#building-a-new-integration" title="Permanent link">&para;</a></h1>
+<p>In this section, you'll find how to add new integrations to MindsDB, either as <em>data layers</em> or <em>predictive frameworks</em>.</p>
 <h2 id="prerequisite">Prerequisite<a class="headerlink" href="#prerequisite" title="Permanent link">&para;</a></h2>
-<p>Make sure you have cloned and installed the latest staging version of MindsDB repository locally. </p>
-<h2 id="what-are-handlers">What are handlers?<a class="headerlink" href="#what-are-handlers" title="Permanent link">&para;</a></h2>
-<p>At the heart of the MindsDB philosophy lies the belief that predictive insights are best leveraged when produced as close as possible to the data layer. Usually, this "layer" is a SQL-compatible database, but it could also be a non-SQL database, data stream, or any other tool that interacts with data stored somewhere else.</p>
-<p>The above description fits an enormous set of tools that people use across the software industry. The complexity increases further by bringing Machine Learning into the equation, as the set of popular ML tools is similarly huge. We aim to support most technology stacks, requiring a simple integration procedure so that anyone is able to easily contribute the necessary "glue" to enable any predictive system for usage within data layers.</p>
-<p>This motivates the concept of <em>handlers</em>, which is an abstraction for the two types of entities mentioned above: data layers and predictive systems. Handlers are meant to enforce a common and sufficient set of behaviors that all MindsDB-compatible entities should support. By creating a handler, the target system is effectively integrated into the wider MindsDB ecosystem.</p>
-<h2 id="structure-of-a-handler">Structure of a handler<a class="headerlink" href="#structure-of-a-handler" title="Permanent link">&para;</a></h2>
-<p>Technically speaking, a handler is a self-contained Python package that will have everything required for MindsDB to interact with it, including aspects like dependencies, unit tests, and continuous integration logic. It is up to the author to determine the nature of the package (e.g. close or open source, version control, etc.), although we encourage opening pull requests to expand the default set of supported tools.</p>
-<p>The entrypoint is a class definition that should inherit from either <code>integrations.libs.base_handler.DatabaseHandler</code> or <code>integrations.libs.base_handler.PredictiveHandler</code> depending on the type of system that is integrated. <code>integrations.libs.base_handler.BaseHandler</code> defines all the common methods that have to be overwritten in order to achieve a functional implementation.</p>
-<p>Apart from the above, structure is not enforced and the package can be built arranged into whatever design is preferred by the author.</p>
-<h3 id="structure-within-the-mindsdb-repository">Structure within the MindsDB repository<a class="headerlink" href="#structure-within-the-mindsdb-repository" title="Permanent link">&para;</a></h3>
-<p>The code for integrations is located in the main MindsDB repository under <a href="https://github.com/mindsdb/mindsdb/tree/staging/mindsdb/integrations">/integrations</a> directory.</p>
-<div class="highlight"><pre><span></span><code>integrations                           # Contains integrations source code
-├─ handlers/                           # Each integration has its own handler dir
-│  ├─ mysql_handler/                   # MySQL integration code
-│  ├─ lightwood_handler/               # Lightwood integration code
-│  ├─  .../                            # Other handlers
-├─ libs/
-│  ├─ base_handler.py                  # Base class that each handler inherit from
-│  ├─ storage_handler.py               # Storage classes for each handler
-└─ utilities                           # Handlers utilities dir
-│  ├─ install.py                       # Installs all handlers dependencies
+<p>You should have the latest staging version of the MindsDB repository installed locally. Follow <a href="/contribute/install/">this guide</a> to learn how to install MindsDB for development.</p>
+<h2 id="what-are-handlers">What are Handlers?<a class="headerlink" href="#what-are-handlers" title="Permanent link">&para;</a></h2>
+<p>At the heart of the MindsDB philosophy lies the belief that predictive insights are best leveraged when produced as close as possible to the data layer. Usually, this <em>data layer</em> is a SQL-compatible database, but it could also be a non-SQL database, data stream, or any other tool that interacts with data stored somewhere else.</p>
+<p>The above description fits an enormous set of tools used across the software industry. The complexity increases further by bringing Machine Learning into the equation, as the set of popular ML tools is similarly huge. We aim to support most technology stacks, requiring a simple integration procedure so that anyone can easily contribute the necessary <em>glue</em> to enable any predictive system for usage within data layers.</p>
+<p>This motivates the concept of <em>handlers</em>, which is an abstraction for the two types of entities mentioned above: <em>data layers</em> and <em>predictive frameworks</em>. Handlers are meant to enforce a common and sufficient set of behaviors that all MindsDB-compatible entities should support. By creating a handler, the target system is effectively integrated into the wider MindsDB ecosystem.</p>
+<h2 id="handlers-in-the-mindsdb-repository">Handlers in the MindsDB Repository<a class="headerlink" href="#handlers-in-the-mindsdb-repository" title="Permanent link">&para;</a></h2>
+<p>The codes for integrations are located in the main MindsDB repository under the <a href="https://github.com/mindsdb/mindsdb/tree/staging/mindsdb/integrations">/integrations</a> directory.</p>
+<div class="highlight"><pre><span></span><code>integrations                      # Contains integrations source codes
+├─ handlers/                           # Each integration has its own handler directory
+│  ├─ mysql_handler/                       # MySQL integration code
+│  ├─ lightwood_handler/                   # Lightwood integration code
+│  ├─  .../                                # Other handlers
+├─ libs/                               # Handler libraries directory
+│  ├─ base_handler.py                      # Each handler class inherits from this base class
+│  ├─ storage_handler.py                   # Storage classes used by handlers
+└─ utilities                           # Handler utility directory
+│  ├─ install.py                           # Script that installs all handler dependencies
 </code></pre></div>
-<h3 id="core-methods">Core methods<a class="headerlink" href="#core-methods" title="Permanent link">&para;</a></h3>
-<p>Apart from <code>__init__()</code>, there are seven core methods that the handler class has to implement, these are: <code>connect(), disconnect(), check_connection(), native_query(), query(), get_tables(), get_columns()</code>. It is recommended to check actual examples in the codebase to get an idea of what may go into each of these methods, as they can change a bit depending on the nature of the system being integrated. Respectively, their main purpose is:</p>
-<ol>
-<li><code>connect</code>: perform any necessary steps to connect to the underlying system</li>
-<li><code>disconnect</code>: if needed, gracefully close connections established in <code>connect</code></li>
-<li><code>check_connection</code>: evaluate if the connection is alive and healthy. Will be frequently called.</li>
-<li><code>native_query</code>: should parse any <em>native</em> statement string and act upon it (e.g. raw SQL-like commands).</li>
-<li><code>query</code>: takes a parsed SQL-like command (in the form of an abstract syntax tree) and executes it. An example would be a <code>CREATE PREDICTOR</code> statement for predictive handlers, which is <em>not</em> native syntax as databases have no notion of a <code>PREDICTOR</code> entity.</li>
-<li><code>get_tables</code>: All available <code>tables</code>s should be listed and returned. Each handler should decide what a <code>table</code> will mean for the underlying system when interacting with it from the data layer. Typically, this means actual tables for data handlers, and machine learning models (or predictive handlers.</li>
-<li><code>get_columns</code>: Each table registered in the handler will have one or more columns (with their respective data types) that will be returned when calling this method.</li>
-</ol>
-<p>As stated in the above section, authors can opt for adding private methods, new files, folders, or any combination of these to structure all the necessary work that will enable the methods above to work as intended.</p>
-<h3 id="predictor-specific-behavior">Predictor-specific behavior<a class="headerlink" href="#predictor-specific-behavior" title="Permanent link">&para;</a></h3>
-<p>For predictive handlers, there is an additional method that is fundamental:</p>
-<ul>
-<li><code>join()</code>: triggers a specific model to generate predictions given some input data. This behavior manifests in the SQL API when doing any type of <code>JOIN</code> operation between tables from a predictive and data handler.</li>
-</ul>
+<h2 id="structure-of-a-handler">Structure of a Handler<a class="headerlink" href="#structure-of-a-handler" title="Permanent link">&para;</a></h2>
+<p>In technical terms, a handler is a self-contained Python package having everything required for MindsDB to interact with it. It includes aspects like dependencies, unit tests, and continuous integration logic. It is up to the author to determine the nature of the package, for example, closed or open source, version control, and more. Although, we encourage opening pull requests to expand the default set of supported tools.</p>
+<p>The entry point is a class definition that should inherit either from the <code>integrations.libs.base_handler.DatabaseHandler</code> class or the <code>integrations.libs.base_handler.PredictiveHandler</code> class, depending on the type of the handler. The <code>integrations.libs.base_handler.BaseHandler</code> class defines all the methods that must be overwritten in order to achieve a functional implementation.</p>
+<div class="admonition note">
+<p class="admonition-title">Handler's Structure</p>
+<p>The handler's structure is not enforced, and the package design is up to the author.</p>
+</div>
+<h3 id="core-methods">Core Methods<a class="headerlink" href="#core-methods" title="Permanent link">&para;</a></h3>
+<p>Apart from the <code>__init__()</code> method, there are seven core methods that the <code>Handler</code> class has to implement, these are: <code>connect()</code>, <code>disconnect()</code>, <code>check_connection()</code>, <code>native_query()</code>, <code>query()</code>, <code>get_tables()</code>, <code>get_columns()</code>. We recommend checking actual examples in the codebase to get an idea of what goes into each of these methods, as they can change a bit depending on the nature of the system being integrated.</p>
+<p>Let's review the purpose of each method.</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>connect()</code></td>
+<td>It performs the necessary steps to connect to the underlying system.</td>
+</tr>
+<tr>
+<td><code>disconnect()</code></td>
+<td>It gracefully closes connections established in the <code>connect()</code> method.</td>
+</tr>
+<tr>
+<td><code>check_connection()</code></td>
+<td>It evaluates if the connection is alive and healthy. This method is called frequently.</td>
+</tr>
+<tr>
+<td><code>native_query()</code></td>
+<td>It parses any <em>native</em> statement string and acts upon it (for example, raw SQL commands).</td>
+</tr>
+<tr>
+<td><code>query()</code></td>
+<td>It takes a parsed SQL command in the form of an abstract syntax tree and executes it. A good example is the <code>CREATE PREDICTOR</code> statement for predictive handlers, which is a <em>non-native</em> syntax as databases have no notion of a <code>PREDICTOR</code> entity.</td>
+</tr>
+<tr>
+<td><code>get_tables()</code></td>
+<td>It lists and returns all the available tables. Each handler decides what a <code>table</code> means for the underlying system when interacting with it from the data layer. Typically, these are actual tables for data handlers and predictive handlers.</td>
+</tr>
+<tr>
+<td><code>get_columns()</code></td>
+<td>It returns columns of a table registered in the handler with the respective data type.</td>
+</tr>
+</tbody>
+</table>
+<p>Authors can opt for adding private methods, new files and folders, or any combination of these to structure all the necessary work that will enable the core methods to work as intended.</p>
+<div class="admonition tip">
+<p class="admonition-title">Other Common Methods</p>
+<p>Under the <code>mindsdb.integrations.libs.utils</code> library, contributors can find various methods that may be useful while implementing new handlers, especially the predictive handlers.</p>
+</div>
+<h3 id="predictor-specific-methods">Predictor-Specific Methods<a class="headerlink" href="#predictor-specific-methods" title="Permanent link">&para;</a></h3>
+<p>For predictive handlers, there is an additional method that must be implemented, the <code>join()</code> method.</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>join()</code></td>
+<td>It triggers a specific model to generate predictions when given some input data. This behavior manifests in the SQL API when performing any type of <code>JOIN</code> operations between tables from a predictive handler and tables from a data handler.</td>
+</tr>
+</tbody>
+</table>
 <h3 id="parsing-sql">Parsing SQL<a class="headerlink" href="#parsing-sql" title="Permanent link">&para;</a></h3>
-<p>Whenever a string that contains SQL needs to be parsed, it is heavily recommended to opt for using the <code>mindsdb_sql</code> package, which contains its own parser that fully supports the MindsDB SQL dialect and partially supports the common SQL dialect. There is also a "render" feature to map other dialects into the already supported ones.</p>
-<h3 id="storing-internal-state">Storing internal state<a class="headerlink" href="#storing-internal-state" title="Permanent link">&para;</a></h3>
-<p>Most handlers need to store internal metadata, ranging from a list of registered tables to implementation-specific details that will greatly vary from one case to another.</p>
-<p>The recommendation for storing these bits of information is to opt for storage handlers (located in <code>integrations.libs.storage_handler</code>). We currently support two options, either a Sqlite or a Redis backend. In both cases, the premise is the same: a key-value store system is setup so that interfaces are kept simple and clean, exposing only <code>get()</code> and <code>set()</code> methods for usage within the data and predictive handlers.</p>
-<blockquote>
-<p>Note: for ML frameworks, opt for storing the path to your model weights inside the KV storage, saving weights in optimized formats preferred by the system, like <code>.h5</code>)</p>
-</blockquote>
-<h3 id="formatting-output">Formatting output<a class="headerlink" href="#formatting-output" title="Permanent link">&para;</a></h3>
-<p>When it comes to building the response of the public methods, the output should be wrapped by the <code>HandlerResponse</code> and <code>HandlerStatusResponse</code> classes (located in <code>mindsdb.integrations.libs.response</code>), which are used by MindsDB executioner to orchestrate and coordinate multiple handler instances in parallel.</p>
-<h2 id="other-common-methods">Other common methods<a class="headerlink" href="#other-common-methods" title="Permanent link">&para;</a></h2>
-<p>Under <code>mindsdb.integrations.libs.utils</code>, contributors can find various methods that may be useful while implementing new handlers, with a focus on predictive handlers.</p>
-<h2 id="how-to-write-a-handler">How to write a handler<a class="headerlink" href="#how-to-write-a-handler" title="Permanent link">&para;</a></h2>
-<p>We wrap up this page by going through all the above information step by step. Remember, if you are adding new data integration you need to extend the <a href="https://github.com/mindsdb/mindsdb/blob/staging/mindsdb/integrations/libs/base_handler.py#L106"><code>DatabaseHandler</code></a>. In a case of adding a predictive framework integration extend <a href="https://github.com/mindsdb/mindsdb/blob/staging/mindsdb/integrations/libs/base_handler.py#L114"><code>PredictiveHandler</code></a>. 
-In both cases we need 7 core methods:</p>
+<p>Whenever you want to parse a string that contains SQL, we strongly recommend using the <code>mindsdb_sql</code> package. It provides a parser that fully supports the MindsDB SQL dialect and partially the standard SQL dialect. There is also a <em>render</em> feature to map other dialects into the already supported ones.</p>
+<h3 id="storing-internal-state">Storing Internal State<a class="headerlink" href="#storing-internal-state" title="Permanent link">&para;</a></h3>
+<p>Most handlers need to store internal metadata ranging from a list of registered tables to implementation-specific details that greatly vary from one case to another.</p>
+<p>The recommendation for storing these bits of information is to use storage handlers from the <code>integrations.libs.storage_handler</code> library. We currently support two options: an SQLite backend and a Redis backend. In both cases, the premise is the same: a key-value store system is set up such that interfaces are simple and clean, exposing only the <code>get()</code> and <code>set()</code> methods for usage within the data and predictive handlers.</p>
+<div class="admonition note">
+<p class="admonition-title">ML Frameworks</p>
+<p>In the case of ML frameworks, opt for storing the path to your model weights inside the KV storage and saving weights in optimized formats preferred by the system, like <code>.h5</code>.</p>
+</div>
+<h3 id="formatting-output">Formatting Output<a class="headerlink" href="#formatting-output" title="Permanent link">&para;</a></h3>
+<p>When it comes to building the response of the public methods, the output should be wrapped by the <code>HandlerResponse</code> or <code>HandlerStatusResponse</code> class located in the <code>mindsdb.integrations.libs.response</code> library. These classes are used by the MindsDB executioner to orchestrate and coordinate multiple handler instances in parallel.</p>
+<h2 id="how-to-write-a-handler">How to Write a Handler<a class="headerlink" href="#how-to-write-a-handler" title="Permanent link">&para;</a></h2>
+<p>Let's go through all the above information step by step.</p>
+<div class="admonition info">
+<p class="admonition-title">Extending the Classes</p>
+<p>Extend the <a href="https://github.com/mindsdb/mindsdb/blob/staging/mindsdb/integrations/libs/base_handler.py#L106"><code>DatabaseHandler</code></a> class when adding a new data handler.<br/>
+Extend the <a href="https://github.com/mindsdb/mindsdb/blob/staging/mindsdb/integrations/libs/base_handler.py#L114"><code>PredictiveHandler</code></a> class when adding a new predictive handler.</p>
+</div>
+<p>The seven core methods must be implemented, both for a data handler and a predictive handler.</p>
 <ol>
-<li><code>connect</code> – Setup storage and connection</li>
-<li><code>disconnect</code> – Terminate connection</li>
-<li><code>check_connection</code> – Health check</li>
-<li><code>native_query</code>  – Act upon a raw SQL-like command</li>
-<li><code>query</code> – Act upon a parsed SQL-like command</li>
-<li><code>get_tables</code> – List all accessible entities within handler</li>
-<li><code>get_columns</code> – Column info for a specific table entity</li>
+<li>The <code>connect()</code> method sets up storage and connection.</li>
+<li>The <code>disconnect()</code> method terminates the connection.</li>
+<li>The <code>check_connection()</code> method validates the connection.</li>
+<li>The <code>native_query()</code> method acts upon a raw SQL command.</li>
+<li>The <code>query()</code> method acts upon a parsed SQL command.</li>
+<li>The <code>get_tables()</code> method lists all accessible entities within the handler.</li>
+<li>The <code>get_columns()</code> method returns columns for a specific table entity.</li>
 </ol>
-<p>And additionally for predictive handlers:
-8. <code>join</code> – Call other handlers to merge data with predictions. </p>
-<p>Below, you can find a list of entities required to create a database handler.</p>
-<h3 id="step-1-create-handler-class">Step 1: Create <code>Handler</code> class:<a class="headerlink" href="#step-1-create-handler-class" title="Permanent link">&para;</a></h3>
-<p>Each DatabaseHandler should inherit from <code>DatabaseHandler</code> class.</p>
-<h4 id="set-class-property-name">Set class property <code>name</code>:<a class="headerlink" href="#set-class-property-name" title="Permanent link">&para;</a></h4>
-<p>It will be used inside MindsDB as name of handler. For example, the name is used use an <code>ENGINE</code> in <code>CREATE DATABASE</code> statement:</p>
+<p>And additionally, for predictive handlers:</p>
+<ol>
+<li>The <code>join()</code> method calls other handlers to merge data with predictions. </li>
+</ol>
+<h2 id="creating-a-database-handler">Creating a Database Handler<a class="headerlink" href="#creating-a-database-handler" title="Permanent link">&para;</a></h2>
+<p>Below is the list of entities required to create a database handler.</p>
+<h3 id="creating-the-handler-class">Creating the <code>Handler</code> Class<a class="headerlink" href="#creating-the-handler-class" title="Permanent link">&para;</a></h3>
+<p>Each database handler should inherit from the <a href="https://github.com/mindsdb/mindsdb/blob/staging/mindsdb/integrations/libs/base_handler.py#L106"><code>DatabaseHandler</code></a> class.</p>
+<ul>
+<li>
+<p>Setting the <code>name</code> class property:</p>
+<p>MindsDB uses it internally as a name of the handler.</p>
+<p>For example, the <code>CREATE DATABASE</code> statement uses the handler's name.</p>
 <div class="highlight"><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">integration_name</span><span class="w"></span>
-<span class="k">WITH</span><span class="w"> </span><span class="n">ENGINE</span><span class="o">=</span><span class="s1">&#39;postgres&#39;</span><span class="p">,</span><span class="w"> </span><span class="o">+</span><span class="w"></span>
+<span class="k">WITH</span><span class="w"> </span><span class="n">ENGINE</span><span class="o">=</span><span class="s1">&#39;postgres&#39;</span><span class="p">,</span><span class="w">             </span><span class="c1">--- here, the handler&#39;s name is `postgres`</span>
 <span class="k">PARAMETERS</span><span class="o">=</span><span class="err">{</span><span class="w"></span>
-<span class="w">  </span><span class="s1">&#39;host&#39;</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;127.0.0.1&#39;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="s1">&#39;user&#39;</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;root&#39;</span><span class="p">,</span><span class="w"></span>
-<span class="w">  </span><span class="s1">&#39;password&#39;</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;password&#39;</span><span class="w"></span>
+<span class="s1">&#39;host&#39;</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;127.0.0.1&#39;</span><span class="p">,</span><span class="w"></span>
+<span class="s1">&#39;user&#39;</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;root&#39;</span><span class="p">,</span><span class="w"></span>
+<span class="s1">&#39;password&#39;</span><span class="p">:</span><span class="w"> </span><span class="s1">&#39;password&#39;</span><span class="w"></span>
 <span class="err">}</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
-<h4 id="step-11-implement-__init__">Step 1.1: Implement <code>__init__</code><a class="headerlink" href="#step-11-implement-__init__" title="Permanent link">&para;</a></h4>
-<p>This method should initialize the handler. the <code>connection_data</code> argument will contain <code>PARAMETERS</code> from <code>CREATE DATABASE</code> statement as <code>user</code>, <code>password</code> etc.</p>
-<div class="highlight"><pre><span></span><code>    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">connection_data</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">dict</span><span class="p">],</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
-        <span class="sd">&quot;&quot;&quot; Initialize the handler</span>
-<span class="sd">        Args:</span>
-<span class="sd">            name (str): name of particular handler instance</span>
-<span class="sd">            connection_data (dict): parameters for connecting to the database</span>
-<span class="sd">            **kwargs: arbitrary keyword arguments.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+</li>
+<li>
+<p>Implementing the <code>__init__()</code> method:</p>
+<p>This method initializes the handler. The <code>connection_data</code> argument contains the <code>PARAMETERS</code> from the <code>CREATE DATABASE</code> statement, such as <code>user</code>, <code>password</code>, etc.</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">connection_data</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">dict</span><span class="p">],</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span>
+    <span class="sd">&quot;&quot;&quot; Initialize the handler</span>
+<span class="sd">    Args:</span>
+<span class="sd">        name (str): name of particular handler instance</span>
+<span class="sd">        connection_data (dict): parameters for connecting to the database</span>
+<span class="sd">        **kwargs: arbitrary keyword arguments.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
 </code></pre></div>
-<h4 id="step-12-implement-connect">Step 1.2: Implement <code>connect</code><a class="headerlink" href="#step-12-implement-connect" title="Permanent link">&para;</a></h4>
-<p>The connect method should set up the connection as:</p>
-<div class="highlight"><pre><span></span><code>    <span class="k">def</span> <span class="nf">connect</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">HandlerStatusResponse</span><span class="p">:</span>
-        <span class="sd">&quot;&quot;&quot; Set up any connections required by the handler</span>
-<span class="sd">        Should return output of check_connection() method after attempting</span>
-<span class="sd">        connection. Should switch self.is_connected.</span>
-<span class="sd">        Returns:</span>
-<span class="sd">            HandlerStatusResponse</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+</li>
+<li>
+<p>Implementing the <code>connect()</code> method:</p>
+<p>The <code>connect()</code> method sets up the connection.</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">connect</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">HandlerStatusResponse</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot; Set up any connections required by the handler</span>
+<span class="sd">    Should return output of check_connection() method after attempting</span>
+<span class="sd">    connection. Should switch self.is_connected.</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        HandlerStatusResponse</span>
+<span class="sd">    &quot;&quot;&quot;</span>
 </code></pre></div>
-<h4 id="step-13-implement-disconnect">Step 1.3: Implement <code>disconnect</code><a class="headerlink" href="#step-13-implement-disconnect" title="Permanent link">&para;</a></h4>
-<p>The disconnect method should close the existing connection as:</p>
-<div class="highlight"><pre><span></span><code>  <span class="k">def</span> <span class="nf">disconnect</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot; Close any existing connections</span>
-<span class="sd">        Should switch self.is_connected.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="bp">self</span><span class="o">.</span><span class="n">is_connected</span> <span class="o">=</span> <span class="kc">False</span>
-        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">is_connected</span>
+</li>
+<li>
+<p>Implementing the <code>disconnect()</code> method:</p>
+<p>The <code>disconnect()</code> method closes the existing connection.</p>
+<div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">disconnect</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot; Close any existing connections</span>
+<span class="sd">    Should switch self.is_connected.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">is_connected</span> <span class="o">=</span> <span class="kc">False</span>
+    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">is_connected</span>
 </code></pre></div>
-<h4 id="step-14-implement-check_connection">Step 1.4: Implement <code>check_connection</code><a class="headerlink" href="#step-14-implement-check_connection" title="Permanent link">&para;</a></h4>
-<p>The check_connection method is used to perform the health check for the connection:</p>
+</li>
+<li>
+<p>Implementing the <code>check_connection()</code> method:</p>
+<p>The <code>check_connection()</code> method performs the health check for the connection.</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">check_connection</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">HandlerStatusResponse</span><span class="p">:</span>
-        <span class="sd">&quot;&quot;&quot; Check connection to the handler</span>
-<span class="sd">        Returns:</span>
-<span class="sd">            HandlerStatusResponse</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+    <span class="sd">&quot;&quot;&quot; Check connection to the handler</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        HandlerStatusResponse</span>
+<span class="sd">    &quot;&quot;&quot;</span>
 </code></pre></div>
-<h4 id="step-15-implement-native_query">Step 1.5: Implement <code>native_query</code><a class="headerlink" href="#step-15-implement-native_query" title="Permanent link">&para;</a></h4>
-<p>The native_query method is used to run command on native database language:</p>
+</li>
+<li>
+<p>Implementing the <code>native_query()</code> method:</p>
+<p>The <code>native_query()</code> method runs commands of the native database language.</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">native_query</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">query</span><span class="p">:</span> <span class="n">Any</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">HandlerStatusResponse</span><span class="p">:</span>
-        <span class="sd">&quot;&quot;&quot;Receive raw query and act upon it somehow.</span>
-<span class="sd">        Args:</span>
-<span class="sd">            query (Any): query in native format (str for sql databases,</span>
-<span class="sd">                dict for mongo, etc)</span>
-<span class="sd">        Returns:</span>
-<span class="sd">            HandlerResponse</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+    <span class="sd">&quot;&quot;&quot;Receive raw query and act upon it somehow.</span>
+<span class="sd">    Args:</span>
+<span class="sd">        query (Any): query in native format (str for sql databases,</span>
+<span class="sd">            dict for mongo, etc)</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        HandlerResponse</span>
+<span class="sd">    &quot;&quot;&quot;</span>
 </code></pre></div>
-<h4 id="step-16-implement-query">Step 1.6: Implement <code>query</code><a class="headerlink" href="#step-16-implement-query" title="Permanent link">&para;</a></h4>
-<p>The query method is used to run parsed SQL command:</p>
+</li>
+<li>
+<p>Implementing the <code>query()</code> method:</p>
+<p>The query method runs parsed SQL commands.</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">query</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">query</span><span class="p">:</span> <span class="n">ASTNode</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">HandlerStatusResponse</span><span class="p">:</span>
-        <span class="sd">&quot;&quot;&quot;Receive query as AST (abstract syntax tree) and act upon it somehow.</span>
-<span class="sd">        Args:</span>
-<span class="sd">            query (ASTNode): sql query represented as AST. May be any kind</span>
-<span class="sd">                of query: SELECT, INTSERT, DELETE, etc</span>
-<span class="sd">        Returns:</span>
-<span class="sd">            HandlerResponse</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+    <span class="sd">&quot;&quot;&quot;Receive query as AST (abstract syntax tree) and act upon it somehow.</span>
+<span class="sd">    Args:</span>
+<span class="sd">        query (ASTNode): sql query represented as AST. May be any kind</span>
+<span class="sd">            of query: SELECT, INTSERT, DELETE, etc</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        HandlerResponse</span>
+<span class="sd">    &quot;&quot;&quot;</span>
 </code></pre></div>
-<h4 id="step-17-implement-get_tables">Step 1.7: Implement <code>get_tables</code><a class="headerlink" href="#step-17-implement-get_tables" title="Permanent link">&para;</a></h4>
-<p>The get_tables method is used to list tables:</p>
+</li>
+<li>
+<p>Implementing the <code>get_tables()</code> method:</p>
+<p>The <code>get_tables()</code> method lists all the available tables.</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">get_tables</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">HandlerStatusResponse</span><span class="p">:</span>
-       <span class="sd">&quot;&quot;&quot; Return list of entities</span>
-<span class="sd">        Return list of entities that will be accesible as tables.</span>
-<span class="sd">        Returns:</span>
-<span class="sd">            HandlerResponse: shoud have same columns as information_schema.tables</span>
-<span class="sd">                (https://dev.mysql.com/doc/refman/8.0/en/information-schema-tables-table.html)</span>
-<span class="sd">                Column &#39;TABLE_NAME&#39; is mandatory, other is optional.</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+    <span class="sd">&quot;&quot;&quot; Return list of entities</span>
+<span class="sd">    Return list of entities that will be accesible as tables.</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        HandlerResponse: shoud have same columns as information_schema.tables</span>
+<span class="sd">            (https://dev.mysql.com/doc/refman/8.0/en/information-schema-tables-table.html)</span>
+<span class="sd">            Column &#39;TABLE_NAME&#39; is mandatory, other is optional.</span>
+<span class="sd">    &quot;&quot;&quot;</span>
 </code></pre></div>
-<h4 id="step-18-implement-get_columns">Step 1.8: Implement <code>get_columns</code><a class="headerlink" href="#step-18-implement-get_columns" title="Permanent link">&para;</a></h4>
-<p>The get_tables method is used to list tables:</p>
+</li>
+<li>
+<p>Implementing the <code>get_columns()</code> method:</p>
+<p>The <code>get_tables()</code> method lists all columns of a specified table.</p>
 <div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">get_columns</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">table_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="n">HandlerStatusResponse</span><span class="p">:</span>
-      <span class="sd">&quot;&quot;&quot; Returns a list of entity columns</span>
-<span class="sd">        Args:</span>
-<span class="sd">            table_name (str): name of one of tables returned by self.get_tables()</span>
-<span class="sd">        Returns:</span>
-<span class="sd">            HandlerResponse: shoud have same columns as information_schema.columns</span>
-<span class="sd">                (https://dev.mysql.com/doc/refman/8.0/en/information-schema-columns-table.html)</span>
-<span class="sd">                Column &#39;COLUMN_NAME&#39; is mandatory, other is optional. Hightly</span>
-<span class="sd">                recomended to define also &#39;DATA_TYPE&#39;: it should be one of</span>
-<span class="sd">                python data types (by default it str).</span>
-<span class="sd">        &quot;&quot;&quot;</span>
+    <span class="sd">&quot;&quot;&quot; Returns a list of entity columns</span>
+<span class="sd">    Args:</span>
+<span class="sd">        table_name (str): name of one of tables returned by self.get_tables()</span>
+<span class="sd">    Returns:</span>
+<span class="sd">        HandlerResponse: shoud have same columns as information_schema.columns</span>
+<span class="sd">            (https://dev.mysql.com/doc/refman/8.0/en/information-schema-columns-table.html)</span>
+<span class="sd">            Column &#39;COLUMN_NAME&#39; is mandatory, other is optional. Hightly</span>
+<span class="sd">            recomended to define also &#39;DATA_TYPE&#39;: it should be one of</span>
+<span class="sd">            python data types (by default it str).</span>
+<span class="sd">    &quot;&quot;&quot;</span>
 </code></pre></div>
-<h3 id="step-2-create-connection_args-dict">Step 2: Create <code>connection_args</code> dict:<a class="headerlink" href="#step-2-create-connection_args-dict" title="Permanent link">&para;</a></h3>
-<p>The <code>connection_arg</code> dictinonary should contain all required arguments to establish the connection.</p>
-<h3 id="step-3-create-connection_args_example-dict">Step 3: Create <code>connection_args_example</code> dict:<a class="headerlink" href="#step-3-create-connection_args_example-dict" title="Permanent link">&para;</a></h3>
-<p>The <code>connection_args_example</code> dictinonary should contain an example of all required arguments to establish the connection.</p>
-<h3 id="step-4-export-all-required-variables">Step 4: Export all required variables:<a class="headerlink" href="#step-4-export-all-required-variables" title="Permanent link">&para;</a></h3>
-<p>In <code>__init__</code> file export:</p>
-<ul>
-<li><code>Handler</code> - handler class</li>
-<li><code>version</code> - version of handler</li>
-<li><code>name</code> - name of the handler (same as Handler.name)</li>
-<li><code>type</code> - type of the handler (is it DATA of ML handler)</li>
-<li><code>icon_path</code> - path to file with database icon</li>
-<li><code>title</code> - short description of handler</li>
-<li><code>description</code> - description of handler</li>
-<li><code>connection_args</code> - dict with connection args</li>
-<li><code>connection_args_example</code> - example of connection args</li>
-<li><code>import_error</code> - error message, in case if is not possible to import <code>Handler</code> class</li>
+</li>
 </ul>
-<p>E.g:</p>
-<div class="highlight"><pre><span></span><code><span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;Trino&#39;</span>
+<h3 id="creating-the-connection_args-dictionary">Creating the <code>connection_args</code> Dictionary<a class="headerlink" href="#creating-the-connection_args-dictionary" title="Permanent link">&para;</a></h3>
+<p>The <code>connection_arg</code> dictionary contains all required arguments to establish the connection.</p>
+<p>Here is an example of the <code>connection_arg</code> dictionary from the <a href="https://github.com/mindsdb/mindsdb/tree/staging/mindsdb/integrations/handlers/mysql_handler">MySQL handler</a>.</p>
+<div class="highlight"><pre><span></span><code><span class="n">connection_args</span> <span class="o">=</span> <span class="n">OrderedDict</span><span class="p">(</span>
+    <span class="n">user</span><span class="o">=</span><span class="p">{</span>
+        <span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="n">ARG_TYPE</span><span class="o">.</span><span class="n">STR</span><span class="p">,</span>
+        <span class="s1">&#39;description&#39;</span><span class="p">:</span> <span class="s1">&#39;The user name used to authenticate with the MySQL server.&#39;</span>
+    <span class="p">},</span>
+    <span class="n">password</span><span class="o">=</span><span class="p">{</span>
+        <span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="n">ARG_TYPE</span><span class="o">.</span><span class="n">STR</span><span class="p">,</span>
+        <span class="s1">&#39;description&#39;</span><span class="p">:</span> <span class="s1">&#39;The password to authenticate the user with the MySQL server.&#39;</span>
+    <span class="p">},</span>
+    <span class="n">database</span><span class="o">=</span><span class="p">{</span>
+        <span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="n">ARG_TYPE</span><span class="o">.</span><span class="n">STR</span><span class="p">,</span>
+        <span class="s1">&#39;description&#39;</span><span class="p">:</span> <span class="s1">&#39;The database name to use when connecting with the MySQL server.&#39;</span>
+    <span class="p">},</span>
+    <span class="n">host</span><span class="o">=</span><span class="p">{</span>
+        <span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="n">ARG_TYPE</span><span class="o">.</span><span class="n">STR</span><span class="p">,</span>
+        <span class="s1">&#39;description&#39;</span><span class="p">:</span> <span class="s1">&#39;The host name or IP address of the MySQL server. NOTE: use </span><span class="se">\&#39;</span><span class="s1">127.0.0.1</span><span class="se">\&#39;</span><span class="s1"> instead of </span><span class="se">\&#39;</span><span class="s1">localhost</span><span class="se">\&#39;</span><span class="s1"> to connect to local server.&#39;</span>
+    <span class="p">},</span>
+    <span class="n">port</span><span class="o">=</span><span class="p">{</span>
+        <span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="n">ARG_TYPE</span><span class="o">.</span><span class="n">INT</span><span class="p">,</span>
+        <span class="s1">&#39;description&#39;</span><span class="p">:</span> <span class="s1">&#39;The TCP/IP port of the MySQL server. Must be an integer.&#39;</span>
+    <span class="p">},</span>
+    <span class="n">ssl</span><span class="o">=</span><span class="p">{</span>
+        <span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="n">ARG_TYPE</span><span class="o">.</span><span class="n">BOOL</span><span class="p">,</span>
+        <span class="s1">&#39;description&#39;</span><span class="p">:</span> <span class="s1">&#39;Set it to False to disable ssl.&#39;</span>
+    <span class="p">},</span>
+    <span class="n">ssl_ca</span><span class="o">=</span><span class="p">{</span>
+        <span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="n">ARG_TYPE</span><span class="o">.</span><span class="n">PATH</span><span class="p">,</span>
+        <span class="s1">&#39;description&#39;</span><span class="p">:</span> <span class="s1">&#39;Path or URL of the Certificate Authority (CA) certificate file&#39;</span>
+    <span class="p">},</span>
+    <span class="n">ssl_cert</span><span class="o">=</span><span class="p">{</span>
+        <span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="n">ARG_TYPE</span><span class="o">.</span><span class="n">PATH</span><span class="p">,</span>
+        <span class="s1">&#39;description&#39;</span><span class="p">:</span> <span class="s1">&#39;Path name or URL of the server public key certificate file&#39;</span>
+    <span class="p">},</span>
+    <span class="n">ssl_key</span><span class="o">=</span><span class="p">{</span>
+        <span class="s1">&#39;type&#39;</span><span class="p">:</span> <span class="n">ARG_TYPE</span><span class="o">.</span><span class="n">PATH</span><span class="p">,</span>
+        <span class="s1">&#39;description&#39;</span><span class="p">:</span> <span class="s1">&#39;The path name or URL of the server private key file&#39;</span>
+    <span class="p">}</span>
+<span class="p">)</span>
+</code></pre></div>
+<h3 id="creating-the-connection_args_example-dictionary">Creating the <code>connection_args_example</code> Dictionary<a class="headerlink" href="#creating-the-connection_args_example-dictionary" title="Permanent link">&para;</a></h3>
+<p>The <code>connection_args_example</code> dictionary contains an example of all required arguments to establish the connection.</p>
+<p>Here is an example of the <code>connection_args_example</code> dictionary from the <a href="https://github.com/mindsdb/mindsdb/tree/staging/mindsdb/integrations/handlers/mysql_handler">MySQL handler</a>.</p>
+<div class="highlight"><pre><span></span><code><span class="n">connection_args_example</span> <span class="o">=</span> <span class="n">OrderedDict</span><span class="p">(</span>
+    <span class="n">host</span><span class="o">=</span><span class="s1">&#39;127.0.0.1&#39;</span><span class="p">,</span>
+    <span class="n">port</span><span class="o">=</span><span class="mi">3306</span><span class="p">,</span>
+    <span class="n">user</span><span class="o">=</span><span class="s1">&#39;root&#39;</span><span class="p">,</span>
+    <span class="n">password</span><span class="o">=</span><span class="s1">&#39;password&#39;</span><span class="p">,</span>
+    <span class="n">database</span><span class="o">=</span><span class="s1">&#39;database&#39;</span>
+<span class="p">)</span>
+</code></pre></div>
+<h3 id="exporting-all-required-variables">Exporting All Required Variables<a class="headerlink" href="#exporting-all-required-variables" title="Permanent link">&para;</a></h3>
+<p>This is what should be exported in the <code>__init__.py</code> file:</p>
+<ul>
+<li>The <code>Handler</code> class.</li>
+<li>The <code>version</code> of the handler.</li>
+<li>The <code>name</code> of the handler.</li>
+<li>The <code>type</code> of the handler, either <code>DATA</code> handler or <code>ML</code> handler.</li>
+<li>The <code>icon_path</code> to the file with the database icon.</li>
+<li>The <code>title</code> of the handler or a short description.</li>
+<li>The <code>description</code> of the handler.</li>
+<li>The <code>connection_args</code> dictionary with the connection arguments.</li>
+<li>The <code>connection_args_example</code> dictionary with an example of the connection arguments.</li>
+<li>The <code>import_error</code> message that is used if the import of the <code>Handler</code> class fails.</li>
+</ul>
+<p>Let's look at an example of the <code>__init__.py</code> file.</p>
+<div class="highlight"><pre><span></span><code><span class="o">...</span>
+<span class="n">title</span> <span class="o">=</span> <span class="s1">&#39;Trino&#39;</span>
 <span class="n">version</span> <span class="o">=</span> <span class="mf">0.1</span>
 <span class="n">description</span> <span class="o">=</span> <span class="s1">&#39;Integration for connection to TrinoDB&#39;</span>
 <span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;trino&#39;</span>
@@ -2556,17 +2586,18 @@ In both cases we need 7 core methods:</p>
 
 <span class="n">__all__</span> <span class="o">=</span> <span class="p">[</span>
     <span class="s1">&#39;Handler&#39;</span><span class="p">,</span> <span class="s1">&#39;version&#39;</span><span class="p">,</span> <span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="s1">&#39;type&#39;</span><span class="p">,</span> <span class="s1">&#39;title&#39;</span><span class="p">,</span>
-    <span class="s1">&#39;description&#39;</span><span class="p">,</span> <span class="s1">&#39;connection_args_example&#39;</span>
-    <span class="s1">&#39;Handler&#39;</span><span class="p">,</span> <span class="s1">&#39;version&#39;</span><span class="p">,</span> <span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="s1">&#39;type&#39;</span><span class="p">,</span> <span class="s1">&#39;title&#39;</span><span class="p">,</span> <span class="s1">&#39;description&#39;</span><span class="p">,</span> <span class="s1">&#39;icon_path&#39;</span>
+    <span class="s1">&#39;description&#39;</span><span class="p">,</span> <span class="s1">&#39;connection_args_example&#39;</span><span class="p">,</span> <span class="s1">&#39;icon_path&#39;</span>
 <span class="p">]</span>
 </code></pre></div>
-<p>For real examples, we encourage you to inspect the following handlers inside the MindsDB repository:</p>
+<h2 id="check-out-our-handlers">Check out our Handlers!<a class="headerlink" href="#check-out-our-handlers" title="Permanent link">&para;</a></h2>
+<p>To see some integration handlers that are currently in use, we encourage you to check out the following handlers inside the MindsDB repository:</p>
 <ul>
 <li><a href="https://github.com/mindsdb/mindsdb/tree/staging/mindsdb/integrations/handlers/mysql_handler">MySQL</a></li>
 <li><a href="https://github.com/mindsdb/mindsdb/tree/staging/mindsdb/integrations/handlers/postgres_handler">Postgres</a></li>
 <li><a href="https://github.com/mindsdb/mindsdb/tree/staging/mindsdb/integrations/handlers/mlflow_handler">MLflow</a></li>
 <li><a href="https://github.com/mindsdb/mindsdb/tree/staging/mindsdb/integrations/handlers/lightwood_handler">Lightwood</a></li>
 </ul>
+<p>And here are <a href="https://github.com/mindsdb/mindsdb/tree/staging/mindsdb/integrations/handlers">all the handlers available in the MindsDB repository</a>.</p>
 
               
             </article>

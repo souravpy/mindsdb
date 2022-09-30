@@ -1028,6 +1028,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#using-view" class="md-nav__link">
+    USING VIEW
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1551,6 +1558,20 @@
 
             
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../tutorials/eeg-forecasting/" class="md-nav__link">
+        Brain activity
+      </a>
+    </li>
+  
+
+            
+          
         </ul>
       </nav>
     </li>
@@ -1765,6 +1786,20 @@
           
         </ul>
       </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../tutorials/" class="md-nav__link">
+        Tutorials List
+      </a>
     </li>
   
 
@@ -2017,6 +2052,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#using-view" class="md-nav__link">
+    USING VIEW
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2133,6 +2175,33 @@ Normally, you use the old data to train the model, and then you join the new dat
 <span class="p">);</span><span class="w"></span>
 </code></pre></div>
 </div>
+<h2 id="using-view">USING VIEW<a class="headerlink" href="#using-view" title="Permanent link">&para;</a></h2>
+<p>Examples to use view</p>
+<ol>
+<li>Complex select on view (it is grouping in this example). It performs on mindsdb side</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="k">type</span><span class="p">,</span><span class="w"> </span><span class="k">last</span><span class="p">(</span><span class="n">bedrooms</span><span class="p">)</span><span class="w"> </span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">views</span><span class="p">.</span><span class="n">house_v</span><span class="w"></span>
+<span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="mi">1</span><span class="w"></span>
+</code></pre></div>
+<ol>
+<li>Creating predictor from view</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="n">predictor</span><span class="w"> </span><span class="n">house_sales_model</span><span class="w"></span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">views</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
+<span class="w">  </span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">house_v</span><span class="w"></span>
+<span class="p">)</span><span class="w"> </span><span class="n">PREDICT</span><span class="w"> </span><span class="n">ma</span><span class="w"></span>
+<span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">saledate</span><span class="w"></span>
+<span class="k">GROUP</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">bedrooms</span><span class="p">,</span><span class="w"> </span><span class="k">type</span><span class="w"></span>
+<span class="n">WINDOW</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="n">HORIZON</span><span class="w"> </span><span class="mi">4</span><span class="w"></span>
+</code></pre></div>
+<ol>
+<li>Using predictor with view</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">views</span><span class="p">.</span><span class="n">house_v</span><span class="w"></span>
+<span class="k">JOIN</span><span class="w"> </span><span class="n">mindsdb</span><span class="p">.</span><span class="n">house_sales_model</span><span class="w"></span>
+<span class="k">WHERE</span><span class="w"> </span><span class="n">house_v</span><span class="p">.</span><span class="n">saledate</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">latest</span><span class="w"> </span>
+</code></pre></div>
 
               
             </article>
