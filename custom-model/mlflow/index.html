@@ -41,23 +41,23 @@
     
     <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
-
-<!--iubenda privacy policy-->
+<!-- Iubenda cookie solution -->
 <script type="text/javascript">
-    var _iub = _iub || [];
-    _iub.csConfiguration = {"lang":"en","ccpaAcknowledgeOnDisplay":true,"siteId":1832244,"countryDetection":true,"enableCcpa":true,"whitelabel":false,"cookiePolicyId":63309853, "banner":{ "acceptButtonDisplay":true,"customizeButtonDisplay":true,"position":"float-bottom-left","textColor":"#656565","backgroundColor":"#ffffff","rejectButtonDisplay":true,"acceptButtonColor":"#00af6c","acceptButtonCaptionColor":"white","customizeButtonColor":"#818181","customizeButtonCaptionColor":"white","rejectButtonColor":"#f77476","rejectButtonCaptionColor":"white" }};
+var _iub = _iub || [];
+_iub.csConfiguration = {"ccpaAcknowledgeOnDisplay":true,"consentOnContinuedBrowsing":false,"cookiePolicyInOtherWindow":true,"countryDetection":true,"enableCcpa":true,"invalidateConsentWithoutLog":true,"lang":"en","perPurposeConsent":true,"siteId":1832244,"cookiePolicyId":63309853,"cookiePolicyUrl":"https://mindsdb.com/cookie-policy/","privacyPolicyUrl":"https://mindsdb.com/privacy-policy/", "banner":{ "acceptButtonCaptionColor":"#FFFFFF","acceptButtonColor":"#00A587","acceptButtonDisplay":true,"backgroundColor":"#FFFFFF","brandBackgroundColor":"#FFFFFF","brandTextColor":"#000000","closeButtonRejects":true,"customizeButtonCaptionColor":"#4D4D4D","customizeButtonColor":"#DADADA","customizeButtonDisplay":true,"explicitWithdrawal":true,"listPurposes":true,"position":"float-bottom-left","rejectButtonCaptionColor":"#FFFFFF","rejectButtonColor":"#000000","rejectButtonDisplay":true,"textColor":"#000000" }};
 </script>
 <script type="text/javascript" src="//cdn.iubenda.com/cs/ccpa/stub.js"></script>
 <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
-<!--end privacy policy-->
-
+<!-- End Iubenda cookie solution -->
+<!-- Iubenda conscent solution -->
+<script type="text/javascript">var _iub = _iub || {}; _iub.cons_instructions = _iub.cons_instructions || []; _iub.cons_instructions.push(["init", {api_key: "sBV3hROhwPJrjrOXk6LHP7DeBPJlW9SZ"}]);</script><script type="text/javascript" src="https://cdn.iubenda.com/cons/iubenda_cons.js" async></script>
+<!-- End Iubenda conscent solution -->
 <!-- Google Tag Manager -->
-<!--TODO: Read gtm value from mkdocs.yml-->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-MNN47J3');</script>
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MNN47J3');</script>
 <!-- End Google Tag Manager -->
 
     
@@ -980,6 +980,20 @@
           
         </ul>
       </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sql/api/update/" class="md-nav__link">
+        UPDATE
+      </a>
     </li>
   
 
@@ -2168,7 +2182,7 @@ Model saved <span class="k">in</span> run &lt;run-id&gt;
 <span class="w">    </span><span class="n">format</span><span class="o">=</span><span class="s1">&#39;mlflow&#39;</span><span class="p">,</span><span class="w"> </span>
 <span class="w">    </span><span class="n">data_dtype</span><span class="o">=</span><span class="err">{</span><span class="ss">&quot;0&quot;</span><span class="p">:</span><span class="w"> </span><span class="ss">&quot;integer&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">&quot;1&quot;</span><span class="p">:</span><span class="w"> </span><span class="ss">&quot;integer&quot;</span><span class="err">}</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
-<p>Now, you can fetch predictions using the standard MindsDB syntax. Follow the guide on the <a href="/sql/api/select/"><code>SELECT</code></a> statement to learn more.</p>
+<p>Now, you can fetch predictions using the standard MindsDB syntax. Follow the guide on the <a href="/sql/api/select/"><code class="highlight"><span class="k">SELECT</span><span class="w"></span></code></a> statement to learn more.</p>
 <div class="highlight"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="o">`</span><span class="mi">1</span><span class="o">`</span><span class="w"></span>
 <span class="k">FROM</span><span class="w"> </span><span class="n">byom_mlflow</span><span class="w"></span>
 <span class="k">WHERE</span><span class="w"> </span><span class="o">`</span><span class="mi">0</span><span class="o">`=</span><span class="mi">2</span><span class="p">;</span><span class="w"></span>
@@ -2255,13 +2269,13 @@ Model saved <span class="k">in</span> run &lt;run-id&gt;
 <span class="w">    </span><span class="n">format</span><span class="o">=</span><span class="s1">&#39;mlflow&#39;</span><span class="p">,</span><span class="w"></span>
 <span class="w">    </span><span class="n">dtype_dict</span><span class="o">=</span><span class="err">{</span><span class="ss">&quot;text&quot;</span><span class="p">:</span><span class="w"> </span><span class="ss">&quot;rich text&quot;</span><span class="p">,</span><span class="w"> </span><span class="ss">&quot;target&quot;</span><span class="p">:</span><span class="w"> </span><span class="ss">&quot;binary&quot;</span><span class="err">}</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
-<p>Now, you can fetch predictions using the standard MindsDB syntax. Follow the guide on the <a href="/sql/api/select/"><code>SELECT</code></a> statement to learn more.</p>
-<p>You can directly pass input data in the <code>WHERE</code> clause to get a single prediction.</p>
+<p>Now, you can fetch predictions using the standard MindsDB syntax. Follow the guide on the <a href="/sql/api/select/"><code class="highlight"><span class="k">SELECT</span><span class="w"></span></code></a> statement to learn more.</p>
+<p>You can directly pass input data in the <code class="highlight"><span class="k">WHERE</span><span class="w"></span></code> clause to get a single prediction.</p>
 <div class="highlight"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="n">target</span><span class="w"></span>
 <span class="k">FROM</span><span class="w"> </span><span class="n">mindsdb</span><span class="p">.</span><span class="n">byom_mlflow_nlp</span><span class="w"></span>
 <span class="k">WHERE</span><span class="w"> </span><span class="nb">text</span><span class="o">=</span><span class="s1">&#39;The tsunami is coming, seek high ground&#39;</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
-<p>Or you can <code>JOIN</code> the model with a data table to get bulk predictions. Here, ensure that the data table exists and the database it belongs to is connected to your MindsDB instance.</p>
+<p>Or you can <code class="highlight"><span class="k">JOIN</span><span class="w"></span></code> the model with a data table to get bulk predictions. Here, ensure that the data table exists and the database it belongs to is connected to your MindsDB instance.</p>
 <div class="highlight"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="n">ta</span><span class="p">.</span><span class="nb">text</span><span class="p">,</span><span class="w"></span>
 <span class="w">       </span><span class="n">tb</span><span class="p">.</span><span class="n">target</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">predicted</span><span class="w"></span>
 <span class="k">FROM</span><span class="w"> </span><span class="n">db_byom</span><span class="p">.</span><span class="n">test</span><span class="p">.</span><span class="n">nlp_kaggle_test</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">ta</span><span class="w"></span>

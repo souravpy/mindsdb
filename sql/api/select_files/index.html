@@ -41,23 +41,23 @@
     
     <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
-
-<!--iubenda privacy policy-->
+<!-- Iubenda cookie solution -->
 <script type="text/javascript">
-    var _iub = _iub || [];
-    _iub.csConfiguration = {"lang":"en","ccpaAcknowledgeOnDisplay":true,"siteId":1832244,"countryDetection":true,"enableCcpa":true,"whitelabel":false,"cookiePolicyId":63309853, "banner":{ "acceptButtonDisplay":true,"customizeButtonDisplay":true,"position":"float-bottom-left","textColor":"#656565","backgroundColor":"#ffffff","rejectButtonDisplay":true,"acceptButtonColor":"#00af6c","acceptButtonCaptionColor":"white","customizeButtonColor":"#818181","customizeButtonCaptionColor":"white","rejectButtonColor":"#f77476","rejectButtonCaptionColor":"white" }};
+var _iub = _iub || [];
+_iub.csConfiguration = {"ccpaAcknowledgeOnDisplay":true,"consentOnContinuedBrowsing":false,"cookiePolicyInOtherWindow":true,"countryDetection":true,"enableCcpa":true,"invalidateConsentWithoutLog":true,"lang":"en","perPurposeConsent":true,"siteId":1832244,"cookiePolicyId":63309853,"cookiePolicyUrl":"https://mindsdb.com/cookie-policy/","privacyPolicyUrl":"https://mindsdb.com/privacy-policy/", "banner":{ "acceptButtonCaptionColor":"#FFFFFF","acceptButtonColor":"#00A587","acceptButtonDisplay":true,"backgroundColor":"#FFFFFF","brandBackgroundColor":"#FFFFFF","brandTextColor":"#000000","closeButtonRejects":true,"customizeButtonCaptionColor":"#4D4D4D","customizeButtonColor":"#DADADA","customizeButtonDisplay":true,"explicitWithdrawal":true,"listPurposes":true,"position":"float-bottom-left","rejectButtonCaptionColor":"#FFFFFF","rejectButtonColor":"#000000","rejectButtonDisplay":true,"textColor":"#000000" }};
 </script>
 <script type="text/javascript" src="//cdn.iubenda.com/cs/ccpa/stub.js"></script>
 <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
-<!--end privacy policy-->
-
+<!-- End Iubenda cookie solution -->
+<!-- Iubenda conscent solution -->
+<script type="text/javascript">var _iub = _iub || {}; _iub.cons_instructions = _iub.cons_instructions || []; _iub.cons_instructions.push(["init", {api_key: "sBV3hROhwPJrjrOXk6LHP7DeBPJlW9SZ"}]);</script><script type="text/javascript" src="https://cdn.iubenda.com/cons/iubenda_cons.js" async></script>
+<!-- End Iubenda conscent solution -->
 <!-- Google Tag Manager -->
-<!--TODO: Read gtm value from mkdocs.yml-->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-MNN47J3');</script>
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MNN47J3');</script>
 <!-- End Google Tag Manager -->
 
     
@@ -982,6 +982,20 @@
           
         </ul>
       </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../update/" class="md-nav__link">
+        UPDATE
+      </a>
     </li>
   
 
@@ -2064,7 +2078,7 @@
 <h1 id="select-from-filesfile_name-statement"><code class="highlight"><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">files</span><span class="p">.[</span><span class="n">file_name</span><span class="p">]</span><span class="w"></span></code> Statement<a class="headerlink" href="#select-from-filesfile_name-statement" title="Permanent link">&para;</a></h1>
 <h2 id="description">Description<a class="headerlink" href="#description" title="Permanent link">&para;</a></h2>
 <p>The <code class="highlight"><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">files</span><span class="p">.[</span><span class="n">file_name</span><span class="p">]</span><span class="w"></span></code> statement is used to select data from a file.</p>
-<p>First, you upload a file to the MindsDB Cloud Editor by following <a href="/sql/create/file/">this guide</a>. And then, you can <a href="/sql/create/predictor/"><code>CREATE PREDICTOR</code></a> from the uploaded file.</p>
+<p>First, you upload a file to the MindsDB Cloud Editor by following <a href="/sql/create/file/">this guide</a>. And then, you can <a href="/sql/create/predictor/"><code class="highlight"><span class="k">CREATE</span><span class="w"> </span><span class="n">PREDICTOR</span><span class="w"></span></code></a> from the uploaded file.</p>
 <h2 id="syntax">Syntax<a class="headerlink" href="#syntax" title="Permanent link">&para;</a></h2>
 <p>Here is the syntax:</p>
 <div class="highlight"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"></span>
@@ -2118,7 +2132,7 @@
 <span class="o">|</span><span class="w"> </span><span class="mi">2</span><span class="w">               </span><span class="o">|</span><span class="w"> </span><span class="mi">1</span><span class="w">                   </span><span class="o">|</span><span class="w"> </span><span class="mi">878</span><span class="w">   </span><span class="o">|</span><span class="w"> </span><span class="n">great</span><span class="w">    </span><span class="o">|</span><span class="w"> </span><span class="mi">8</span><span class="w">              </span><span class="o">|</span><span class="w"> </span><span class="mi">3861</span><span class="w">          </span><span class="o">|</span><span class="w"> </span><span class="n">south_side</span><span class="w">   </span><span class="o">|</span><span class="w"> </span><span class="mi">3861</span><span class="w">         </span><span class="o">|</span><span class="w"></span>
 <span class="o">+</span><span class="c1">-----------------+---------------------+-------+----------+----------------+---------------+--------------+--------------+</span>
 </code></pre></div>
-<p>Now let's create a predictor using the uploaded file. You can learn more about the <a href="/sql/create/predictor/"><code>CREATE PREDICTOR</code> command here</a>.</p>
+<p>Now let's create a predictor using the uploaded file. You can learn more about the <a href="/sql/create/predictor/"><code class="highlight"><span class="k">CREATE</span><span class="w"> </span><span class="n">PREDICTOR</span><span class="w"></span></code> command here</a>.</p>
 <div class="highlight"><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="n">PREDICTOR</span><span class="w"> </span><span class="n">mindsdb</span><span class="p">.</span><span class="n">home_rentals_model</span><span class="w"></span>
 <span class="k">FROM</span><span class="w"> </span><span class="n">files</span><span class="w"></span>
 <span class="w">    </span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">from</span><span class="w"> </span><span class="n">home_rentals</span><span class="p">)</span><span class="w"></span>

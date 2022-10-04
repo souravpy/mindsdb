@@ -41,23 +41,23 @@
     
     <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
-
-<!--iubenda privacy policy-->
+<!-- Iubenda cookie solution -->
 <script type="text/javascript">
-    var _iub = _iub || [];
-    _iub.csConfiguration = {"lang":"en","ccpaAcknowledgeOnDisplay":true,"siteId":1832244,"countryDetection":true,"enableCcpa":true,"whitelabel":false,"cookiePolicyId":63309853, "banner":{ "acceptButtonDisplay":true,"customizeButtonDisplay":true,"position":"float-bottom-left","textColor":"#656565","backgroundColor":"#ffffff","rejectButtonDisplay":true,"acceptButtonColor":"#00af6c","acceptButtonCaptionColor":"white","customizeButtonColor":"#818181","customizeButtonCaptionColor":"white","rejectButtonColor":"#f77476","rejectButtonCaptionColor":"white" }};
+var _iub = _iub || [];
+_iub.csConfiguration = {"ccpaAcknowledgeOnDisplay":true,"consentOnContinuedBrowsing":false,"cookiePolicyInOtherWindow":true,"countryDetection":true,"enableCcpa":true,"invalidateConsentWithoutLog":true,"lang":"en","perPurposeConsent":true,"siteId":1832244,"cookiePolicyId":63309853,"cookiePolicyUrl":"https://mindsdb.com/cookie-policy/","privacyPolicyUrl":"https://mindsdb.com/privacy-policy/", "banner":{ "acceptButtonCaptionColor":"#FFFFFF","acceptButtonColor":"#00A587","acceptButtonDisplay":true,"backgroundColor":"#FFFFFF","brandBackgroundColor":"#FFFFFF","brandTextColor":"#000000","closeButtonRejects":true,"customizeButtonCaptionColor":"#4D4D4D","customizeButtonColor":"#DADADA","customizeButtonDisplay":true,"explicitWithdrawal":true,"listPurposes":true,"position":"float-bottom-left","rejectButtonCaptionColor":"#FFFFFF","rejectButtonColor":"#000000","rejectButtonDisplay":true,"textColor":"#000000" }};
 </script>
 <script type="text/javascript" src="//cdn.iubenda.com/cs/ccpa/stub.js"></script>
 <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
-<!--end privacy policy-->
-
+<!-- End Iubenda cookie solution -->
+<!-- Iubenda conscent solution -->
+<script type="text/javascript">var _iub = _iub || {}; _iub.cons_instructions = _iub.cons_instructions || []; _iub.cons_instructions.push(["init", {api_key: "sBV3hROhwPJrjrOXk6LHP7DeBPJlW9SZ"}]);</script><script type="text/javascript" src="https://cdn.iubenda.com/cons/iubenda_cons.js" async></script>
+<!-- End Iubenda conscent solution -->
 <!-- Google Tag Manager -->
-<!--TODO: Read gtm value from mkdocs.yml-->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-MNN47J3');</script>
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MNN47J3');</script>
 <!-- End Google Tag Manager -->
 
     
@@ -982,6 +982,20 @@
           
         </ul>
       </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../update/" class="md-nav__link">
+        UPDATE
+      </a>
     </li>
   
 
@@ -2212,7 +2226,7 @@
 <h1 id="select-statement"><code class="highlight"><span class="k">SELECT</span><span class="w"></span></code> statement<a class="headerlink" href="#select-statement" title="Permanent link">&para;</a></h1>
 <h2 id="description">Description<a class="headerlink" href="#description" title="Permanent link">&para;</a></h2>
 <p>The <code class="highlight"><span class="k">SELECT</span><span class="w"></span></code> statement fetches predictions from the model table. The data is returned on the fly and not saved.</p>
-<p>But there are ways to save predictions data! You can save your predictions as a view using the <a href="/sql/create/view/"><code>CREATE VIEW</code></a> statement. Please note that a view is a saved query and does not store data like a table. Another way is to insert your predictions into a table using the <a href="/sql/api/insert/"><code>INSERT INTO</code></a> statement.</p>
+<p>But there are ways to save predictions data! You can save your predictions as a view using the <a href="/sql/create/view/"><code class="highlight"><span class="k">CREATE</span><span class="w"> </span><span class="k">VIEW</span><span class="w"></span></code></a> statement. Please note that a view is a saved query and does not store data like a table. Another way is to insert your predictions into a table using the <a href="/sql/api/insert/"><code class="highlight"><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"></span></code></a> statement.</p>
 <h2 id="syntax">Syntax<a class="headerlink" href="#syntax" title="Permanent link">&para;</a></h2>
 <h3 id="single-prediction">Single Prediction<a class="headerlink" href="#single-prediction" title="Permanent link">&para;</a></h3>
 <p>Here is the syntax for fetching a single prediction from the model table:</p>
@@ -2368,7 +2382,7 @@ It can be useful when query to integration can not be parsed as sql</p>
 <ol>
 <li>Subselect on data from integration.</li>
 </ol>
-<p>It can be useful in cases when ingration engine doesn't support some functions, for example grouping.
+<p>It can be useful in cases when integration engine doesn't support some functions, for example grouping.
 In that case all data from raw select are passed to mindsdb and then subselect performs on them inside mindsdb</p>
 <div class="highlight"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="k">type</span><span class="p">,</span><span class="w"> </span><span class="k">max</span><span class="p">(</span><span class="n">bedrooms</span><span class="p">),</span><span class="w"> </span><span class="k">last</span><span class="p">(</span><span class="n">MA</span><span class="p">)</span><span class="w"></span>
 <span class="k">FROM</span><span class="w"> </span><span class="n">mongo</span><span class="w"> </span><span class="p">(</span><span class="w"></span>
@@ -2378,7 +2392,7 @@ In that case all data from raw select are passed to mindsdb and then subselect p
 <ol>
 <li>Unions</li>
 </ol>
-<p>It is possible to use UNION / UNION ALL operators.
+<p>It is possible to use <code class="highlight"><span class="k">UNION</span><span class="w"></span></code> / <code class="highlight"><span class="k">UNION</span><span class="w"> </span><span class="k">ALL</span><span class="w"></span></code> operators.
 It this case every subselect from union will be fetched and merged to one result-set on mindsdb side  </p>
 <div class="highlight"><pre><span></span><code><span class="w"> </span><span class="k">SELECT</span><span class="w"> </span>
 <span class="w">  </span><span class="k">data</span><span class="p">.</span><span class="k">time</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nb">date</span><span class="p">,</span><span class="w"> </span><span class="k">data</span><span class="p">.</span><span class="n">target</span><span class="w"></span>

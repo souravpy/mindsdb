@@ -41,23 +41,23 @@
     
     <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
-
-<!--iubenda privacy policy-->
+<!-- Iubenda cookie solution -->
 <script type="text/javascript">
-    var _iub = _iub || [];
-    _iub.csConfiguration = {"lang":"en","ccpaAcknowledgeOnDisplay":true,"siteId":1832244,"countryDetection":true,"enableCcpa":true,"whitelabel":false,"cookiePolicyId":63309853, "banner":{ "acceptButtonDisplay":true,"customizeButtonDisplay":true,"position":"float-bottom-left","textColor":"#656565","backgroundColor":"#ffffff","rejectButtonDisplay":true,"acceptButtonColor":"#00af6c","acceptButtonCaptionColor":"white","customizeButtonColor":"#818181","customizeButtonCaptionColor":"white","rejectButtonColor":"#f77476","rejectButtonCaptionColor":"white" }};
+var _iub = _iub || [];
+_iub.csConfiguration = {"ccpaAcknowledgeOnDisplay":true,"consentOnContinuedBrowsing":false,"cookiePolicyInOtherWindow":true,"countryDetection":true,"enableCcpa":true,"invalidateConsentWithoutLog":true,"lang":"en","perPurposeConsent":true,"siteId":1832244,"cookiePolicyId":63309853,"cookiePolicyUrl":"https://mindsdb.com/cookie-policy/","privacyPolicyUrl":"https://mindsdb.com/privacy-policy/", "banner":{ "acceptButtonCaptionColor":"#FFFFFF","acceptButtonColor":"#00A587","acceptButtonDisplay":true,"backgroundColor":"#FFFFFF","brandBackgroundColor":"#FFFFFF","brandTextColor":"#000000","closeButtonRejects":true,"customizeButtonCaptionColor":"#4D4D4D","customizeButtonColor":"#DADADA","customizeButtonDisplay":true,"explicitWithdrawal":true,"listPurposes":true,"position":"float-bottom-left","rejectButtonCaptionColor":"#FFFFFF","rejectButtonColor":"#000000","rejectButtonDisplay":true,"textColor":"#000000" }};
 </script>
 <script type="text/javascript" src="//cdn.iubenda.com/cs/ccpa/stub.js"></script>
 <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
-<!--end privacy policy-->
-
+<!-- End Iubenda cookie solution -->
+<!-- Iubenda conscent solution -->
+<script type="text/javascript">var _iub = _iub || {}; _iub.cons_instructions = _iub.cons_instructions || []; _iub.cons_instructions.push(["init", {api_key: "sBV3hROhwPJrjrOXk6LHP7DeBPJlW9SZ"}]);</script><script type="text/javascript" src="https://cdn.iubenda.com/cons/iubenda_cons.js" async></script>
+<!-- End Iubenda conscent solution -->
 <!-- Google Tag Manager -->
-<!--TODO: Read gtm value from mkdocs.yml-->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-MNN47J3');</script>
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MNN47J3');</script>
 <!-- End Google Tag Manager -->
 
     
@@ -1359,6 +1359,20 @@
           
         </ul>
       </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/update/" class="md-nav__link">
+        UPDATE
+      </a>
     </li>
   
 
@@ -3960,7 +3974,7 @@ Forwarding                    tcp://4.tcp.ngrok.io:15093 -&gt; localhost <span c
 </div>
 </div>
 <h3 id="trino">Trino<a class="headerlink" href="#trino" title="Permanent link">&para;</a></h3>
-<div class="tabbed-set tabbed-alternate" data-tabs="37:2"><input checked="checked" id="__tabbed_37_1" name="__tabbed_37" type="radio" /><input id="__tabbed_37_2" name="__tabbed_37" type="radio" /><div class="tabbed-labels"><label for="__tabbed_37_1">Template</label><label for="__tabbed_37_2">Example</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="37:1"><input checked="checked" id="__tabbed_37_1" name="__tabbed_37" type="radio" /><div class="tabbed-labels"><label for="__tabbed_37_1">Template</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">trino_datasource</span><span class="w">          </span><span class="c1">--- display name for the database</span>
@@ -3968,13 +3982,21 @@ Forwarding                    tcp://4.tcp.ngrok.io:15093 -&gt; localhost <span c
 <span class="k">PARAMETERS</span><span class="o">=</span><span class="err">{</span><span class="w"></span>
 <span class="w">  </span><span class="ss">&quot;host&quot;</span><span class="p">:</span><span class="w"> </span><span class="ss">&quot; &quot;</span><span class="p">,</span><span class="w">                            </span><span class="c1">--- host name or IP address</span>
 <span class="w">  </span><span class="ss">&quot;port&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">,</span><span class="w">                               </span><span class="c1">--- port used to make TCP/IP connection</span>
+<span class="w">  </span><span class="ss">&quot;auth&quot;</span><span class="p">:</span><span class="w"> </span><span class="ss">&quot; &quot;</span><span class="p">,</span><span class="w">                            </span><span class="c1">--- optional, authentication method, currently only `basic` is supported</span>
+<span class="w">  </span><span class="ss">&quot;http_scheme&quot;</span><span class="p">:</span><span class="w"> </span><span class="ss">&quot; &quot;</span><span class="p">,</span><span class="w">                     </span><span class="c1">--- optional, `http`(default) or `https`</span>
 <span class="w">  </span><span class="ss">&quot;user&quot;</span><span class="p">:</span><span class="w"> </span><span class="ss">&quot; &quot;</span><span class="p">,</span><span class="w">                            </span><span class="c1">--- database user</span>
 <span class="w">  </span><span class="ss">&quot;password&quot;</span><span class="p">:</span><span class="w"> </span><span class="ss">&quot; &quot;</span><span class="p">,</span><span class="w">                        </span><span class="c1">--- database password</span>
 <span class="w">  </span><span class="ss">&quot;catalog&quot;</span><span class="p">:</span><span class="w"> </span><span class="ss">&quot; &quot;</span><span class="p">,</span><span class="w">                         </span><span class="c1">--- optional, catalog</span>
 <span class="w">  </span><span class="ss">&quot;schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="ss">&quot; &quot;</span><span class="w">                           </span><span class="c1">--- optional, schema</span>
+<span class="w">  </span><span class="ss">&quot;with&quot;</span><span class="p">:</span><span class="w">                                 </span><span class="c1">--- optional, default WITH-clause(properties) for ALL tables(*)</span>
 <span class="err">}</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
 </div>
+</div>
+</div>
+<p>(*): this parameter is experimental and might be changed or removed in future release</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="38:1"><input checked="checked" id="__tabbed_38_1" name="__tabbed_38" type="radio" /><div class="tabbed-labels"><label for="__tabbed_38_1">Example</label></div>
+<div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">trino_datasource</span><span class="w"></span>
 <span class="k">WITH</span><span class="w"> </span><span class="n">ENGINE</span><span class="o">=</span><span class="s1">&#39;trino&#39;</span><span class="p">,</span><span class="w"></span>
@@ -3990,8 +4012,26 @@ Forwarding                    tcp://4.tcp.ngrok.io:15093 -&gt; localhost <span c
 </div>
 </div>
 </div>
+<p>or</p>
+<div class="codehilite"><pre><span></span><code>```sql
+CREATE DATABASE trino_datasource
+WITH ENGINE=&#39;trino&#39;,
+PARAMETERS={
+  &quot;host&quot;: &quot;127.0.0.1&quot;,
+  &quot;port&quot;: 443,
+  &quot;auth&quot;: &quot;basic&quot;,
+  &quot;http_scheme&quot;: &quot;https&quot;,
+  &quot;user&quot;: &quot;trino&quot;,
+  &quot;password&quot;: &quot;password&quot;,
+  &quot;catalog&quot;: &quot;default&quot;,
+  &quot;schema&quot;: &quot;test&quot;,
+  &quot;with&quot;: &quot;with (transactional = true)&quot;
+};
+```
+</code></pre></div>
+
 <h3 id="vertica">Vertica<a class="headerlink" href="#vertica" title="Permanent link">&para;</a></h3>
-<div class="tabbed-set tabbed-alternate" data-tabs="38:2"><input checked="checked" id="__tabbed_38_1" name="__tabbed_38" type="radio" /><input id="__tabbed_38_2" name="__tabbed_38" type="radio" /><div class="tabbed-labels"><label for="__tabbed_38_1">Template</label><label for="__tabbed_38_2">Example</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="39:2"><input checked="checked" id="__tabbed_39_1" name="__tabbed_39" type="radio" /><input id="__tabbed_39_2" name="__tabbed_39" type="radio" /><div class="tabbed-labels"><label for="__tabbed_39_1">Template</label><label for="__tabbed_39_2">Example</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">vertica_datasource</span><span class="w">        </span><span class="c1">--- display name for the database</span>
