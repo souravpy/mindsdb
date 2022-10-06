@@ -15,7 +15,7 @@
     
     
       
-        <title>Brain activity - MindsDB Documentation</title>
+        <title>Brain Activity - MindsDB Documentation</title>
       
     
     
@@ -83,7 +83,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div data-md-component="skip">
       
         
-        <a href="#forecast-eye-state-from-electroencephalogram-readings" class="md-skip">
+        <a href="#forecasting-eye-state-from-electroencephalogram-readings-with-mindsdb" class="md-skip">
           Skip to content
         </a>
       
@@ -155,7 +155,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Brain activity
+              Brain Activity
             
           </span>
         </div>
@@ -723,6 +723,34 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
+      <a href="../../../connect/mongo-compass/" class="md-nav__link">
+        Mongo Compass
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../connect/mongo-shell/" class="md-nav__link">
+        Mongo Shell
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../connect/kafka/" class="md-nav__link">
         Kafka
       </a>
@@ -767,6 +795,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <li class="md-nav__item">
       <a href="../../../connect/tableau/" class="md-nav__link">
         Tableau
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../connect/mariadb-cloud/" class="md-nav__link">
+        MariaDB Cloud Service
       </a>
     </li>
   
@@ -1020,7 +1062,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
     <li class="md-nav__item">
       <a href="../../api/describe/" class="md-nav__link">
-        DESCRIBE
+        DESCRIBE PREDICTOR
       </a>
     </li>
   
@@ -1526,12 +1568,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
-          Brain activity
+          Brain Activity
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
-        Brain activity
+        Brain Activity
       </a>
       
         
@@ -1557,22 +1599,49 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </li>
       
         <li class="md-nav__item">
-  <a href="#data-and-setup" class="md-nav__link">
-    Data and Setup
+  <a href="#data-setup" class="md-nav__link">
+    Data Setup
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#connecting-the-data" class="md-nav__link">
+    Connecting the Data
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#understanding-the-data" class="md-nav__link">
+    Understanding the Data
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#training-a-predictor" class="md-nav__link">
+    Training a Predictor
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#create-a-time-series-predictor" class="md-nav__link">
-    Create a Time Series Predictor
+  <a href="#status-of-a-predictor" class="md-nav__link">
+    Status of a Predictor
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#generating-forecasts" class="md-nav__link">
-    Generating Forecasts
+  <a href="#making-predictions" class="md-nav__link">
+    Making Predictions
   </a>
   
 </li>
@@ -1585,8 +1654,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </li>
       
         <li class="md-nav__item">
-  <a href="#next-steps" class="md-nav__link">
-    Next Steps
+  <a href="#whats-next" class="md-nav__link">
+    What's Next?
   </a>
   
 </li>
@@ -2067,22 +2136,49 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </li>
       
         <li class="md-nav__item">
-  <a href="#data-and-setup" class="md-nav__link">
-    Data and Setup
+  <a href="#data-setup" class="md-nav__link">
+    Data Setup
+  </a>
+  
+    <nav class="md-nav" aria-label="Data Setup">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#connecting-the-data" class="md-nav__link">
+    Connecting the Data
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#understanding-the-data" class="md-nav__link">
+    Understanding the Data
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#training-a-predictor" class="md-nav__link">
+    Training a Predictor
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#create-a-time-series-predictor" class="md-nav__link">
-    Create a Time Series Predictor
+  <a href="#status-of-a-predictor" class="md-nav__link">
+    Status of a Predictor
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#generating-forecasts" class="md-nav__link">
-    Generating Forecasts
+  <a href="#making-predictions" class="md-nav__link">
+    Making Predictions
   </a>
   
 </li>
@@ -2095,8 +2191,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </li>
       
         <li class="md-nav__item">
-  <a href="#next-steps" class="md-nav__link">
-    Next Steps
+  <a href="#whats-next" class="md-nav__link">
+    What's Next?
   </a>
   
 </li>
@@ -2119,50 +2215,160 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 
-<h1 id="forecast-eye-state-from-electroencephalogram-readings">Forecast Eye State From Electroencephalogram Readings<a class="headerlink" href="#forecast-eye-state-from-electroencephalogram-readings" title="Permanent link">&para;</a></h1>
+<h1 id="forecasting-eye-state-from-electroencephalogram-readings-with-mindsdb">Forecasting Eye State from Electroencephalogram Readings with MindsDB<a class="headerlink" href="#forecasting-eye-state-from-electroencephalogram-readings-with-mindsdb" title="Permanent link">&para;</a></h1>
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
-<p>In this short example we will produce categorical forecasts for a multivariate time series.</p>
-<h2 id="data-and-setup">Data and Setup<a class="headerlink" href="#data-and-setup" title="Permanent link">&para;</a></h2>
-<p>The dataset we will use is the UCI "EEG Eye State" found <a href="https://archive.ics.uci.edu/ml/datasets/EEG+Eye+State">here</a>. Each row contains 15 different electroencephalogram (EEG) readings plus the current state of one of the patient's eye (0: closed, 1: open). We want to know ahead of time when the eye is going to change state, let's try!</p>
-<p>Make sure you have access to a working MindsDB installation (either local or via <a href="https://cloud.mindsdb.com">cloud.mindsdb.com</a>), and either load it into a table in your database of choice or upload the file directly to the special <code>FILES</code> datasource (via SQL or GUI). Once you've done this, proceed to the next step. For the rest of the tutorial we'll assume you've opted for the latter option and uploaded the file with the name <code>EEGEye</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="k">SHOW</span><span class="w"> </span><span class="n">TABLES</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">files</span><span class="p">;</span><span class="w"></span>
-
-<span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">files</span><span class="p">.</span><span class="n">EEGEye</span><span class="w"> </span><span class="k">LIMIT</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span><span class="w"></span>
+<p>In this tutorial, we'll create and train a machine learning model, or as we call it, an <code>AI Table</code> or a <code>predictor</code>. By querying the model, we'll produce categorical forecasts for a multivariate time series.</p>
+<p>Make sure you have access to a working MindsDB installation, either locally or at <a href="https://cloud.mindsdb.com/">MindsDB Cloud</a>.</p>
+<p>If you want to learn how to set up your account at MindsDB Cloud, follow <a href="https://docs.mindsdb.com/setup/cloud/">this guide</a>. Another way is to set up MindsDB locally using <a href="https://docs.mindsdb.com/setup/self-hosted/docker/">Docker</a> or <a href="https://docs.mindsdb.com/setup/self-hosted/pip/source/">Python</a>.</p>
+<p>Let's get started.</p>
+<h2 id="data-setup">Data Setup<a class="headerlink" href="#data-setup" title="Permanent link">&para;</a></h2>
+<h3 id="connecting-the-data">Connecting the Data<a class="headerlink" href="#connecting-the-data" title="Permanent link">&para;</a></h3>
+<p>There are a couple of ways you can get the data to follow through with this tutorial.</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Connecting as a database</label><label for="__tabbed_1_2">Connecting as a file</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>You can connect to a demo database that we've prepared for you. It contains the data used throughout this tutorial (the <code class="highlight"><span class="n">example_db</span><span class="p">.</span><span class="n">demo_data</span><span class="p">.</span><span class="n">eeg_eye</span><span class="w"></span></code> table).</p>
+<div class="highlight"><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">example_db</span><span class="w"></span>
+<span class="w">    </span><span class="k">WITH</span><span class="w"> </span><span class="n">ENGINE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="ss">&quot;postgres&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="k">PARAMETERS</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="err">{</span><span class="w"></span>
+<span class="w">        </span><span class="ss">&quot;user&quot;</span><span class="p">:</span><span class="w"> </span><span class="ss">&quot;demo_user&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="ss">&quot;password&quot;</span><span class="p">:</span><span class="w"> </span><span class="ss">&quot;demo_password&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="ss">&quot;host&quot;</span><span class="p">:</span><span class="w"> </span><span class="ss">&quot;3.220.66.106&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="ss">&quot;port&quot;</span><span class="p">:</span><span class="w"> </span><span class="ss">&quot;5432&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="ss">&quot;database&quot;</span><span class="p">:</span><span class="w"> </span><span class="ss">&quot;demo&quot;</span><span class="w"></span>
+<span class="err">}</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
-<h2 id="create-a-time-series-predictor">Create a Time Series Predictor<a class="headerlink" href="#create-a-time-series-predictor" title="Permanent link">&para;</a></h2>
-<p>Let's specify the <code>eyeDetection</code> column as our target variable. The interesting thing about this example is that we are aiming to forecast "labels" that are not strictly numerical. Even though this example is simple (because the variable is a binary category, either "Open"ed or "Close"d eye), this can easily be generalized to more categories.</p>
-<p>We will order the measurements by the <code>Timestamps</code> column, which shows readings a frequency of approximately 8 miliseconds.</p>
-<p>To create our predictor, we can execute the following statement:</p>
-<div class="highlight"><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="n">PREDICTOR</span><span class="w"> </span>
-<span class="w">  </span><span class="n">mindsdb</span><span class="p">.</span><span class="n">eeg_eye_forecast</span><span class="w"></span>
+<p>Now you can run queries directly on the demo database. Let's preview the data that we'll use to train our predictor.</p>
+<div class="highlight"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">example_db</span><span class="p">.</span><span class="n">demo_data</span><span class="p">.</span><span class="n">eeg_eye</span><span class="w"></span>
+<span class="k">LIMIT</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span><span class="w"></span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<p>The dataset we use in this tutorial is the UCI's <em>EEG Eye State</em> dataset. You can download it <a href="https://archive.ics.uci.edu/ml/datasets/EEG+Eye+State">here</a> in the <code>ARFF</code> format that shoud be converted to the <code>CSV</code> format before uploading it via <a href="/connect/mindsdb_editor/">MindsDB SQL Editor</a>.</p>
+<p>Follow <a href="/sql/create/file/">this guide</a> to find out how to upload a file to MindsDB.</p>
+<p>Now you can run queries directly on the file as if it were a table. Let's preview the data that we'll use to train our predictor.</p>
+<div class="highlight"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"></span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">files</span><span class="p">.</span><span class="n">eeg_eye</span><span class="w"></span>
+<span class="k">LIMIT</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span><span class="w"></span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Pay Attention to the Queries</p>
+<p>From now on, we'll use the <code class="highlight"><span class="n">files</span><span class="p">.</span><span class="n">eeg_eye</span><span class="w"></span></code> file as a table. Make sure you replace it with <code>example_db.demo_data.eeg_eye</code> if you connect the data as a database.</p>
+</div>
+<h3 id="understanding-the-data">Understanding the Data<a class="headerlink" href="#understanding-the-data" title="Permanent link">&para;</a></h3>
+<p>We use the UCI's <em>EEG Eye State</em> dataset, where each row contains data of one electroencephalogram (EEG) reading plus the current state of the patient's eye, where <code>0</code> indicates open eye and <code>1</code> indicates closed eye. We want to know ahead of time when the eye state will change, so we predict the <code>eyeDetection</code> column.</p>
+<p>Below is the sample data stored in the <code class="highlight"><span class="n">files</span><span class="p">.</span><span class="n">eeg_eye</span><span class="w"></span></code> table.</p>
+<div class="highlight"><pre><span></span><code><span class="o">+</span><span class="c1">----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+--------------+</span>
+<span class="o">|</span><span class="w"> </span><span class="n">AF3</span><span class="w">      </span><span class="o">|</span><span class="w"> </span><span class="n">F7</span><span class="w">       </span><span class="o">|</span><span class="w"> </span><span class="n">F3</span><span class="w">       </span><span class="o">|</span><span class="w"> </span><span class="n">FC5</span><span class="w">      </span><span class="o">|</span><span class="w"> </span><span class="n">T7</span><span class="w">       </span><span class="o">|</span><span class="w"> </span><span class="n">P7</span><span class="w">       </span><span class="o">|</span><span class="w"> </span><span class="n">O1</span><span class="w">       </span><span class="o">|</span><span class="w"> </span><span class="n">O2</span><span class="w">       </span><span class="o">|</span><span class="w"> </span><span class="n">P8</span><span class="w">       </span><span class="o">|</span><span class="w"> </span><span class="n">T8</span><span class="w">       </span><span class="o">|</span><span class="w"> </span><span class="n">FC6</span><span class="w">      </span><span class="o">|</span><span class="w"> </span><span class="n">F4</span><span class="w">       </span><span class="o">|</span><span class="w"> </span><span class="n">F8</span><span class="w">       </span><span class="o">|</span><span class="w"> </span><span class="n">AF4</span><span class="w">      </span><span class="o">|</span><span class="w"> </span><span class="n">eyeDetection</span><span class="w"> </span><span class="o">|</span><span class="w"></span>
+<span class="o">+</span><span class="c1">----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+--------------+</span>
+<span class="o">|</span><span class="w"> </span><span class="mi">4329</span><span class="p">.</span><span class="mi">23</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4009</span><span class="p">.</span><span class="mi">23</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4289</span><span class="p">.</span><span class="mi">23</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4148</span><span class="p">.</span><span class="mi">21</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4350</span><span class="p">.</span><span class="mi">26</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4586</span><span class="p">.</span><span class="mi">15</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4096</span><span class="p">.</span><span class="mi">92</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4641</span><span class="p">.</span><span class="mi">03</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4222</span><span class="p">.</span><span class="mi">05</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4238</span><span class="p">.</span><span class="mi">46</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4211</span><span class="p">.</span><span class="mi">28</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4280</span><span class="p">.</span><span class="mi">51</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4635</span><span class="p">.</span><span class="mi">9</span><span class="w">   </span><span class="o">|</span><span class="w"> </span><span class="mi">4393</span><span class="p">.</span><span class="mi">85</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">0</span><span class="w">            </span><span class="o">|</span><span class="w"></span>
+<span class="o">|</span><span class="w"> </span><span class="mi">4324</span><span class="p">.</span><span class="mi">62</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4004</span><span class="p">.</span><span class="mi">62</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4293</span><span class="p">.</span><span class="mi">85</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4148</span><span class="p">.</span><span class="mi">72</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4342</span><span class="p">.</span><span class="mi">05</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4586</span><span class="p">.</span><span class="mi">67</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4097</span><span class="p">.</span><span class="mi">44</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4638</span><span class="p">.</span><span class="mi">97</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4210</span><span class="p">.</span><span class="mi">77</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4226</span><span class="p">.</span><span class="mi">67</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4207</span><span class="p">.</span><span class="mi">69</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4279</span><span class="p">.</span><span class="mi">49</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4632</span><span class="p">.</span><span class="mi">82</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4384</span><span class="p">.</span><span class="mi">1</span><span class="w">   </span><span class="o">|</span><span class="w"> </span><span class="mi">0</span><span class="w">            </span><span class="o">|</span><span class="w"></span>
+<span class="o">|</span><span class="w"> </span><span class="mi">4327</span><span class="p">.</span><span class="mi">69</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4006</span><span class="p">.</span><span class="mi">67</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4295</span><span class="p">.</span><span class="mi">38</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4156</span><span class="p">.</span><span class="mi">41</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4336</span><span class="p">.</span><span class="mi">92</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4583</span><span class="p">.</span><span class="mi">59</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4096</span><span class="p">.</span><span class="mi">92</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4630</span><span class="p">.</span><span class="mi">26</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4207</span><span class="p">.</span><span class="mi">69</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4222</span><span class="p">.</span><span class="mi">05</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4206</span><span class="p">.</span><span class="mi">67</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4282</span><span class="p">.</span><span class="mi">05</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4628</span><span class="p">.</span><span class="mi">72</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4389</span><span class="p">.</span><span class="mi">23</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">0</span><span class="w">            </span><span class="o">|</span><span class="w"></span>
+<span class="o">|</span><span class="w"> </span><span class="mi">4328</span><span class="p">.</span><span class="mi">72</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4011</span><span class="p">.</span><span class="mi">79</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4296</span><span class="p">.</span><span class="mi">41</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4155</span><span class="p">.</span><span class="mi">9</span><span class="w">   </span><span class="o">|</span><span class="w"> </span><span class="mi">4343</span><span class="p">.</span><span class="mi">59</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4582</span><span class="p">.</span><span class="mi">56</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4097</span><span class="p">.</span><span class="mi">44</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4630</span><span class="p">.</span><span class="mi">77</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4217</span><span class="p">.</span><span class="mi">44</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4235</span><span class="p">.</span><span class="mi">38</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4210</span><span class="p">.</span><span class="mi">77</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4287</span><span class="p">.</span><span class="mi">69</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4632</span><span class="p">.</span><span class="mi">31</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4396</span><span class="p">.</span><span class="mi">41</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">0</span><span class="w">            </span><span class="o">|</span><span class="w"></span>
+<span class="o">|</span><span class="w"> </span><span class="mi">4326</span><span class="p">.</span><span class="mi">15</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4011</span><span class="p">.</span><span class="mi">79</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4292</span><span class="p">.</span><span class="mi">31</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4151</span><span class="p">.</span><span class="mi">28</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4347</span><span class="p">.</span><span class="mi">69</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4586</span><span class="p">.</span><span class="mi">67</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4095</span><span class="p">.</span><span class="mi">9</span><span class="w">   </span><span class="o">|</span><span class="w"> </span><span class="mi">4627</span><span class="p">.</span><span class="mi">69</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4210</span><span class="p">.</span><span class="mi">77</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4244</span><span class="p">.</span><span class="mi">1</span><span class="w">   </span><span class="o">|</span><span class="w"> </span><span class="mi">4212</span><span class="p">.</span><span class="mi">82</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4288</span><span class="p">.</span><span class="mi">21</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4632</span><span class="p">.</span><span class="mi">82</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">4398</span><span class="p">.</span><span class="mi">46</span><span class="w">  </span><span class="o">|</span><span class="w"> </span><span class="mi">0</span><span class="w">            </span><span class="o">|</span><span class="w"></span>
+<span class="o">+</span><span class="c1">----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+--------------+</span>
+</code></pre></div>
+<p>Where:</p>
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Description</th>
+<th>Data Type</th>
+<th>Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>AF3</code>,<code>F7</code>,<code>F3</code>,<code>FC5</code>,<code>T7</code>,<code>P7</code>,<code>O1</code>,<code>O2</code>,<code>P8</code>,<code>T8</code>,<code>FC6</code>,<code>F4</code>,<code>F8</code>,<code>AF4</code></td>
+<td>The EEG measurement data.</td>
+<td><code>float</code></td>
+<td>Feature</td>
+</tr>
+<tr>
+<td><code>eyeDetectin</code></td>
+<td>The state of the patient's eye where <code>0</code> indicates open eye and <code>1</code> indicates closed eye.</td>
+<td><code>binary</code></td>
+<td>Label</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition info">
+<p class="admonition-title">Labels and Features</p>
+<p>A <strong>label</strong> is a column whose values will be predicted (the y variable in simple linear regression).<br/>
+A <strong>feature</strong> is a column used to train the model (the x variable in simple linear regression).</p>
+</div>
+<h2 id="training-a-predictor">Training a Predictor<a class="headerlink" href="#training-a-predictor" title="Permanent link">&para;</a></h2>
+<p>Let's create and train the machine learning model. For that, we use the <a href="/sql/create/predictor"><code class="highlight"><span class="k">CREATE</span><span class="w"> </span><span class="n">PREDICTOR</span><span class="w"></span></code></a> statement and specify the input columns used to train <code class="highlight"><span class="k">FROM</span><span class="w"></span></code> (features) and what we want to <code class="highlight"><span class="n">PREDICT</span><span class="w"></span></code> (labels).</p>
+<p>The <code>eyeDetection</code> column is our target variable. The interesting thing about this example is that we aim to forecast <em>labels</em> that are not strictly numerical. Even though this example is simple (because the variable is a binary category), this can easily be generalized to more than two categories.</p>
+<p>We order the measurements by the <code>Timestamps</code> column that shows readings frequency of approximately 8 miliseconds.</p>
+<div class="highlight"><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="n">PREDICTOR</span><span class="w"> </span><span class="n">mindsdb</span><span class="p">.</span><span class="n">eeg_eye_forecast</span><span class="w"></span>
 <span class="k">FROM</span><span class="w"> </span><span class="n">files</span><span class="w"></span>
-<span class="w">  </span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">EEGEye</span><span class="p">)</span><span class="w"></span>
+<span class="w">  </span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">eeg_eye</span><span class="p">)</span><span class="w"></span>
 <span class="n">PREDICT</span><span class="w"> </span><span class="n">eyeDetection</span><span class="w"></span>
 <span class="k">ORDER</span><span class="w"> </span><span class="k">BY</span><span class="w"> </span><span class="n">Timestamps</span><span class="w"></span>
 <span class="n">WINDOW</span><span class="w"> </span><span class="mi">50</span><span class="w"></span>
 <span class="n">HORIZON</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
-<p>As the sampling frequency is 8 ms, this predictor will use be trained using a historical context of roughly <code>(50 * 8) = 400 [ms]</code> to predict the following <code>(10 * 8) = 80 [ms]</code>.</p>
-<p>You can check the status of the predictor:</p>
-<div class="highlight"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">mindsdb</span><span class="p">.</span><span class="n">predictors</span><span class="w"></span>
+<p>As the sampling frequency is 8 ms, this predictor is trained using a historical context of roughly 400 ms (<code>(50 * 8) = 400 [ms]</code>) to predict the following 80 ms (<code>(10 * 8) = 80 [ms]</code>).</p>
+<h2 id="status-of-a-predictor">Status of a Predictor<a class="headerlink" href="#status-of-a-predictor" title="Permanent link">&para;</a></h2>
+<p>A predictor may take a couple of minutes for the training to complete. You can monitor the status of the predictor by using this SQL command:</p>
+<div class="highlight"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="n">status</span><span class="w"></span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">mindsdb</span><span class="p">.</span><span class="n">predictors</span><span class="w"></span>
 <span class="k">WHERE</span><span class="w"> </span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;eeg_eye_forecast&#39;</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
-<h2 id="generating-forecasts">Generating Forecasts<a class="headerlink" href="#generating-forecasts" title="Permanent link">&para;</a></h2>
-<p>Once the predictor has been successfully trained, you can query it to get predictions for the next <code class="highlight"><span class="n">HORIZON</span><span class="w"></span></code> timesteps into the future, which in this case is roughly 80 miliseconds. Usually, in forecasting scenarios you'll want to know what happens right after the latest data measurement, for which we have a special bit of syntax, the <code class="highlight"><span class="n">LATEST</span><span class="w"></span></code> key word:</p>
-<div class="highlight"><pre><span></span><code>SELECT m.Timestamps as timestamps,
-       m.eyeDetection as eye_status
-FROM files.EEGEye as t
-JOIN mindsdb.eeg_eye_forecast as m  
-WHERE t.timestamps &gt; LATEST
-LIMIT 10;
+<p>If we run it right after creating a predictor, we get this output:</p>
+<div class="highlight"><pre><span></span><code><span class="o">+</span><span class="c1">------------+</span>
+<span class="o">|</span><span class="w"> </span><span class="n">status</span><span class="w">     </span><span class="o">|</span><span class="w"></span>
+<span class="o">+</span><span class="c1">------------+</span>
+<span class="o">|</span><span class="w"> </span><span class="n">generating</span><span class="w"> </span><span class="o">|</span><span class="w"></span>
+<span class="o">+</span><span class="c1">------------+</span>
 </code></pre></div>
-<p>That's it. We can now <code class="highlight"><span class="k">JOIN</span><span class="w"></span></code> any set of <code class="highlight"><span class="n">WINDOW</span><span class="w"></span></code> rows worth of measurements with this predictor, and forecasts will be emitted to help us expect a change in the state of the patient's eye based on her EEG readings.</p>
+<p>A bit later, this is the output:</p>
+<div class="highlight"><pre><span></span><code><span class="o">+</span><span class="c1">----------+</span>
+<span class="o">|</span><span class="w"> </span><span class="n">status</span><span class="w">   </span><span class="o">|</span><span class="w"></span>
+<span class="o">+</span><span class="c1">----------+</span>
+<span class="o">|</span><span class="w"> </span><span class="n">training</span><span class="w"> </span><span class="o">|</span><span class="w"></span>
+<span class="o">+</span><span class="c1">----------+</span>
+</code></pre></div>
+<p>And at last, this should be the output:</p>
+<div class="highlight"><pre><span></span><code><span class="o">+</span><span class="c1">----------+</span>
+<span class="o">|</span><span class="w"> </span><span class="n">status</span><span class="w">   </span><span class="o">|</span><span class="w"></span>
+<span class="o">+</span><span class="c1">----------+</span>
+<span class="o">|</span><span class="w"> </span><span class="n">complete</span><span class="w"> </span><span class="o">|</span><span class="w"></span>
+<span class="o">+</span><span class="c1">----------+</span>
+</code></pre></div>
+<p>Now, if the status of our predictor says <code>complete</code>, we can start making predictions!</p>
+<h2 id="making-predictions">Making Predictions<a class="headerlink" href="#making-predictions" title="Permanent link">&para;</a></h2>
+<p>You can make predictions by querying the predictor joined with the data table. The <a href="/sql/api/select/"><code>SELECT</code></a> statement lets you make predictions for the label based on the chosen features for a given time period. Usually, you want to know what happens right after the latest training data point that was fed. We have a special keyword for that, the <code>LATEST</code> keyword.</p>
+<p>Let's run a query to get predictions for the next <code class="highlight"><span class="n">HORIZON</span><span class="w"></span></code> timesteps into the future, which in this case is roughly 80 miliseconds.</p>
+<div class="highlight"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="n">m</span><span class="p">.</span><span class="n">Timestamps</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">timestamps</span><span class="p">,</span><span class="w"></span>
+<span class="w">       </span><span class="n">m</span><span class="p">.</span><span class="n">eyeDetection</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">eye_status</span><span class="w"></span>
+<span class="k">FROM</span><span class="w"> </span><span class="n">files</span><span class="p">.</span><span class="n">eeg_eye</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">t</span><span class="w"></span>
+<span class="k">JOIN</span><span class="w"> </span><span class="n">mindsdb</span><span class="p">.</span><span class="n">eeg_eye_forecast</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="n">m</span><span class="w">  </span>
+<span class="k">WHERE</span><span class="w"> </span><span class="n">t</span><span class="p">.</span><span class="n">timestamps</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">LATEST</span><span class="w"></span>
+<span class="k">LIMIT</span><span class="w"> </span><span class="mi">10</span><span class="p">;</span><span class="w"></span>
+</code></pre></div>
+<p>On execution, we get:</p>
+<div class="highlight"><pre><span></span><code>
+</code></pre></div>
+<p>That's it. We can now <code class="highlight"><span class="k">JOIN</span><span class="w"></span></code> any set of <code class="highlight"><span class="n">WINDOW</span><span class="w"></span></code> rows worth of measurements with this predictor, and forecasts will be emitted to help us expect a change in the state of the patient's eye based on the EEG readings.</p>
 <h2 id="alternate-problem-framings">Alternate Problem Framings<a class="headerlink" href="#alternate-problem-framings" title="Permanent link">&para;</a></h2>
-<p>It is also possible to reframe this task as a "normal" forecasting scenario where the variable is numeric. There are a few options here, and it boils down to what the broader scenario is, and what format would maximize value of any specific prediction.</p>
-<p>For example, a simple mapping of "eye is closed" to zero, and "eye is open" to one, would be enough to replicate the above behavior.</p>
-<p>We could also explore other options. With some data transformations on the data layer, we could get a countdown to the next change in state, effectively predicting a "date" if we cast this back into the timestamp domain.</p>
-<h2 id="next-steps">Next Steps<a class="headerlink" href="#next-steps" title="Permanent link">&para;</a></h2>
-<p>We invite you to try this tutorial with your own time series data. If you have any questions or feedback, be sure to join our slack community or make an issue in the github repository!</p>
+<p>It is also possible to reframe this task as a <em>normal</em> forecasting scenario where the variable is numeric. There are a few options here. It boils down to what the broader scenario is and what format would maximize the value of any specific prediction.</p>
+<p>For example, a simple mapping of <code>eye is open</code> to <code>0</code> and <code>eye is closed</code> to <code>1</code> would be enough to replicate the above behavior.</p>
+<p>We could also explore other options. With some data transformations on the data layer, we could get a countdown to the next change in state, effectively predicting a <em>date</em> if we cast this back into the timestamp domain.</p>
+<h2 id="whats-next">What's Next?<a class="headerlink" href="#whats-next" title="Permanent link">&para;</a></h2>
+<p>Have fun while trying it out yourself!</p>
+<ul>
+<li>Bookmark <a href="https://github.com/mindsdb/mindsdb">MindsDB repository on GitHub</a>.</li>
+<li>Sign up for a free <a href="https://cloud.mindsdb.com/register">MindsDB account</a>.</li>
+<li>Engage with the MindsDB community on <a href="https://mindsdb.com/joincommunity">Slack</a> or <a href="https://github.com/mindsdb/mindsdb/discussions">GitHub</a> to ask questions and share your ideas and thoughts.</li>
+</ul>
+<p>If this tutorial was helpful, please give us a GitHub star <a href="https://github.com/mindsdb/mindsdb">here</a>.</p>
 
               
             </article>

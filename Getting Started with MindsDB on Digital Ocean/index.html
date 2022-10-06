@@ -723,6 +723,34 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
+      <a href="../connect/mongo-compass/" class="md-nav__link">
+        Mongo Compass
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../connect/mongo-shell/" class="md-nav__link">
+        Mongo Shell
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../connect/kafka/" class="md-nav__link">
         Kafka
       </a>
@@ -767,6 +795,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <li class="md-nav__item">
       <a href="../connect/tableau/" class="md-nav__link">
         Tableau
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../connect/mariadb-cloud/" class="md-nav__link">
+        MariaDB Cloud Service
       </a>
     </li>
   
@@ -1020,7 +1062,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
     <li class="md-nav__item">
       <a href="../sql/api/describe/" class="md-nav__link">
-        DESCRIBE
+        DESCRIBE PREDICTOR
       </a>
     </li>
   
@@ -1513,7 +1555,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
     <li class="md-nav__item">
       <a href="../sql/tutorials/eeg-forecasting/" class="md-nav__link">
-        Brain activity
+        Brain Activity
       </a>
     </li>
   
@@ -2075,7 +2117,7 @@ If the command successfully returns <code>Hello From Docker</code>, then you're 
 <p>You may encounter a few errors with regards to the versioning of <code>pandas</code> and <code>scramp</code> which you can ignore.</p>
 <p><strong>Step 10:</strong> Now you can access the MindsDB GUI using the Droplet <code>IPv4:47334</code>. Make sure you have turned off any VPN service you're using or else you may not be able to connect to the GUI using the URL.</p>
 <p><img alt="MindsDB GUI" src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/o74amk99g2txrrtjeba9.PNG" /></p>
-<p><strong>Step 11:</strong> This step enables us to connect a database client to our MindsDB server. For now, I would be using <a href="https://dbeaver.io/">DBeaver</a> to do the same. You can also connect your local MySQL server following the steps <a href="https://docs.mindsdb.com/sql/connect/cloud/">here</a>.</p>
+<p><strong>Step 11:</strong> This step enables us to connect a database client to our MindsDB server. For now, I would be using <a href="https://dbeaver.io/">DBeaver</a> to do the same. You can also connect your local MySQL server following the steps <a href="https://docs.mindsdb.com/connect/mysql-client/">here</a>.</p>
 <blockquote>
 <p><strong>NOTE:</strong> You should follow the local deployment steps instead of cloud as this is a local instance hosted on the cloud and not the official MindsDB cloud edition. The default username is <code>mindsdb</code> and the default password is empty.</p>
 </blockquote>
@@ -2095,7 +2137,7 @@ If the command successfully returns <code>Hello From Docker</code>, then you're 
 <h2 id="tables-in-mindsdb">Tables in MindsDB<a class="headerlink" href="#tables-in-mindsdb" title="Permanent link">&para;</a></h2>
 <p><img alt="Tables in MindsDB" src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/05jp9kzkc971irjd2h0i.PNG" /></p>
 <p>Once connected to the mindsdb database, it will contain 3 tables <code>predictors</code>, <code>commands</code> and <code>datasources</code>. You can simply run a query <code>show tables;</code> to see these as shown in the snippet above.
-The <code>Predictors</code> table contains all the newly trained ML models as a new record. Each column in the <code>Predictors</code> table contains information about each of these models. You can always find more information by visiting <a href="https://docs.mindsdb.com/sql/connect/dbeaver/">MindsDB Documentation</a> page.</p>
+The <code>Predictors</code> table contains all the newly trained ML models as a new record. Each column in the <code>Predictors</code> table contains information about each of these models. You can always find more information by visiting <a href="https://docs.mindsdb.com/">MindsDB Documentation</a> page.</p>
 <p>This concludes the tutorial on how to deploy the MindsDB server on a Digital Ocean Droplet and connect to it using a local client. Please drop a like let me know in the comments if you found this useful or have any other suggestions.</p>
 <blockquote>
 <p><strong>NOTE:</strong> The dashboard images belong to the official platforms of Digital Ocean and MindsDB respectively and are used here only for illustrative purposes.
