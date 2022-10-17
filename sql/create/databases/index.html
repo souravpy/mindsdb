@@ -695,8 +695,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../../connect/mindsdb_editor/" class="md-nav__link">
-        MindsDB SQL Editor
+      <a href="../../../connect/kafka/" class="md-nav__link">
+        Kafka
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../connect/connect-mariadb-skysql/" class="md-nav__link">
+        MariaDB SkySQL
       </a>
     </li>
   
@@ -711,6 +725,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <li class="md-nav__item">
       <a href="../../../connect/metabase/" class="md-nav__link">
         Metabase
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../connect/mindsdb_editor/" class="md-nav__link">
+        MindsDB SQL Editor
       </a>
     </li>
   
@@ -739,20 +767,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <li class="md-nav__item">
       <a href="../../../connect/mongo-shell/" class="md-nav__link">
         Mongo Shell
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../connect/kafka/" class="md-nav__link">
-        Kafka
       </a>
     </li>
   
@@ -795,20 +809,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <li class="md-nav__item">
       <a href="../../../connect/tableau/" class="md-nav__link">
         Tableau
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../../connect/mariadb-cloud/" class="md-nav__link">
-        MariaDB Cloud Service
       </a>
     </li>
   
@@ -1281,6 +1281,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </li>
         
           <li class="md-nav__item">
+  <a href="#sap-hana" class="md-nav__link">
+    SAP HANA
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#scylla" class="md-nav__link">
     Scylla
   </a>
@@ -1332,6 +1339,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <li class="md-nav__item">
   <a href="#vertica" class="md-nav__link">
     Vertica
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sap-hana-handler" class="md-nav__link">
+    SAP Hana Handler
   </a>
   
 </li>
@@ -2674,6 +2688,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </li>
         
           <li class="md-nav__item">
+  <a href="#sap-hana" class="md-nav__link">
+    SAP HANA
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#scylla" class="md-nav__link">
     Scylla
   </a>
@@ -2725,6 +2746,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           <li class="md-nav__item">
   <a href="#vertica" class="md-nav__link">
     Vertica
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sap-hana-handler" class="md-nav__link">
+    SAP Hana Handler
   </a>
   
 </li>
@@ -3823,8 +3851,39 @@ Forwarding                    tcp://4.tcp.ngrok.io:15093 -&gt; localhost <span c
 </div>
 </div>
 </div>
-<h3 id="scylla">Scylla<a class="headerlink" href="#scylla" title="Permanent link">&para;</a></h3>
+<h3 id="sap-hana">SAP HANA<a class="headerlink" href="#sap-hana" title="Permanent link">&para;</a></h3>
 <div class="tabbed-set tabbed-alternate" data-tabs="31:2"><input checked="checked" id="__tabbed_31_1" name="__tabbed_31" type="radio" /><input id="__tabbed_31_2" name="__tabbed_31" type="radio" /><div class="tabbed-labels"><label for="__tabbed_31_1">Template</label><label for="__tabbed_31_2">Example</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">sap_hana_datasource</span><span class="w">           </span><span class="c1">--- display name for the database</span>
+<span class="k">WITH</span><span class="w"> </span><span class="n">ENGINE</span><span class="o">=</span><span class="s1">&#39;hana&#39;</span><span class="p">,</span><span class="w">                           </span><span class="c1">--- name of the MindsDB handler</span>
+<span class="k">PARAMETERS</span><span class="o">=</span><span class="err">{</span><span class="w"></span>
+<span class="w">  </span><span class="ss">&quot;host&quot;</span><span class="p">:</span><span class="w"> </span><span class="ss">&quot; &quot;</span><span class="p">,</span><span class="w">                                </span><span class="c1">--- host name or IP address</span>
+<span class="w">  </span><span class="ss">&quot;port&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">,</span><span class="w">                                   </span><span class="c1">--- port used to make TCP/IP connection</span>
+<span class="w">  </span><span class="ss">&quot;user&quot;</span><span class="p">:</span><span class="w"> </span><span class="ss">&quot; &quot;</span><span class="p">,</span><span class="w">                                </span><span class="c1">--- user</span>
+<span class="w">  </span><span class="ss">&quot;password&quot;</span><span class="p">:</span><span class="w"> </span><span class="ss">&quot; &quot;</span><span class="p">,</span><span class="w">                            </span><span class="c1">--- password</span>
+<span class="w">  </span><span class="ss">&quot;schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="ss">&quot; &quot;</span><span class="p">,</span><span class="w">                              </span><span class="c1">--- database schema name (defaults to the current schema if left blank)</span>
+<span class="w">  </span><span class="ss">&quot;encrypt&quot;</span><span class="p">:</span><span class="w">                                  </span><span class="c1">--- whether connection is encrypted (required for cloud usage)</span>
+<span class="err">}</span><span class="p">;</span><span class="w"></span>
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">sap_hana_datasource</span><span class="w"></span>
+<span class="k">WITH</span><span class="w"> </span><span class="n">ENGINE</span><span class="o">=</span><span class="s1">&#39;hana&#39;</span><span class="p">,</span><span class="w"></span>
+<span class="k">PARAMETERS</span><span class="o">=</span><span class="err">{</span><span class="w"></span>
+<span class="w">  </span><span class="ss">&quot;host&quot;</span><span class="p">:</span><span class="w"> </span><span class="ss">&quot;&lt;uuid&gt;.hana.trial-us10.hanacloud.ondemand.com&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="ss">&quot;port&quot;</span><span class="p">:</span><span class="w"> </span><span class="ss">&quot;443&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="ss">&quot;user&quot;</span><span class="p">:</span><span class="w"> </span><span class="ss">&quot;DBADMIN&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="ss">&quot;password&quot;</span><span class="p">:</span><span class="w"> </span><span class="ss">&quot;password&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="ss">&quot;schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="ss">&quot;MINDSDB&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="ss">&quot;encrypt&quot;</span><span class="p">:</span><span class="w"> </span><span class="k">true</span><span class="w"></span>
+<span class="err">}</span><span class="p">;</span><span class="w"></span>
+</code></pre></div>
+</div>
+</div>
+</div>
+<h3 id="scylla">Scylla<a class="headerlink" href="#scylla" title="Permanent link">&para;</a></h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="32:2"><input checked="checked" id="__tabbed_32_1" name="__tabbed_32" type="radio" /><input id="__tabbed_32_2" name="__tabbed_32" type="radio" /><div class="tabbed-labels"><label for="__tabbed_32_1">Template</label><label for="__tabbed_32_2">Example</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">scylladb_datasource</span><span class="w">           </span><span class="c1">--- display name for the database</span>
@@ -3861,7 +3920,7 @@ Forwarding                    tcp://4.tcp.ngrok.io:15093 -&gt; localhost <span c
 </div>
 </div>
 <h3 id="singlestore">SingleStore<a class="headerlink" href="#singlestore" title="Permanent link">&para;</a></h3>
-<div class="tabbed-set tabbed-alternate" data-tabs="32:2"><input checked="checked" id="__tabbed_32_1" name="__tabbed_32" type="radio" /><input id="__tabbed_32_2" name="__tabbed_32" type="radio" /><div class="tabbed-labels"><label for="__tabbed_32_1">Template</label><label for="__tabbed_32_2">Example</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="33:2"><input checked="checked" id="__tabbed_33_1" name="__tabbed_33" type="radio" /><input id="__tabbed_33_2" name="__tabbed_33" type="radio" /><div class="tabbed-labels"><label for="__tabbed_33_1">Template</label><label for="__tabbed_33_2">Example</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">singlestore_datasource</span><span class="w">          </span><span class="c1">--- display name for the database</span>
@@ -3900,7 +3959,7 @@ Forwarding                    tcp://4.tcp.ngrok.io:15093 -&gt; localhost <span c
 </div>
 </div>
 <h3 id="snowflake">Snowflake<a class="headerlink" href="#snowflake" title="Permanent link">&para;</a></h3>
-<div class="tabbed-set tabbed-alternate" data-tabs="33:2"><input checked="checked" id="__tabbed_33_1" name="__tabbed_33" type="radio" /><input id="__tabbed_33_2" name="__tabbed_33" type="radio" /><div class="tabbed-labels"><label for="__tabbed_33_1">Template</label><label for="__tabbed_33_2">Example</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="34:2"><input checked="checked" id="__tabbed_34_1" name="__tabbed_34" type="radio" /><input id="__tabbed_34_2" name="__tabbed_34" type="radio" /><div class="tabbed-labels"><label for="__tabbed_34_1">Template</label><label for="__tabbed_34_2">Example</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">snowflake_datasource</span><span class="w">              </span><span class="c1">--- display name for the database</span>
@@ -3937,7 +3996,7 @@ Forwarding                    tcp://4.tcp.ngrok.io:15093 -&gt; localhost <span c
 </div>
 </div>
 <h3 id="sqlite">SQLite<a class="headerlink" href="#sqlite" title="Permanent link">&para;</a></h3>
-<div class="tabbed-set tabbed-alternate" data-tabs="34:2"><input checked="checked" id="__tabbed_34_1" name="__tabbed_34" type="radio" /><input id="__tabbed_34_2" name="__tabbed_34" type="radio" /><div class="tabbed-labels"><label for="__tabbed_34_1">Template</label><label for="__tabbed_34_2">Example</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="35:2"><input checked="checked" id="__tabbed_35_1" name="__tabbed_35" type="radio" /><input id="__tabbed_35_2" name="__tabbed_35" type="radio" /><div class="tabbed-labels"><label for="__tabbed_35_1">Template</label><label for="__tabbed_35_2">Example</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">sqlite_datasource</span><span class="w">         </span><span class="c1">--- display name for the database</span>
@@ -3958,7 +4017,7 @@ Forwarding                    tcp://4.tcp.ngrok.io:15093 -&gt; localhost <span c
 </div>
 </div>
 <h3 id="supabase">Supabase<a class="headerlink" href="#supabase" title="Permanent link">&para;</a></h3>
-<div class="tabbed-set tabbed-alternate" data-tabs="35:2"><input checked="checked" id="__tabbed_35_1" name="__tabbed_35" type="radio" /><input id="__tabbed_35_2" name="__tabbed_35" type="radio" /><div class="tabbed-labels"><label for="__tabbed_35_1">Template</label><label for="__tabbed_35_2">Example</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="36:2"><input checked="checked" id="__tabbed_36_1" name="__tabbed_36" type="radio" /><input id="__tabbed_36_2" name="__tabbed_36" type="radio" /><div class="tabbed-labels"><label for="__tabbed_36_1">Template</label><label for="__tabbed_36_2">Example</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">supabase_datasource</span><span class="w">             </span><span class="c1">--- display name for the database</span>
@@ -3987,7 +4046,7 @@ Forwarding                    tcp://4.tcp.ngrok.io:15093 -&gt; localhost <span c
 </div>
 </div>
 <h3 id="tidb">TiDB<a class="headerlink" href="#tidb" title="Permanent link">&para;</a></h3>
-<div class="tabbed-set tabbed-alternate" data-tabs="36:2"><input checked="checked" id="__tabbed_36_1" name="__tabbed_36" type="radio" /><input id="__tabbed_36_2" name="__tabbed_36" type="radio" /><div class="tabbed-labels"><label for="__tabbed_36_1">Template</label><label for="__tabbed_36_2">Example</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="37:2"><input checked="checked" id="__tabbed_37_1" name="__tabbed_37" type="radio" /><input id="__tabbed_37_2" name="__tabbed_37" type="radio" /><div class="tabbed-labels"><label for="__tabbed_37_1">Template</label><label for="__tabbed_37_2">Example</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">tidb_datasource</span><span class="w">                 </span><span class="c1">--- display name for the database</span>
@@ -4016,7 +4075,7 @@ Forwarding                    tcp://4.tcp.ngrok.io:15093 -&gt; localhost <span c
 </div>
 </div>
 <h3 id="trino">Trino<a class="headerlink" href="#trino" title="Permanent link">&para;</a></h3>
-<div class="tabbed-set tabbed-alternate" data-tabs="37:1"><input checked="checked" id="__tabbed_37_1" name="__tabbed_37" type="radio" /><div class="tabbed-labels"><label for="__tabbed_37_1">Template</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="38:1"><input checked="checked" id="__tabbed_38_1" name="__tabbed_38" type="radio" /><div class="tabbed-labels"><label for="__tabbed_38_1">Template</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">trino_datasource</span><span class="w">          </span><span class="c1">--- display name for the database</span>
@@ -4037,7 +4096,7 @@ Forwarding                    tcp://4.tcp.ngrok.io:15093 -&gt; localhost <span c
 </div>
 </div>
 <p>(*): this parameter is experimental and might be changed or removed in future release</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="38:1"><input checked="checked" id="__tabbed_38_1" name="__tabbed_38" type="radio" /><div class="tabbed-labels"><label for="__tabbed_38_1">Example</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="39:1"><input checked="checked" id="__tabbed_39_1" name="__tabbed_39" type="radio" /><div class="tabbed-labels"><label for="__tabbed_39_1">Example</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">trino_datasource</span><span class="w"></span>
@@ -4073,7 +4132,7 @@ PARAMETERS={
 </code></pre></div>
 
 <h3 id="vertica">Vertica<a class="headerlink" href="#vertica" title="Permanent link">&para;</a></h3>
-<div class="tabbed-set tabbed-alternate" data-tabs="39:2"><input checked="checked" id="__tabbed_39_1" name="__tabbed_39" type="radio" /><input id="__tabbed_39_2" name="__tabbed_39" type="radio" /><div class="tabbed-labels"><label for="__tabbed_39_1">Template</label><label for="__tabbed_39_2">Example</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="40:2"><input checked="checked" id="__tabbed_40_1" name="__tabbed_40" type="radio" /><input id="__tabbed_40_2" name="__tabbed_40" type="radio" /><div class="tabbed-labels"><label for="__tabbed_40_1">Template</label><label for="__tabbed_40_2">Example</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">vertica_datasource</span><span class="w">        </span><span class="c1">--- display name for the database</span>
@@ -4103,6 +4162,39 @@ PARAMETERS={
 </div>
 </div>
 </div>
+<h3 id="sap-hana-handler">SAP Hana Handler<a class="headerlink" href="#sap-hana-handler" title="Permanent link">&para;</a></h3>
+<div class="tabbed-set tabbed-alternate" data-tabs="41:1"><input checked="checked" id="__tabbed_41_1" name="__tabbed_41" type="radio" /><div class="tabbed-labels"><label for="__tabbed_41_1">Template</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block"></div>
+</div>
+</div>
+<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="k">CREATE</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">sap_hana_trial</span><span class="w"> </span><span class="c1">--- display name for the database</span>
+<span class="w">  </span><span class="k">WITH</span><span class="w"> </span><span class="n">ENGINE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;hana&#39;</span><span class="p">,</span><span class="w">   </span><span class="c1">--- name of the MindsDB handler</span>
+<span class="w">  </span><span class="k">PARAMETERS</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="err">{</span><span class="w"></span>
+<span class="w">    </span><span class="ss">&quot;user&quot;</span><span class="p">:</span><span class="w"> </span><span class="ss">&quot;&quot;</span><span class="p">,</span><span class="w">   </span><span class="c1">--- user name</span>
+<span class="w">    </span><span class="ss">&quot;password&quot;</span><span class="p">:</span><span class="w"> </span><span class="ss">&quot;&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">--- password</span>
+<span class="w">    </span><span class="ss">&quot;host&quot;</span><span class="p">:</span><span class="w"> </span><span class="ss">&quot;&quot;</span><span class="p">,</span><span class="w">  </span><span class="c1">--- host name or IP address</span>
+<span class="w">    </span><span class="ss">&quot;port&quot;</span><span class="p">:</span><span class="w"> </span><span class="ss">&quot;&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">--- port used to make TCP/IP connection</span>
+<span class="w">    </span><span class="ss">&quot;schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="ss">&quot;&quot;</span><span class="p">,</span><span class="w"> </span><span class="c1">--- name of database schema</span>
+<span class="w">    </span><span class="ss">&quot;encrypt&quot;</span><span class="p">:</span><span class="w">   </span><span class="c1">-- set to true or false</span>
+<span class="err">}</span><span class="p">;</span><span class="w"></span>
+</code></pre></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="42:1"><input checked="checked" id="__tabbed_42_1" name="__tabbed_42" type="radio" /><div class="tabbed-labels"><label for="__tabbed_42_1">Example</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block"></div>
+</div>
+</div>
+<div class="highlight"><pre><span></span><code><span class="w">  </span><span class="k">CREATE</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">sap_hana_trial</span><span class="w"></span>
+<span class="w">  </span><span class="k">WITH</span><span class="w"> </span><span class="n">ENGINE</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;hana&#39;</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="k">PARAMETERS</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="err">{</span><span class="w"></span>
+<span class="w">    </span><span class="ss">&quot;user&quot;</span><span class="p">:</span><span class="w"> </span><span class="ss">&quot;DBADMIN&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="ss">&quot;password&quot;</span><span class="p">:</span><span class="w"> </span><span class="ss">&quot;password&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="ss">&quot;host&quot;</span><span class="p">:</span><span class="w"> </span><span class="ss">&quot;&lt;uuid&gt;.hana.trial-us10.hanacloud.ondemand.com&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="ss">&quot;port&quot;</span><span class="p">:</span><span class="w"> </span><span class="ss">&quot;443&quot;</span><span class="p">,</span><span class="w"> </span>
+<span class="w">    </span><span class="ss">&quot;schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="ss">&quot;MINDSDB&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="ss">&quot;encrypt&quot;</span><span class="p">:</span><span class="w"> </span><span class="k">true</span><span class="w"></span>
+<span class="err">}</span><span class="p">;</span><span class="w"></span>
+</code></pre></div>
 <h2 id="connecting-through-ngrok">Connecting Through Ngrok<a class="headerlink" href="#connecting-through-ngrok" title="Permanent link">&para;</a></h2>
 <p>When connecting your local database to MindsDB Cloud, you need to expose the local database server to be publicly accessible using <a href="https://ngrok.com">Ngrok Tunnel</a>. The free tier offers all you need to get started.</p>
 <p>The installation instructions are easy to follow, head over to the <a href="https://ngrok.com/download">downloads page</a> and choose your operating system. Follow the instructions for installation.</p>

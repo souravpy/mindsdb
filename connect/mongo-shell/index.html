@@ -697,8 +697,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../mindsdb_editor/" class="md-nav__link">
-        MindsDB SQL Editor
+      <a href="../kafka/" class="md-nav__link">
+        Kafka
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../connect-mariadb-skysql/" class="md-nav__link">
+        MariaDB SkySQL
       </a>
     </li>
   
@@ -713,6 +727,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <li class="md-nav__item">
       <a href="../metabase/" class="md-nav__link">
         Metabase
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mindsdb_editor/" class="md-nav__link">
+        MindsDB SQL Editor
       </a>
     </li>
   
@@ -763,20 +791,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../kafka/" class="md-nav__link">
-        Kafka
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../mysql-client/" class="md-nav__link">
         MySQL CLI
       </a>
@@ -807,20 +821,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <li class="md-nav__item">
       <a href="../tableau/" class="md-nav__link">
         Tableau
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../mariadb-cloud/" class="md-nav__link">
-        MariaDB Cloud Service
       </a>
     </li>
   
@@ -2044,7 +2044,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 <h1 id="mindsdb-and-mongodb-shell">MindsDB and MongoDB Shell<a class="headerlink" href="#mindsdb-and-mongodb-shell" title="Permanent link">&para;</a></h1>
-<p>MindsDB provides a powerful MongoDB API that allows users to connect to it using the <a href="https://www.mongodb.com/try/download/shell">MongoDB Shell</a>. MongoDB Shell is the quickest way to connect and work with MongoDB. Please note that connection to MindsDB's MongoDB API is the same as connectiong to a MongoDB database.</p>
+<p>MindsDB provides a powerful MongoDB API that allows users to connect to it using the <a href="https://www.mongodb.com/try/download/shell">MongoDB Shell</a>. MongoDB Shell is the quickest way to connect and work with MongoDB. Please note that connection to MindsDB's MongoDB API is the same as connection to a MongoDB database.</p>
 <h1 id="how-to-connect">How to Connect<a class="headerlink" href="#how-to-connect" title="Permanent link">&para;</a></h1>
 <p>To connect to MindsDB, run the below command in your Mongo Shell and provide the connection details, such as host, port, username, and password.</p>
 <div class="highlight"><pre><span></span><code>mongo --host <span class="o">[</span>hostname<span class="o">]</span> --port <span class="o">[</span>TCP/IP port number<span class="o">]</span> -u <span class="o">[</span>user<span class="o">]</span> -p <span class="o">[</span>password<span class="o">]</span>
@@ -2053,7 +2053,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Self-Hosted Local Deployment</label><label for="__tabbed_1_2">MindsDB Cloud</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code>mongo --host <span class="m">127</span>.0.0.1 --port <span class="m">47336</span> -u mindsdb
+<div class="highlight"><pre><span></span><code>mongo --host <span class="m">127</span>.0.0.1 --port <span class="m">47336</span>
 </code></pre></div>
 </div>
 <div class="tabbed-block">
