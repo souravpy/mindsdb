@@ -64,7 +64,7 @@ class TestCompanyIndependent:
         a = set(a)
         b = set(b)
         assert len(a) == len(b)
-        assert a == b 
+        assert a == b
 
     def sql_via_http(self, request: str, expected_resp_type: str = None, context: dict = None,
                      headers: dict = None, company_id: int = None) -> dict:
@@ -88,6 +88,8 @@ class TestCompanyIndependent:
         assert response.status_code == 200
         response = response.json()
         if expected_resp_type is not None:
+            if response.get('type') != expected_resp_type:
+                print(response)
             assert response.get('type') == expected_resp_type
         else:
             assert response.get('type') in [RESPONSE_TYPE.OK, RESPONSE_TYPE.TABLE, RESPONSE_TYPE.ERROR]
@@ -295,6 +297,7 @@ class TestCompanyIndependent:
             )
 
             engines = self.get_ml_engines(cid)
+            print(f'LIST {engines}')
             self.assert_list(
                 engines, {
                     'lightwood'
