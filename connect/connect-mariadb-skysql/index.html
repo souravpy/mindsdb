@@ -1036,22 +1036,50 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
   
+    <li class="md-nav__item">
+      <a href="../../sql/native-queries/" class="md-nav__link">
+        Running Native Queries
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sql/project/" class="md-nav__link">
+        PROJECTS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
     
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11_2" type="checkbox" id="__nav_11_2" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_11_4" type="checkbox" id="__nav_11_4" >
       
       
       
       
-        <label class="md-nav__link" for="__nav_11_2">
+        <label class="md-nav__link" for="__nav_11_4">
           CREATE
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="CREATE" data-md-level="2">
-        <label class="md-nav__title" for="__nav_11_2">
+        <label class="md-nav__title" for="__nav_11_4">
           <span class="md-nav__icon md-icon"></span>
           CREATE
         </label>
@@ -2177,7 +2205,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <h1 id="mariadb-skysql-setup-guide"><a href="https://cloud.MariaDB.com/">MariaDB SkySQL</a> Setup Guide<a class="headerlink" href="#mariadb-skysql-setup-guide" title="Permanent link">&para;</a></h1>
 <h2 id="1-select-your-service-for-mindsdb">1. Select your service for MindsDB<a class="headerlink" href="#1-select-your-service-for-mindsdb" title="Permanent link">&para;</a></h2>
 <p>If you haven’t already, identify the service to be enabled with MindsDB and make sure it is running. Otherwise skip to step 2.</p>
-<p><div class="video-container"><iframe src="https://youtube.com/embed/XLJ7xD9BRu8" style="position: relative; width: 100%; height: 22.172vw" frameborder="0" allowfullscreen></iframe></div></p>
+<iframe src="https://player.vimeo.com/video/768117001?h=0966ac32da" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
 <h2 id="2-add-mindsdb-to-your-service-allowlist">2. Add MindsDB to your service Allowlist<a class="headerlink" href="#2-add-mindsdb-to-your-service-allowlist" title="Permanent link">&para;</a></h2>
 <p>Access to MariaDB SkySQL services is <a href="https://mariadb.com/products/skysql/docs/security/firewalls/ip-allowlist-services/">restricted on a per-service basis</a>.
 Add the following IP addresses to allow MindsDB to connect to your MariaDB service, do this by clicking on the cog icon and navigating to Security Access. In the dialog, input as prompted – one by one – the following IPs:</p>
@@ -2185,17 +2214,21 @@ Add the following IP addresses to allow MindsDB to connect to your MariaDB servi
 3.19.152.46
 52.14.91.162
 </code></pre></div>
-<p><div class="video-container"><iframe src="https://youtube.com/embed/zaUM5kw8vJs" style="position: relative; width: 100%; height: 22.172vw" frameborder="0" allowfullscreen></iframe></div></p>
+<iframe src="https://player.vimeo.com/video/768116526?h=a1383e1ba2" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
 <h2 id="3-download-your-service-pem-file">3. Download your service .pem file<a class="headerlink" href="#3-download-your-service-pem-file" title="Permanent link">&para;</a></h2>
 <p>A <a href="https://mariadb.com/products/skysql/docs/connect/connection-parameters-portal/#certificate-authority-chain">certificate authority chain</a> (.pem file) must be provided for proper TLS certificate validation.</p>
 <p>From your selected service, click on the world globe icon (Connect to service). In the Login Credentials section, click Download. The <code>aws_skysql_chain.pem</code> file will download onto your machine.</p>
-<p><div class="video-container"><iframe src="https://youtube.com/embed/tBCrPSPHKds" style="position: relative; width: 100%; height: 22.172vw" frameborder="0" allowfullscreen></iframe></div></p>
+<iframe src="https://player.vimeo.com/video/768116804?h=eab6e8e2ff" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
 <h2 id="4-publically-expose-your-service-pem-file">4. Publically Expose your service .pem File<a class="headerlink" href="#4-publically-expose-your-service-pem-file" title="Permanent link">&para;</a></h2>
 <p>Select secure storage for the <code>aws_skysql_chain.pem</code> file that allows a working public URL or localpath.</p>
-<p><div class="video-container"><iframe src="https://youtube.com/embed/nCPvBmnV7as" style="position: relative; width: 100%; height: 22.172vw" frameborder="0" allowfullscreen></iframe></div></p>
+<iframe src="https://player.vimeo.com/video/768116895?h=f44c2e1dda" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
 <h2 id="5-link-mindsdb-to-your-mariadb-skysql-service">5. Link <a href="https://cloud.mindsdb.com">MindsDB</a> to your MariaDB SkySQL Service<a class="headerlink" href="#5-link-mindsdb-to-your-mariadb-skysql-service" title="Permanent link">&para;</a></h2>
 <p>To print the query template, select Add Data in either the top or side navigation and choose MariaDB SkySQL from the list. Fill in the values and run query to complete the setup.</p>
-<p><div class="video-container"><iframe src="https://youtube.com/embed/yG4qZBDu918" style="position: relative; width: 100%; height: 22.172vw" frameborder="0" allowfullscreen></iframe></div></p>
+<iframe src="https://player.vimeo.com/video/768116343?h=9a13053947" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Template</label><label for="__tabbed_1_2">Example for MariaDB SkySQL Service</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
