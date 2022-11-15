@@ -8,21 +8,21 @@
       
       
       
-        <link rel="canonical" href="https://docs.mindsdb.com/sql/tutorials/crop-prediction/">
+        <link rel="canonical" href="https://docs.mindsdb.com/rest/sql/">
       
-      <link rel="icon" href="../../../assets/mdb_logo.png">
+      <link rel="icon" href="../../assets/mdb_logo.png">
       <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.13">
     
     
       
-        <title>Crop Recommendation - MindsDB Documentation</title>
+        <title>SQL Queries - MindsDB Documentation</title>
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.e411adfe.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.e411adfe.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.cc9b2e1e.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cc9b2e1e.min.css">
         
       
     
@@ -37,9 +37,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+      <link rel="stylesheet" href="../../stylesheets/extra.css">
     
-    <script>__md_scope=new URL("../../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("../..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
 <!-- Iubenda cookie solution -->
 <script type="text/javascript">
@@ -83,7 +83,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <div data-md-component="skip">
       
         
-        <a href="#crop-recomendation" class="md-skip">
+        <a href="#apisqlquery-endpoint" class="md-skip">
           Skip to content
         </a>
       
@@ -128,14 +128,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     <!-- Link to home -->
     <a
-      href="../../.."
+      href="../.."
       title="MindsDB Documentation"
       class="md-header__button md-logo"
       aria-label="MindsDB Documentation"
       data-md-component="logo"
     >
       
-  <img src="../../../assets/mdb_logo_w.svg" alt="logo">
+  <img src="../../assets/mdb_logo_w.svg" alt="logo">
 
     </a>
 
@@ -155,7 +155,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Crop Recommendation
+              SQL Queries
             
           </span>
         </div>
@@ -313,9 +313,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="MindsDB Documentation" class="md-nav__button md-logo" aria-label="MindsDB Documentation" data-md-component="logo">
+    <a href="../.." title="MindsDB Documentation" class="md-nav__button md-logo" aria-label="MindsDB Documentation" data-md-component="logo">
       
-  <img src="../../../assets/mdb_logo_w.svg" alt="logo">
+  <img src="../../assets/mdb_logo_w.svg" alt="logo">
 
     </a>
     MindsDB Documentation
@@ -343,7 +343,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../.." class="md-nav__link">
+      <a href="../.." class="md-nav__link">
         Quickstart
       </a>
     </li>
@@ -358,7 +358,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../../what-is-mindsdb/" class="md-nav__link">
+      <a href="../../what-is-mindsdb/" class="md-nav__link">
         What is MindsDB?
       </a>
     </li>
@@ -425,7 +425,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../../setup/self-hosted/docker/" class="md-nav__link">
+      <a href="../../setup/self-hosted/docker/" class="md-nav__link">
         Docker
       </a>
     </li>
@@ -465,7 +465,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../../setup/self-hosted/pip/windows/" class="md-nav__link">
+      <a href="../../setup/self-hosted/pip/windows/" class="md-nav__link">
         Windows via pip
       </a>
     </li>
@@ -479,7 +479,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../../setup/self-hosted/pip/linux/" class="md-nav__link">
+      <a href="../../setup/self-hosted/pip/linux/" class="md-nav__link">
         Linux via pip
       </a>
     </li>
@@ -493,7 +493,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../../setup/self-hosted/pip/macos/" class="md-nav__link">
+      <a href="../../setup/self-hosted/pip/macos/" class="md-nav__link">
         MacOS via pip
       </a>
     </li>
@@ -507,7 +507,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../../setup/self-hosted/pip/source/" class="md-nav__link">
+      <a href="../../setup/self-hosted/pip/source/" class="md-nav__link">
         Sourcecode via pip
       </a>
     </li>
@@ -535,7 +535,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../../setup/custom-config/" class="md-nav__link">
+      <a href="../../setup/custom-config/" class="md-nav__link">
         Extend the Default MindsDB Configuration
       </a>
     </li>
@@ -549,7 +549,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../../setup/cloud/" class="md-nav__link">
+      <a href="../../setup/cloud/" class="md-nav__link">
         MindsDB Cloud
       </a>
     </li>
@@ -563,7 +563,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../../setup/digital-ocean/" class="md-nav__link">
+      <a href="../../setup/digital-ocean/" class="md-nav__link">
         Digital Ocean
       </a>
     </li>
@@ -577,7 +577,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../../setup/gcp/" class="md-nav__link">
+      <a href="../../setup/gcp/" class="md-nav__link">
         Google Cloud Platform
       </a>
     </li>
@@ -591,7 +591,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../../setup/vultr/" class="md-nav__link">
+      <a href="../../setup/vultr/" class="md-nav__link">
         Vultr Cloud
       </a>
     </li>
@@ -605,7 +605,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../../setup/civo/" class="md-nav__link">
+      <a href="../../setup/civo/" class="md-nav__link">
         Civo Cloud
       </a>
     </li>
@@ -653,7 +653,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../../connect/dbeaver/" class="md-nav__link">
+      <a href="../../connect/dbeaver/" class="md-nav__link">
         DBeaver
       </a>
     </li>
@@ -667,7 +667,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../../connect/dbt/" class="md-nav__link">
+      <a href="../../connect/dbt/" class="md-nav__link">
         DBT
       </a>
     </li>
@@ -681,7 +681,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../../connect/deepnote/" class="md-nav__link">
+      <a href="../../connect/deepnote/" class="md-nav__link">
         Deepnote
       </a>
     </li>
@@ -695,7 +695,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../../connect/kafka/" class="md-nav__link">
+      <a href="../../connect/kafka/" class="md-nav__link">
         Kafka
       </a>
     </li>
@@ -709,7 +709,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../../connect/connect-mariadb-skysql/" class="md-nav__link">
+      <a href="../../connect/connect-mariadb-skysql/" class="md-nav__link">
         MariaDB SkySQL
       </a>
     </li>
@@ -723,7 +723,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../../connect/metabase/" class="md-nav__link">
+      <a href="../../connect/metabase/" class="md-nav__link">
         Metabase
       </a>
     </li>
@@ -737,7 +737,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../../connect/mindsdb_editor/" class="md-nav__link">
+      <a href="../../connect/mindsdb_editor/" class="md-nav__link">
         MindsDB SQL Editor
       </a>
     </li>
@@ -751,7 +751,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../../connect/mongo-compass/" class="md-nav__link">
+      <a href="../../connect/mongo-compass/" class="md-nav__link">
         Mongo Compass
       </a>
     </li>
@@ -765,7 +765,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../../connect/mongo-shell/" class="md-nav__link">
+      <a href="../../connect/mongo-shell/" class="md-nav__link">
         Mongo Shell
       </a>
     </li>
@@ -779,7 +779,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../../connect/mysql-client/" class="md-nav__link">
+      <a href="../../connect/mysql-client/" class="md-nav__link">
         MySQL CLI
       </a>
     </li>
@@ -793,7 +793,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../../connect/sql-alchemy/" class="md-nav__link">
+      <a href="../../connect/sql-alchemy/" class="md-nav__link">
         SQL Alchemy
       </a>
     </li>
@@ -807,7 +807,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../../connect/tableau/" class="md-nav__link">
+      <a href="../../connect/tableau/" class="md-nav__link">
         Tableau
       </a>
     </li>
@@ -829,7 +829,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../create/databases/" class="md-nav__link">
+      <a href="../../sql/create/databases/" class="md-nav__link">
         Data Setup in MindsDB
       </a>
     </li>
@@ -844,7 +844,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../create/file/" class="md-nav__link">
+      <a href="../../sql/create/file/" class="md-nav__link">
         Upload a File to MindsDB
       </a>
     </li>
@@ -859,7 +859,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../data-insights/" class="md-nav__link">
+      <a href="../../sql/data-insights/" class="md-nav__link">
         MindsDB Data Insights
       </a>
     </li>
@@ -874,7 +874,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../create/predictor/" class="md-nav__link">
+      <a href="../../sql/create/predictor/" class="md-nav__link">
         Train a Predictor
       </a>
     </li>
@@ -889,7 +889,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../api/select/" class="md-nav__link">
+      <a href="../../sql/api/select/" class="md-nav__link">
         Get a Prediction
       </a>
     </li>
@@ -904,7 +904,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../feature-eng/" class="md-nav__link">
+      <a href="../../sql/feature-eng/" class="md-nav__link">
         Feature Engineering in MindsDB
       </a>
     </li>
@@ -945,7 +945,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../table-structure/" class="md-nav__link">
+      <a href="../../sql/table-structure/" class="md-nav__link">
         MindsDB Tables Structure
       </a>
     </li>
@@ -959,7 +959,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../native-queries/" class="md-nav__link">
+      <a href="../../sql/native-queries/" class="md-nav__link">
         Running Native Queries
       </a>
     </li>
@@ -973,7 +973,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../project/" class="md-nav__link">
+      <a href="../../sql/project/" class="md-nav__link">
         PROJECTS
       </a>
     </li>
@@ -1013,7 +1013,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../create/databases/" class="md-nav__link">
+      <a href="../../sql/create/databases/" class="md-nav__link">
         DATABASE
       </a>
     </li>
@@ -1027,7 +1027,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../create/predictor/" class="md-nav__link">
+      <a href="../../sql/create/predictor/" class="md-nav__link">
         PREDICTOR
       </a>
     </li>
@@ -1041,7 +1041,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../create/table/" class="md-nav__link">
+      <a href="../../sql/create/table/" class="md-nav__link">
         TABLE
       </a>
     </li>
@@ -1055,7 +1055,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../create/view/" class="md-nav__link">
+      <a href="../../sql/create/view/" class="md-nav__link">
         VIEW
       </a>
     </li>
@@ -1069,7 +1069,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../create/ml_engine/" class="md-nav__link">
+      <a href="../../sql/create/ml_engine/" class="md-nav__link">
         ML_ENGINE
       </a>
     </li>
@@ -1090,7 +1090,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../api/update/" class="md-nav__link">
+      <a href="../../sql/api/update/" class="md-nav__link">
         UPDATE
       </a>
     </li>
@@ -1104,7 +1104,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../api/insert/" class="md-nav__link">
+      <a href="../../sql/api/insert/" class="md-nav__link">
         INSERT INTO
       </a>
     </li>
@@ -1118,7 +1118,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../api/describe/" class="md-nav__link">
+      <a href="../../sql/api/describe/" class="md-nav__link">
         DESCRIBE PREDICTOR
       </a>
     </li>
@@ -1132,7 +1132,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../api/retrain/" class="md-nav__link">
+      <a href="../../sql/api/retrain/" class="md-nav__link">
         RETRAIN
       </a>
     </li>
@@ -1146,7 +1146,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../api/drop/" class="md-nav__link">
+      <a href="../../sql/api/drop/" class="md-nav__link">
         DROP PREDICTOR
       </a>
     </li>
@@ -1160,7 +1160,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../api/select/" class="md-nav__link">
+      <a href="../../sql/api/select/" class="md-nav__link">
         SELECT
       </a>
     </li>
@@ -1174,7 +1174,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../api/select_files/" class="md-nav__link">
+      <a href="../../sql/api/select_files/" class="md-nav__link">
         SELECT from files
       </a>
     </li>
@@ -1188,7 +1188,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../api/join/" class="md-nav__link">
+      <a href="../../sql/api/join/" class="md-nav__link">
         JOIN
       </a>
     </li>
@@ -1208,12 +1208,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   
   
+    
+  
   
     
-    <li class="md-nav__item md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12" type="checkbox" id="__nav_12" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_12" type="checkbox" id="__nav_12" checked>
       
       
       
@@ -1234,11 +1236,66 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../../../rest/sql/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          SQL Queries
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         SQL Queries
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    Description
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#syntax" class="md-nav__link">
+    Syntax
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -1284,7 +1341,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../../mongo/collection-structure/" class="md-nav__link">
+      <a href="../../mongo/collection-structure/" class="md-nav__link">
         Collection Structure
       </a>
     </li>
@@ -1324,7 +1381,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../../mongo/database/" class="md-nav__link">
+      <a href="../../mongo/database/" class="md-nav__link">
         Databases
       </a>
     </li>
@@ -1338,7 +1395,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../../mongo/insert/" class="md-nav__link">
+      <a href="../../mongo/insert/" class="md-nav__link">
         Predictors
       </a>
     </li>
@@ -1359,7 +1416,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../../mongo/stats/" class="md-nav__link">
+      <a href="../../mongo/stats/" class="md-nav__link">
         Stats()
       </a>
     </li>
@@ -1373,7 +1430,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../../mongo/find/" class="md-nav__link">
+      <a href="../../mongo/find/" class="md-nav__link">
         Find()
       </a>
     </li>
@@ -1387,7 +1444,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../../mongo/delete/" class="md-nav__link">
+      <a href="../../mongo/delete/" class="md-nav__link">
         Delete()
       </a>
     </li>
@@ -1435,7 +1492,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../../custom-model/mlflow/" class="md-nav__link">
+      <a href="../../custom-model/mlflow/" class="md-nav__link">
         MLflow
       </a>
     </li>
@@ -1449,7 +1506,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../../custom-model/ray-serve/" class="md-nav__link">
+      <a href="../../custom-model/ray-serve/" class="md-nav__link">
         Ray Serve
       </a>
     </li>
@@ -1463,7 +1520,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../../custom-model/huggingface/" class="md-nav__link">
+      <a href="../../custom-model/huggingface/" class="md-nav__link">
         HuggingFace
       </a>
     </li>
@@ -1477,7 +1534,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../../custom-model/openai/" class="md-nav__link">
+      <a href="../../custom-model/openai/" class="md-nav__link">
         OpenAI
       </a>
     </li>
@@ -1551,7 +1608,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../home-rentals/" class="md-nav__link">
+      <a href="../../sql/tutorials/home-rentals/" class="md-nav__link">
         Home Rentals
       </a>
     </li>
@@ -1598,7 +1655,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../customer-churn/" class="md-nav__link">
+      <a href="../../sql/tutorials/customer-churn/" class="md-nav__link">
         Customer Churn
       </a>
     </li>
@@ -1645,7 +1702,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../house-sales-forecasting/" class="md-nav__link">
+      <a href="../../sql/tutorials/house-sales-forecasting/" class="md-nav__link">
         House Sales
       </a>
     </li>
@@ -1659,7 +1716,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../eeg-forecasting/" class="md-nav__link">
+      <a href="../../sql/tutorials/eeg-forecasting/" class="md-nav__link">
         Brain Activity
       </a>
     </li>
@@ -1686,14 +1743,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16" type="checkbox" id="__nav_16" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16" type="checkbox" id="__nav_16" >
       
       
       
@@ -1742,7 +1797,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../insurance-cost-prediction/" class="md-nav__link">
+      <a href="../../sql/tutorials/insurance-cost-prediction/" class="md-nav__link">
         Insurance Cost
       </a>
     </li>
@@ -1756,7 +1811,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../bodyfat/" class="md-nav__link">
+      <a href="../../sql/tutorials/bodyfat/" class="md-nav__link">
         Body Fat Prediction
       </a>
     </li>
@@ -1770,7 +1825,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../process-quality/" class="md-nav__link">
+      <a href="../../sql/tutorials/process-quality/" class="md-nav__link">
         Process Quality
       </a>
     </li>
@@ -1789,14 +1844,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               
   
   
-    
-  
   
     
-    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16_2" type="checkbox" id="__nav_16_2" checked>
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_16_2" type="checkbox" id="__nav_16_2" >
       
       
       
@@ -1817,59 +1870,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               
   
   
-    
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          Crop Recommendation
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../../sql/tutorials/crop-prediction/" class="md-nav__link">
         Crop Recommendation
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#pre-requisites" class="md-nav__link">
-    Pre-requisites
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#add-your-file-to-mindsdb" class="md-nav__link">
-    Add your file to MindsDB
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-      
     </li>
   
 
@@ -1881,7 +1886,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../diabetes/" class="md-nav__link">
+      <a href="../../sql/tutorials/diabetes/" class="md-nav__link">
         Diabetes
       </a>
     </li>
@@ -1895,7 +1900,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../spam_emails_tutorial/" class="md-nav__link">
+      <a href="../../sql/tutorials/spam_emails_tutorial/" class="md-nav__link">
         Email spam
       </a>
     </li>
@@ -1909,7 +1914,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../mushrooms/" class="md-nav__link">
+      <a href="../../sql/tutorials/mushrooms/" class="md-nav__link">
         Mushrooms Hunting
       </a>
     </li>
@@ -1923,7 +1928,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../heart-disease/" class="md-nav__link">
+      <a href="../../sql/tutorials/heart-disease/" class="md-nav__link">
         Heart Disease
       </a>
     </li>
@@ -1944,7 +1949,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../../tutorials/" class="md-nav__link">
+      <a href="../../tutorials/" class="md-nav__link">
         Tutorials List
       </a>
     </li>
@@ -1992,7 +1997,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../../contribute/install/" class="md-nav__link">
+      <a href="../../contribute/install/" class="md-nav__link">
         MindsDB Installation for Development
       </a>
     </li>
@@ -2006,7 +2011,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../../contribute/issues/" class="md-nav__link">
+      <a href="../../contribute/issues/" class="md-nav__link">
         Bug Reports and Feature Requests
       </a>
     </li>
@@ -2020,7 +2025,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../../contribute/integrations/" class="md-nav__link">
+      <a href="../../contribute/integrations/" class="md-nav__link">
         Building a New Integration
       </a>
     </li>
@@ -2034,7 +2039,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../../contribute/ml_handlers/" class="md-nav__link">
+      <a href="../../contribute/ml_handlers/" class="md-nav__link">
         Building an ML Engine
       </a>
     </li>
@@ -2048,7 +2053,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../../contribute/docs/" class="md-nav__link">
+      <a href="../../contribute/docs/" class="md-nav__link">
         Writing Documentation
       </a>
     </li>
@@ -2062,7 +2067,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../../docs-rules/" class="md-nav__link">
+      <a href="../../docs-rules/" class="md-nav__link">
         Docs Style Guide
       </a>
     </li>
@@ -2076,7 +2081,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../../contribute/tests/" class="md-nav__link">
+      <a href="../../contribute/tests/" class="md-nav__link">
         Testing and Improving Test Coverage
       </a>
     </li>
@@ -2090,7 +2095,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../../contribute/tutorials/" class="md-nav__link">
+      <a href="../../contribute/tutorials/" class="md-nav__link">
         Writing Tutorials
       </a>
     </li>
@@ -2138,7 +2143,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../../contribute/" class="md-nav__link">
+      <a href="../../contribute/" class="md-nav__link">
         How to Contribute
       </a>
     </li>
@@ -2152,7 +2157,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   
   
     <li class="md-nav__item">
-      <a href="../../../community/" class="md-nav__link">
+      <a href="../../community/" class="md-nav__link">
         Join our Community
       </a>
     </li>
@@ -2193,15 +2198,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#pre-requisites" class="md-nav__link">
-    Pre-requisites
+  <a href="#description" class="md-nav__link">
+    Description
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#add-your-file-to-mindsdb" class="md-nav__link">
-    Add your file to MindsDB
+  <a href="#syntax" class="md-nav__link">
+    Syntax
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example" class="md-nav__link">
+    Example
   </a>
   
 </li>
@@ -2218,110 +2230,98 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <article class="md-content__inner md-typeset">
               
                 
-  <a href="https://github.com/mindsdb/mindsdb/edit/master/docs/sql/tutorials/crop-prediction.md" title="Edit this page" class="md-content__button md-icon">
+  <a href="https://github.com/mindsdb/mindsdb/edit/master/docs/rest/sql.md" title="Edit this page" class="md-content__button md-icon">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
   </a>
 
 
 
-<h1 id="crop-recomendation">Crop Recomendation<a class="headerlink" href="#crop-recomendation" title="Permanent link">&para;</a></h1>
-<p><em>Dataset: <a href="https://www.kaggle.com/atharvaingle/crop-recommendation-dataset">Crop recomendation Data</a></em></p>
-<p><em>Communtiy Author: <a href="https://github.com/pixpack">pixpack</a></em></p>
-<p>Modern agriculture is becoming very dependent on technology. From advanced machinery to specially selected crops. All the technology produces a lot of data that can be used for better adjustment of the farming process. One use case of machine learning in agriculture could be the selection of the best crop for a specific field to maximize the potential yield. Such problems are often called <em>Classification Problems</em> in machine learning. With <strong>MindsDB</strong> you can easily make automated machine learning predictions straight from your existing database. Even without advanced ML engineering skills, you can start leveraging predictive models that help you make better business decisions.</p>
-<p>In this tutorial, you will learn how to predict the best crop type based on field parameters using <strong>MindsDB</strong>.</p>
-<h2 id="pre-requisites">Pre-requisites<a class="headerlink" href="#pre-requisites" title="Permanent link">&para;</a></h2>
-<p>Before you start make sure you have:</p>
-<ol>
-<li>
-<p>Access to MindsDB. In this tutorial, we will use <a href="https://cloud.mindsdb.com/">MindsDB Cloud GUI</a>. If you want you can also deploy mindsdb on your premises, Check out the installation guide for <a href="https://docs.mindsdb.com/setup/self-hosted/docker/">Docker</a> or <a href="https://docs.mindsdb.com/setup/self-hosted/pip/windows/">PyPi</a>. </p>
-</li>
-<li>
-<p>Downloaded the dataset. You can get it from <a href="https://www.kaggle.com/atharvaingle/crop-recommendation-dataset">Kaggle</a>.</p>
-</li>
-</ol>
-<h2 id="add-your-file-to-mindsdb">Add your file to MindsDB<a class="headerlink" href="#add-your-file-to-mindsdb" title="Permanent link">&para;</a></h2>
-<p>MindsDB can integrates with many databases, in most scenarios your data will be stored in a database, if you decide to load this dataset into your database of choice, please follow instructions here as to how to connect mindsdb to your <a href="https://docs.mindsdb.com/sql/create/databases/">database.</a></p>
-<p>In this tutorial, we will be adding the dataset directly to MindsDB's GUI. For this example <a href="https://cloud.mindsdb.com/">MindsDB Cloud GUI</a> will be used.If you need to create an account you can find the guide on how to do it <a href="https://docs.mindsdb.com/setup/cloud/">here</a>.
-Alternatively, you can also use MindsDB's local deployment and access the GUI in your browser with <a href="https://127.0.0.1:47334">127.0.0.1:47334</a>.</p>
-<p><strong>The first step will be to access MindsDB cloud where we will also make use of the SQL Editor:</strong></p>
+<h1 id="apisqlquery-endpoint"><code class="highlight"><span class="o">/</span><span class="n">api</span><span class="o">/</span><span class="k">sql</span><span class="o">/</span><span class="n">query</span><span class="w"></span></code> Endpoint<a class="headerlink" href="#apisqlquery-endpoint" title="Permanent link">&para;</a></h1>
+<h2 id="description">Description<a class="headerlink" href="#description" title="Permanent link">&para;</a></h2>
+<p>This API provides a REST endpoint for executing the SQL queries. Note:</p>
 <ul>
-<li>Once you are logged onto the Cloud GUI,navigate to either the <code>Add Data</code> button or the plug icon on the left side bar to select it.</li>
-<li>The screen will navigate to the <code>Select your datasource</code> page, select the option Files.</li>
+<li>This endpoint is a HTTP POST method.</li>
+<li>This endpoint accept data via <code>application/json</code> request body. </li>
+<li>The only required key is the <code>query</code> which has the SQL statement value.</li>
 </ul>
-<p><img alt="datasource" src="/assets/tutorials/crops/database.png" /></p>
-<ul>
-<li>Select Import Files.</li>
-</ul>
-<p><img alt="selectfromsource" src="/assets/tutorials/crops/select_datasource.png" /></p>
-<ul>
-<li>Click on <code>Import a File</code> to select your dataset from your local drive. Your dataset should be a maximum size of 10MB.</li>
-<li>Under <code>Table name</code> type in the name you would like to give your dataset which will be stored in MindsDB files.</li>
-</ul>
-<p>Once the dataset has been successfully uploaded into a table, you can query the dataset directly from the table.</p>
-<p>In the SQL Editor,type in the following syntax and select the button <code>Run</code> or Shift+Enter to execute the code:</p>
-<p><div class="highlight"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"></span>
-<span class="k">FROM</span><span class="w"> </span><span class="n">files</span><span class="p">.</span><span class="n">crops</span><span class="p">;</span><span class="w"></span>
+<h2 id="syntax">Syntax<a class="headerlink" href="#syntax" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="err">POST</span><span class="w"> </span><span class="err">h</span><span class="kc">tt</span><span class="err">p</span><span class="p">:</span><span class="c1">//{{url}}}/api/sql/query</span><span class="w"></span>
+
+<span class="p">{</span><span class="w"></span>
+<span class="nt">&quot;query&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;The SQL Query you want to execute&quot;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
-<img alt="file_select" src="/assets/tutorials/crops/selectfromfiles.png" /></p>
-<p>This confirms that the dataset has been successfully uploaded with all its rows.</p>
-<h1 id="create-a-predictor">Create a predictor<a class="headerlink" href="#create-a-predictor" title="Permanent link">&para;</a></h1>
-<p>Now we can create a machine learning model with <code>crops</code> columns serving as features, and MindsDB takes care of the rest of the ML workflow automatically. There is a way to get your hands into the insides of the model to fine tune it, but we will not cover it in this tutorial.</p>
-<p>In the SQL Editor, type in the below syntax to create and train a machine learning predictive model:</p>
-<div class="highlight"><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="n">PREDICTOR</span><span class="w"> </span><span class="n">crop_predictor</span><span class="w"></span>
-<span class="k">FROM</span><span class="w"> </span><span class="n">files</span><span class="w"></span>
-<span class="w">    </span><span class="p">(</span><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">crops</span><span class="p">)</span><span class="w"></span>
-<span class="n">PREDICT</span><span class="w"> </span><span class="n">label</span><span class="p">;</span><span class="w"></span>
+<p>On execution, we get <code>Status 200 OK</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="w">   </span><span class="nt">&quot;context&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{},</span><span class="w"></span>
+<span class="w">   </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;ok&quot;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
-<p>Select the button <code>Run</code> or Shift+Enter to execute the code. If the predictor is successfully created the console will display a message <code>Query successfully completed</code>.</p>
-<p><img alt="create_predictor" src="/assets/tutorials/crops/createcropspredictor.png" /></p>
-<p>Now the predictor will begin training. You can check the status of the predictor with the following query.</p>
-<div class="highlight"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"></span>
-<span class="k">FROM</span><span class="w"> </span><span class="n">mindsdb</span><span class="p">.</span><span class="n">predictors</span><span class="w"></span>
-<span class="k">WHERE</span><span class="w"> </span><span class="n">name</span><span class="o">=</span><span class="s1">&#39;crop_predictor&#39;</span><span class="p">;</span><span class="w"></span>
+<h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">MindsDB Cloud</label><label for="__tabbed_1_2">Local MindsDB</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="err">POST</span><span class="w"> </span><span class="err">h</span><span class="kc">tt</span><span class="err">ps</span><span class="p">:</span><span class="c1">//cloud.mindsdb.com/api/sql/query</span><span class="w"></span>
+
+<span class="p">{</span><span class="w"></span>
+<span class="nt">&quot;query&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SELECT sqft, rental_price FROM example_db.demo_data.home_rentals LIMIT 10;&quot;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
-<p>After the predictor has finished training, you will see a similar output. Note that MindsDB does model testing for you automatically, so you will immediately see if the predictor is accurate enough.</p>
-<p><img alt="statuscheck" src="/assets/tutorials/crops/statuscheck.png" /></p>
-<p>You are now done with creating the predictor! ✨</p>
-<h2 id="make-predictions">Make predictions<a class="headerlink" href="#make-predictions" title="Permanent link">&para;</a></h2>
-<p>In this section you will learn how to make predictions using your trained model.</p>
-<p>To run a prediction against new or existing data, you can use the following query.</p>
-<div class="highlight"><pre><span></span><code><span class="k">SELECT</span><span class="w"> </span><span class="n">label</span><span class="w"></span>
-<span class="k">FROM</span><span class="w"> </span><span class="n">mindsdb</span><span class="p">.</span><span class="n">crop_predictor</span><span class="w"></span>
-<span class="k">WHERE</span><span class="w"> </span><span class="n">N</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">77</span><span class="w"></span>
-<span class="k">AND</span><span class="w"> </span><span class="n">P</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">52</span><span class="w"></span>
-<span class="k">AND</span><span class="w"> </span><span class="n">K</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">17</span><span class="w"></span>
-<span class="k">AND</span><span class="w"> </span><span class="n">temperature</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">24</span><span class="w"></span>
-<span class="k">AND</span><span class="w"> </span><span class="n">humidity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">20</span><span class="p">.</span><span class="mi">74</span><span class="w"></span>
-<span class="k">AND</span><span class="w"> </span><span class="n">ph</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">.</span><span class="mi">71</span><span class="w"></span>
-<span class="k">AND</span><span class="w"> </span><span class="n">rainfall</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">75</span><span class="p">.</span><span class="mi">82</span><span class="p">;</span><span class="w"></span>
+<p>On execution, we get:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="nt">&quot;column_names&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">    </span><span class="s2">&quot;sqft&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="s2">&quot;rental_price&quot;</span><span class="w"></span>
+<span class="p">],</span><span class="w"></span>
+<span class="nt">&quot;context&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;db&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;mindsdb&quot;</span><span class="w"></span>
+<span class="p">},</span><span class="w"></span>
+<span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">    </span><span class="p">[</span><span class="w"></span>
+<span class="w">        </span><span class="mi">917</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="mi">3901</span><span class="w"></span>
+<span class="w">    </span><span class="p">],</span><span class="w"></span>
+<span class="w">    </span><span class="p">[</span><span class="w"></span>
+<span class="w">        </span><span class="mi">194</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="mi">2042</span><span class="w"></span>
+<span class="w">    </span><span class="p">]</span><span class="w"></span>
+<span class="p">],</span><span class="w"></span>
+<span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;table&quot;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
-<p><img alt="statuscheck" src="/assets/tutorials/crops/cropprediction.png" /></p>
-<p>As we have used a real data point from our dataset we can verify the prediction.
-<div class="highlight"><pre><span></span><code>N,  P,  K,  temperature,  humidity,   ph,           rainfall,     label
-77, 52, 17, 24.86374934,  65.7420046, 5.714799723,  75.82270467,  maize
-</code></pre></div></p>
-<p>As you can see, the model correctly predicted the most appropriate crop type for our field.</p>
-<p>OK, we made a prediction using a single query, but what if you want to make a batch prediction for a large set of data in your database? In this case, MindsDB allows you to Join this other table with the Predictor. In result, you will get another table as an output with a predicted value as one of its columns.</p>
-<p>Let’s see how it works.</p>
-<p>Use the following command to create the batch prediction and execute with the <code>Run</code> button.</p>
-<div class="highlight"><pre><span></span><code><span class="k">SELECT</span><span class="w"></span>
-<span class="w">    </span><span class="n">collected_data</span><span class="p">.</span><span class="n">N</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="n">collected_data</span><span class="p">.</span><span class="n">P</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="n">collected_data</span><span class="p">.</span><span class="n">K</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="n">collected_data</span><span class="p">.</span><span class="n">temperature</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="n">collected_data</span><span class="p">.</span><span class="n">humidity</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="n">collected_data</span><span class="p">.</span><span class="n">ph</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="n">collected_data</span><span class="p">.</span><span class="n">rainfall</span><span class="p">,</span><span class="w"></span>
-<span class="w">    </span><span class="n">predictions</span><span class="p">.</span><span class="n">label</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">predicted_crop_type</span><span class="w"></span>
-<span class="k">FROM</span><span class="w"> </span><span class="n">crops_integration</span><span class="p">.</span><span class="n">crops</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">collected_data</span><span class="w"></span>
-<span class="k">JOIN</span><span class="w"> </span><span class="n">mindsdb</span><span class="p">.</span><span class="n">crop_predictor</span><span class="w"> </span><span class="k">AS</span><span class="w"> </span><span class="n">predictions</span><span class="w"></span>
-<span class="k">LIMIT</span><span class="w"> </span><span class="mi">5</span><span class="p">;</span><span class="w"></span>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="err">POST</span><span class="w"> </span><span class="err">h</span><span class="kc">tt</span><span class="err">p</span><span class="p">:</span><span class="c1">//127.0.0.1:47334/api/sql/query</span><span class="w"></span>
+
+<span class="p">{</span><span class="w"></span>
+<span class="nt">&quot;query&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SELECT sqft, rental_price FROM example_db.demo_data.home_rentals LIMIT 10;&quot;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
-<p>As you can see below, the predictor has made multiple predictions for each data point in the <code>collected_data</code> table. You can also try selecting other fields to get more insight on the predictions. See the <a href="https://docs.mindsdb.com/sql/api/join/">JOIN clause documentation</a> for more information.</p>
-<p><img alt="2ndprediction" src="/assets/tutorials/crops/2ndprediction.png" /></p>
-<p>You are now done with the tutorial! 🎉</p>
-<p>Please feel free to try it yourself. Sign up for a <a href="https://cloud.mindsdb.com/signup?utm_medium=community&amp;utm_source=ext.%20blogs&amp;utm_campaign=blog-crop-detection">free MindsDB account</a> to get up and running in 5 minutes, and if you need any help, feel free to ask in <a href="https://join.slack.com/t/mindsdbcommunity/shared_invite/zt-o8mrmx3l-5ai~5H66s6wlxFfBMVI6wQ">Slack</a> or <a href="https://github.com/mindsdb/mindsdb/discussions">Github</a>.</p>
-<p>For more check out other <a href="https://docs.mindsdb.com/">tutorials and MindsDB documentation</a>.</p>
+<p>On execution, we get:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="nt">&quot;column_names&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">    </span><span class="s2">&quot;sqft&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="s2">&quot;rental_price&quot;</span><span class="w"></span>
+<span class="p">],</span><span class="w"></span>
+<span class="nt">&quot;context&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;db&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;mindsdb&quot;</span><span class="w"></span>
+<span class="p">},</span><span class="w"></span>
+<span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">    </span><span class="p">[</span><span class="w"></span>
+<span class="w">        </span><span class="mi">917</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="mi">3901</span><span class="w"></span>
+<span class="w">    </span><span class="p">],</span><span class="w"></span>
+<span class="w">    </span><span class="p">[</span><span class="w"></span>
+<span class="w">        </span><span class="mi">194</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="mi">2042</span><span class="w"></span>
+<span class="w">    </span><span class="p">]</span><span class="w"></span>
+<span class="p">],</span><span class="w"></span>
+<span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;table&quot;</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
+</code></pre></div>
+</div>
+</div>
+</div>
 
               
             </article>
@@ -2336,10 +2336,10 @@ Alternatively, you can also use MindsDB's local deployment and access the GUI in
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["search.suggest", "search.highlight", "header.autohide"], "search": "../../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["search.suggest", "search.highlight", "header.autohide"], "search": "../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.ed9748b7.min.js"></script>
+      <script src="../../assets/javascripts/bundle.ed9748b7.min.js"></script>
       
     
   </body>

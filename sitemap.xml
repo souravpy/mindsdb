@@ -231,6 +231,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://docs.mindsdb.com/rest/sql/</loc>
+         <lastmod>2022-11-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://docs.mindsdb.com/setup/civo/</loc>
          <lastmod>2022-11-15</lastmod>
          <changefreq>daily</changefreq>
