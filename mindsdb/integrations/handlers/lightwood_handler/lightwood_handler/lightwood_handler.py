@@ -89,6 +89,12 @@ class LightwoodHandler(BaseMLEngine):
             predictor_code
         )
         dtype_dict = predictor.dtype_dict
+        timeseries_settings = learn_args.get('timeseries_settings', {'is_timeseries': False})
+        is_ts = timeseries_settings['is_timeseries'] is True
+
+        if is_ts:
+            pred_args['force_ts_infer'] = pred_args.get('force_ts_infer', True)
+            pred_args['time_format'] = pred_args.get('time_format', 'infer')
 
         predictions = predictor.predict(df, args=pred_args)
         predictions = predictions.to_dict(orient='records')
@@ -173,9 +179,7 @@ class LightwoodHandler(BaseMLEngine):
                 original_target_values[col + '_original'].append(row.get(col))
 
         # region transform ts predictions
-        timeseries_settings = learn_args.get('timeseries_settings', {'is_timeseries': False})
-
-        if timeseries_settings['is_timeseries'] is True:
+        if is_ts:
             # offset forecast if have __mdb_forecast_offset > 0
             forecast_offset = any([
                 row.get('__mdb_forecast_offset') is not None and row['__mdb_forecast_offset'] > 0
@@ -187,6 +191,7 @@ class LightwoodHandler(BaseMLEngine):
             if isinstance(order_by_column, list):
                 order_by_column = order_by_column[0]
             horizon = timeseries_settings['horizon']
+            window = timeseries_settings['window']
 
             groups = set()
             for row in pred_dicts:
@@ -211,21 +216,16 @@ class LightwoodHandler(BaseMLEngine):
                         rows_by_groups[group]['rows'].append(row)
                         rows_by_groups[group]['explanations'].append(explain_arr[row_index])
 
+                if not forecast_offset:
+                    rows_by_groups[group]['rows'] = [rows_by_groups[group]['rows'][window]]
+                    rows_by_groups[group]['explanations'] = [rows_by_groups[group]['explanations'][window]]
+
             for group, data in rows_by_groups.items():
                 rows = data['rows']
                 explanations = data['explanations']
 
                 if len(rows) == 0:
                     break
-
-                for row in rows:
-                    predictions = row[target]
-                    if isinstance(predictions, list) is False:
-                        predictions = [predictions]
-
-                    date_values = row[order_by_column]
-                    if isinstance(date_values, list) is False:
-                        date_values = [date_values]
 
                 for i in range(len(rows) - 1):
                     if horizon > 1:
